@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f5f1" />
+
+    <!--
+      Applies the saved theme before the first paint. Inline and synchronous on
+      purpose: as a module it would run after the first paint and the page would
+      flash the wrong theme on every visit. Light is the default in the tag
+      above, so a first-time visitor still gets the intended ground.
+    -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme')
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.dataset.theme = saved
+          }
+        } catch (e) {
+          /* Private mode blocks storage; the light default in the tag stands. */
+        }
+      })()
+    </script>
+
+    <title>Dawid Salwecki | Full Stack &amp; Mobile Developer</title>
+    <meta
+      name="description"
+      content="Dawid Salwecki — full stack and mobile developer with 7+ years of experience. React, Next.js, Node.js, TypeScript, Python and Django; React Native, Android and iOS apps; WordPress and Shopify stores. Working remotely with clients in Latin America, Brazil and the United States."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Mobile Developer, React, Next.js, Node.js, TypeScript, Python, Django, PostgreSQL, MongoDB, React Native, Flutter, Android, iOS, WordPress, Shopify, WooCommerce, E-commerce, Chatbot, Rasa, REST API, Freelance Developer Poland"
+    />
+    <meta name="author" content="Dawid Salwecki" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://dawid-salwecki.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dawid Salwecki" />
+    <meta property="og:title" content="Dawid Salwecki | Full Stack &amp; Mobile Developer" />
+    <meta
+      property="og:description"
+      content="Web, mobile and e-commerce projects taken from requirements through to deployment. 7+ years of full stack development, working remotely with clients across Latin America, Brazil and the United States."
+    />
+    <meta property="og:url" content="https://dawid-salwecki.vercel.app/" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dawid Salwecki | Full Stack &amp; Mobile Developer" />
+    <meta
+      name="twitter:description"
+      content="Web, mobile and e-commerce projects taken from requirements through to deployment. 7+ years of full stack development."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dawid Salwecki",
+        "jobTitle": "Full Stack & Mobile Developer",
+        "description": "Full stack and mobile developer with 7+ years of experience building web applications, mobile apps and e-commerce stores for clients in Latin America, Brazil and the United States.",
+        "url": "https://dawid-salwecki.vercel.app/",
+        "telephone": "+48883734833",
+        "address": { "@type": "PostalAddress", "addressCountry": "PL" },
+        "knowsLanguage": ["English", "Portuguese", "Spanish"],
+        "knowsAbout": [
+          "React", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS",
+          "Node.js", "Python", "Django", "PHP", "Laravel", "REST API",
+          "PostgreSQL", "MySQL", "MongoDB",
+          "React Native", "Flutter", "Android", "iOS", "Unity",
+          "WordPress", "Shopify", "WooCommerce", "E-commerce", "SaaS",
+          "Chatbot Development", "Responsive Web Design"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      Dawid Salwecki — full stack and mobile developer with 7+ years of experience in React,
+      Next.js, Node.js, Python, React Native, WordPress and Shopify. Please enable JavaScript
+      to view the full portfolio.
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
