@@ -57,28 +57,23 @@
 
 [data-theme='dark'] .nav-mark { color: #08120f; }
 
-.nav-brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.nav-brand-text strong {
+/* The name alone: the job title is already the loudest line in the hero, and
+   repeating it here is what pushed the links onto a second row in the locales
+   with longer words. */
+.nav-brand-name {
   font-size: 0.92rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-}
-
-.nav-brand-text small {
-  font-size: 0.72rem;
-  color: var(--ink-faint);
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 4px;
   margin-left: auto;
+  min-width: 0;
 }
 
 .nav-links a {
@@ -87,6 +82,7 @@
   font-size: 0.865rem;
   font-weight: 500;
   color: var(--ink-soft);
+  white-space: nowrap;
   transition: color 0.15s ease, background 0.15s ease;
 }
 
@@ -119,9 +115,10 @@
 
 .nav-cta { padding: 8px 17px; font-size: 0.855rem; }
 
-/* Below 900px the links move to their own scrollable strip under the brand
-   instead of collapsing into a menu, so every section stays one tap away. */
-@media (max-width: 900px) {
+/* Below 1080px the links move to their own scrollable strip under the brand
+   instead of collapsing into a menu, so every section stays one tap away. The
+   breakpoint clears the longest locale, not just English. */
+@media (max-width: 1080px) {
   .nav-inner {
     height: auto;
     flex-wrap: wrap;
@@ -144,6 +141,6 @@
   .nav-actions { margin-left: auto; }
 }
 
-@media (max-width: 520px) {
-  .nav-brand-text small { display: none; }
+@media (max-width: 560px) {
+  .nav-cta { display: none; }
 }

@@ -1,3 +1,4 @@
+import { LocaleProvider, useLocale } from './i18n/LocaleContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
@@ -9,10 +10,12 @@ import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import BackToTop from './components/BackToTop.jsx'
 
-export default function App() {
+function Site() {
+  const t = useLocale()
+
   return (
     <>
-      <a className="skip-link" href="#about">Skip to content</a>
+      <a className="skip-link" href="#about">{t.a11y.skip}</a>
       <Navbar />
       <main>
         <Hero />
@@ -26,5 +29,13 @@ export default function App() {
       <Footer />
       <BackToTop />
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <LocaleProvider>
+      <Site />
+    </LocaleProvider>
   )
 }

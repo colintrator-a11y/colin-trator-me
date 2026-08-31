@@ -1,18 +1,21 @@
-import { navLinks, profile } from '../data/profile.js'
+import { navSections, profile } from '../data/profile.js'
+import { useLocale } from '../i18n/LocaleContext.jsx'
 import './Footer.css'
 
 export default function Footer() {
+  const t = useLocale()
+
   return (
     <footer className="footer">
       <div className="shell footer-inner">
         <p className="footer-brand">
           <strong>{profile.name}</strong>
-          <span>{profile.title} · {profile.location}</span>
+          <span>{t.footer.role}</span>
         </p>
 
-        <nav className="footer-links" aria-label="Footer">
-          {navLinks.map((link) => (
-            <a key={link.href} href={link.href}>{link.label}</a>
+        <nav className="footer-links" aria-label={t.a11y.footer}>
+          {navSections.map((section) => (
+            <a key={section} href={`#${section}`}>{t.nav[section]}</a>
           ))}
         </nav>
 

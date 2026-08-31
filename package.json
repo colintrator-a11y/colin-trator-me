@@ -3,11 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Portfolio website for Dawid Salwecki — Full Stack & Mobile Developer.",
+  "description": "Portfolio website for Dawid Salwecki \u2014 Full Stack & Mobile Developer.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "check:locales": "node scripts/check-locales.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

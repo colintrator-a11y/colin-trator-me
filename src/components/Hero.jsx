@@ -1,20 +1,15 @@
 import { useState } from 'react'
 import { profile, stats } from '../data/profile.js'
+import { useLocale } from '../i18n/LocaleContext.jsx'
 import './Hero.css'
 
 // Lives in public/ so it can be swapped without touching the build.
 const AVATAR = `${import.meta.env.BASE_URL}avatar.jpg`
 
-const facts = [
-  { label: 'Location', value: profile.location },
-  { label: 'Rate', value: profile.rate },
-  { label: 'Phone', value: profile.phone, href: profile.phoneHref },
-  { label: 'Languages', value: 'English · Portuguese · Spanish' },
-]
-
 export default function Hero() {
-  // The portrait is a drop-in file; if it is missing we fall back to the
-  // monogram rather than showing a broken image.
+  const t = useLocale()
+  // If the portrait is ever missing we fall back to the monogram rather than
+  // showing a broken image.
   const [hasPhoto, setHasPhoto] = useState(true)
 
   return (
@@ -23,28 +18,28 @@ export default function Hero() {
         <div className="hero-main">
           <p className="hero-status">
             <span className="dot" aria-hidden="true" />
-            {profile.availability}
+            {t.hero.status}
           </p>
 
           <h1 className="hero-name">{profile.name}</h1>
-          <p className="hero-title">{profile.title}</p>
-          <p className="hero-tagline">{profile.tagline}</p>
-          <p className="hero-note">{profile.locationNote}</p>
+          <p className="hero-title">{t.hero.title}</p>
+          <p className="hero-tagline">{t.hero.tagline}</p>
+          <p className="hero-note">{t.hero.note}</p>
 
           <div className="hero-actions">
-            <a className="btn btn-primary" href={profile.phoneHref}>
-              Call {profile.phone}
+            <a className="btn btn-primary" href="#work">
+              {t.hero.cta}
             </a>
-            <a className="btn btn-ghost" href="#work">
-              See the work
+            <a className="btn btn-ghost" href="#contact">
+              {t.nav.cta}
             </a>
           </div>
 
           <dl className="hero-facts">
-            {facts.map((fact) => (
+            {t.hero.facts.map((fact) => (
               <div key={fact.label}>
                 <dt>{fact.label}</dt>
-                <dd>{fact.href ? <a href={fact.href}>{fact.value}</a> : fact.value}</dd>
+                <dd>{fact.value}</dd>
               </div>
             ))}
           </dl>
@@ -55,9 +50,9 @@ export default function Hero() {
             {hasPhoto ? (
               <img
                 src={AVATAR}
-                alt={`${profile.name}, ${profile.title}`}
-                width="480"
-                height="600"
+                alt={`${profile.name}, ${t.hero.title}`}
+                width="900"
+                height="1125"
                 onError={() => setHasPhoto(false)}
               />
             ) : (
@@ -65,7 +60,7 @@ export default function Hero() {
             )}
           </div>
           <p className="portrait-caption">
-            Freelance developer · <span>Since 2019</span>
+            {t.hero.caption} · <span>{t.hero.captionValue}</span>
           </p>
         </aside>
       </div>
@@ -73,9 +68,9 @@ export default function Hero() {
       <div className="shell">
         <ul className="hero-stats">
           {stats.map((stat) => (
-            <li key={stat.label}>
+            <li key={stat.id}>
               <strong>{stat.value}</strong>
-              <span>{stat.label}</span>
+              <span>{t.hero.stats[stat.id]}</span>
             </li>
           ))}
         </ul>

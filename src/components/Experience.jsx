@@ -1,30 +1,30 @@
-import { experience } from '../data/profile.js'
+import { useLocale } from '../i18n/LocaleContext.jsx'
 import './Experience.css'
 
 export default function Experience() {
+  const t = useLocale()
+
   return (
     <section className="section" id="experience">
       <div className="shell">
         <div className="section-head">
-          <span className="eyebrow">Experience</span>
-          <h2>Work history</h2>
+          <span className="eyebrow">{t.experience.eyebrow}</span>
+          <h2>{t.experience.heading}</h2>
         </div>
 
         <ol className="timeline">
-          {experience.map((entry) => (
-            <li key={entry.role} className="timeline-item">
-              <div className="timeline-period">{entry.period}</div>
-              <div className="card timeline-card">
-                <h3>{entry.role}</h3>
-                <p className="timeline-company">{entry.company}</p>
-                <ul>
-                  {entry.points.map((point) => (
-                    <li key={point.slice(0, 24)}>{point}</li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-          ))}
+          <li className="timeline-item">
+            <div className="timeline-period">{t.experience.period}</div>
+            <div className="card timeline-card">
+              <h3>{t.experience.role}</h3>
+              <p className="timeline-company">{t.experience.company}</p>
+              <ul>
+                {t.experience.points.map((point) => (
+                  <li key={point.slice(0, 24)}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          </li>
         </ol>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { useLocale } from '../i18n/LocaleContext.jsx'
 
 /**
  * The very first paint is handled by the inline script in index.html; this
@@ -10,6 +11,7 @@ function readTheme() {
 }
 
 export default function ThemeToggle() {
+  const t = useLocale()
   const [theme, setTheme] = useState(readTheme)
 
   useEffect(() => {
@@ -26,14 +28,15 @@ export default function ThemeToggle() {
   }, [])
 
   const isDark = theme === 'dark'
+  const label = isDark ? t.a11y.toLight : t.a11y.toDark
 
   return (
     <button
       type="button"
       className="theme-toggle"
       onClick={toggle}
-      aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-      title={isDark ? 'Light theme' : 'Dark theme'}
+      aria-label={label}
+      title={label}
     >
       {isDark ? (
         <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
@@ -44,10 +47,7 @@ export default function ThemeToggle() {
         </svg>
       ) : (
         <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
-          <path
-            d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"
-            fill="currentColor"
-          />
+          <path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z" fill="currentColor" />
         </svg>
       )}
     </button>
