@@ -22,7 +22,7 @@ export default {
     work: 'Proyectos',
     experience: 'Experiencia',
     contact: 'Contacto',
-    cta: 'Hablemos',
+    cta: 'Contrátame',
   },
 
   hero: {
@@ -158,7 +158,7 @@ export default {
     eyebrow: 'Contacto',
     heading: '¿Tienes un proyecto en mente?',
     body: 'Cuéntame qué necesitas y vuelvo con preguntas, un plan y un plazo realista — antes de escribir una sola línea de código.',
-    cta: 'Enviar un mensaje',
+    cta: 'Contrátame en Workana',
     facts: [
       { label: 'Ubicación', value: 'Polonia' },
       { label: 'Trabajo con', value: 'América Latina · Brasil · Estados Unidos' },

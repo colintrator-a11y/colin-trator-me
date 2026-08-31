@@ -3,10 +3,10 @@
 
 export const profile = {
   name: 'Dawid Salwecki',
-  // Set this to the channel you want clients to use — a mailto:, a WhatsApp
-  // link, your Workana profile. While it is empty the contact section shows the
-  // invitation and the facts without a dead button.
-  contactHref: '',
+  // Where every "Hire me" button goes. Swap it for a mailto:, a WhatsApp link
+  // or another platform and the buttons follow; leave it empty and they simply
+  // do not render, rather than pointing nowhere.
+  contactHref: 'https://www.workana.com/freelancer/19077338b5a3c8d89f6a37f74835f159',
 }
 
 export const navSections = ['about', 'services', 'skills', 'work', 'experience', 'contact']

@@ -50,12 +50,16 @@ Project cards take an `accent` (`violet`, `teal`, `emerald`, `amber`, `rose`,
 ## Contact channel
 
 The page deliberately carries no phone number or email. The contact section
-shows the invitation and the facts (location, region, rate, languages), and the
-call-to-action button only appears once `profile.contactHref` in
-[`src/data/profile.js`](src/data/profile.js) is set — a mailto:, a WhatsApp link,
-a Workana profile, whatever you want clients to use. Until then there is no way
-for a visitor to start a conversation from the site, so this is worth filling in
-before the site goes anywhere public.
+shows the invitation and the facts (location, region, rate, languages), and
+every **Hire me** button — in the header, the hero and the contact panel — opens
+`profile.contactHref` from [`src/data/profile.js`](src/data/profile.js) in a new
+tab. It currently points at the Workana profile; swap it for a mailto:, a
+WhatsApp link or another platform and all three buttons follow. Leave it empty
+and they render nothing rather than pointing nowhere.
+
+All three go through [`src/components/HireButton.jsx`](src/components/HireButton.jsx),
+so the destination, the new tab and the empty-link guard are decided in one
+place.
 
 ## The photo
 
@@ -83,7 +87,6 @@ order is what decides.
 
 ## Before deploying
 
-- Set `profile.contactHref` so the contact button appears.
 - Replace `https://dawid-salwecki.vercel.app/` in `index.html` (canonical + Open
   Graph) and `public/sitemap.xml` with the real domain.
 

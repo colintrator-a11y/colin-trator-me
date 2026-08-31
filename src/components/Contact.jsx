@@ -1,5 +1,5 @@
-import { profile } from '../data/profile.js'
 import { useLocale } from '../i18n/LocaleContext.jsx'
+import HireButton from './HireButton.jsx'
 import './Contact.css'
 
 export default function Contact() {
@@ -13,14 +13,7 @@ export default function Contact() {
             <span className="eyebrow">{t.contact.eyebrow}</span>
             <h2>{t.contact.heading}</h2>
             <p>{t.contact.body}</p>
-            {/* No channel is configured yet; a button pointing nowhere would be
-                worse than none, so it only renders once profile.contactHref
-                is filled in. */}
-            {profile.contactHref ? (
-              <a className="btn btn-primary contact-cta" href={profile.contactHref}>
-                {t.contact.cta}
-              </a>
-            ) : null}
+            <HireButton className="btn btn-primary contact-cta" label={t.contact.cta} />
           </div>
 
           <dl className="contact-facts">

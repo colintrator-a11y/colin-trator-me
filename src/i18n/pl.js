@@ -22,7 +22,7 @@ export default {
     work: 'Projekty',
     experience: 'Doświadczenie',
     contact: 'Kontakt',
-    cta: 'Napisz do mnie',
+    cta: 'Zatrudnij mnie',
   },
 
   hero: {
@@ -158,7 +158,7 @@ export default {
     eyebrow: 'Kontakt',
     heading: 'Masz projekt na oku?',
     body: 'Napisz, czego potrzebujesz, a wrócę z pytaniami, planem i realnym terminem — zanim powstanie choć linijka kodu.',
-    cta: 'Wyślij wiadomość',
+    cta: 'Zatrudnij mnie na Workanie',
     facts: [
       { label: 'Lokalizacja', value: 'Polska' },
       { label: 'Pracuję z', value: 'Ameryka Łacińska · Brazylia · Stany Zjednoczone' },
