@@ -43,25 +43,42 @@
 [data-theme='dark'] .filter.is-active { color: #08120f; }
 [data-theme='dark'] .filter.is-active span { background: rgba(0, 0, 0, 0.24); color: #08120f; }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.project-card {
-  position: relative;
-  padding: 22px 20px 20px;
+/* One full-width row per project. A grid of thumbnails would mean cropping
+   every screenshot to a common aspect ratio; a row lets each piece of media be
+   shown whole, portrait or landscape, beside a description with room to read. */
+.projects-list {
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  overflow: hidden;
-  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  gap: 16px;
 }
 
-/* The colour band is the only decoration on a card: it groups the grid by
-   discipline at a glance without needing a screenshot for each project. */
-.project-card::before {
+.project-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: 34px;
+  padding: 28px 30px;
+  align-items: center;
+  overflow: hidden;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* Rows alternate sides so a long list keeps a rhythm instead of a hard left
+   edge of images all the way down. */
+.project-row:nth-child(even) {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
+}
+
+.project-row:nth-child(even) .project-media { order: 2; }
+
+.project-row:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+/* The colour band is the only decoration on a row: it groups the list by
+   discipline at a glance. */
+.project-row::before {
   content: '';
   position: absolute;
   inset: 0 0 auto 0;
@@ -69,10 +86,28 @@
   background: var(--card-accent, var(--accent));
 }
 
-.project-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--line-strong);
-  box-shadow: var(--shadow-md);
+.project-media {
+  display: grid;
+  place-items: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-sunken);
+}
+
+.project-media img {
+  width: auto;
+  max-width: 100%;
+  max-height: 480px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
 }
 
 .accent-violet { --card-accent: var(--p-violet); }
@@ -90,19 +125,22 @@
   color: var(--card-accent, var(--accent));
 }
 
-.project-card h3 { font-size: 1.05rem; }
+.project-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 2px;
+}
 
 .project-body {
-  font-size: 0.885rem;
+  font-size: 0.925rem;
   color: var(--ink-soft);
-  flex: 1;
+  max-width: 68ch;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .project-tags li {
@@ -114,10 +152,16 @@
   border-radius: 6px;
 }
 
-@media (max-width: 980px) {
-  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+@media (max-width: 860px) {
+  .project-row,
+  .project-row:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    padding: 24px 22px;
+  }
 
-@media (max-width: 620px) {
-  .projects-grid { grid-template-columns: minmax(0, 1fr); }
+  /* Stacked, the media always leads — including in the alternating rows. */
+  .project-row:nth-child(even) .project-media { order: 0; }
+  .project-media { justify-self: center; max-width: 340px; width: 100%; }
+  .project-media img { max-height: 380px; }
 }

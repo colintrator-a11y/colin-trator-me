@@ -109,7 +109,7 @@ export default {
   projects: {
     eyebrow: 'Work',
     heading: 'Selected projects',
-    note: (count) => `${count} projects · web, mobile, e-commerce and AI`,
+    note: (count) => (count === 1 ? 'One project' : `${count} projects`),
     all: 'All work',
     categories: {
       chatbot: 'Chatbot / AI',
@@ -122,22 +122,13 @@ export default {
       wordpress: 'WordPress',
     },
     items: {
-      rasa: 'A Rasa assistant that hands a live conversation over from the bot to a human agent when it reaches the limit of what it should answer alone.',
-      erp: 'Development work on a multi-tenant ERP delivered as a SaaS product, covering the PHP back end and the operational modules around it.',
-      ayiko: 'An e-commerce platform with a Laravel back end and a React Native shopping app for Android and iOS.',
-      emuvas: 'A delivery service app built in React Native on a Node.js back end, from order placement through to driver tracking.',
-      ubicabs: 'An Android ride-hailing app taken from user experience design through to the shipped build.',
-      mmorpg: 'A Unity 3D MMORPG released on both Android and iOS, covering gameplay, client build and store release.',
-      dapp: 'A decentralised application streaming live token charts from the Binance Smart Chain.',
-      homeenergy: 'A Shopify store for a home energy retailer, with a chatbot handling the first line of customer questions.',
-      bicycle: 'A Shopify storefront for a bicycle retailer, built around a large product catalogue.',
-      vassalli: 'Catalogue setup and bulk product listing for a Shopify store, run as a managed project from start to handover.',
-      wheels: 'A WordPress catalogue site for a wheels and castors supplier, with custom JavaScript on the product pages.',
-      beauty: 'Website and web design for a beauty clinic, built on WordPress so the team can keep it up to date themselves.',
-      judgement: 'A responsive landing page for a legal services brand, written to convert visitors into enquiries.',
-      arabian: 'A responsive WordPress website built to read as well on a phone as it does on a desktop.',
-      sports: 'A WordPress store front for a sports retailer, with web design work across the whole site.',
+      rasaHandoff: [
+        'This is a Rasa chatbot example demonstrating how to build an AI assistant for an IT Helpdesk. It includes an integration with the Service Now API to open incident reports and check on incident report statuses. Below is an example conversation, showing the bot helping a user open a support ticket and query its status.',
+        'You can use this chatbot as a starting point for building customer service assistants or as a template for collecting required pieces of information from a user before making an API call. This bot includes a simple skill for handing off the conversation to another bot or a human.',
+        'Using this demo, we can transfer the conversation from one bot to another bot, or hand off to a human.',
+      ],
     },
+    mediaAlt: (name) => `Preview of ${name}`,
   },
 
   experience: {

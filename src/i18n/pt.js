@@ -109,7 +109,7 @@ export default {
   projects: {
     eyebrow: 'Projetos',
     heading: 'Projetos selecionados',
-    note: (count) => `${count} projetos · web, mobile, e-commerce e IA`,
+    note: (count) => (count === 1 ? 'Um projeto' : `${count} projetos`),
     all: 'Todos',
     categories: {
       chatbot: 'Chatbot / IA',
@@ -122,22 +122,13 @@ export default {
       wordpress: 'WordPress',
     },
     items: {
-      rasa: 'Assistente em Rasa que transfere a conversa do bot para um atendente humano quando chega ao limite do que deve responder sozinho.',
-      erp: 'Desenvolvimento de um ERP multiempresa entregue como produto SaaS, cobrindo o back end em PHP e os módulos operacionais ao redor dele.',
-      ayiko: 'Plataforma de e-commerce com back end em Laravel e aplicativo de compras em React Native para Android e iOS.',
-      emuvas: 'Aplicativo de serviço de entregas em React Native sobre back end em Node.js, do pedido até o acompanhamento do entregador.',
-      ubicabs: 'Aplicativo Android de transporte por aplicativo, do design de experiência até a versão publicada.',
-      mmorpg: 'MMORPG em Unity 3D lançado para Android e iOS, cobrindo gameplay, build do cliente e publicação nas lojas.',
-      dapp: 'Aplicação descentralizada com gráficos de tokens em tempo real na Binance Smart Chain.',
-      homeenergy: 'Loja Shopify para uma varejista de energia residencial, com um chatbot atendendo a primeira linha de dúvidas dos clientes.',
-      bicycle: 'Loja Shopify para uma revenda de bicicletas, construída em torno de um catálogo extenso de produtos.',
-      vassalli: 'Montagem de catálogo e cadastro em massa de produtos em uma loja Shopify, conduzido como projeto gerenciado do início à entrega.',
-      wheels: 'Site de catálogo em WordPress para um fornecedor de rodas e rodízios, com JavaScript personalizado nas páginas de produto.',
-      beauty: 'Site e web design para uma clínica de estética, feito em WordPress para que a equipe possa manter o conteúdo atualizado.',
-      judgement: 'Landing page responsiva para uma marca de serviços jurídicos, escrita para converter visitantes em contatos.',
-      arabian: 'Site responsivo em WordPress, construído para ler tão bem no celular quanto no desktop.',
-      sports: 'Loja em WordPress para uma varejista de artigos esportivos, com trabalho de web design em todo o site.',
+      rasaHandoff: [
+        'Este é um exemplo de chatbot em Rasa que demonstra como construir um assistente de IA para um helpdesk de TI. Inclui uma integração com a API do Service Now para abrir chamados de incidente e consultar o status desses chamados. Abaixo há um exemplo de conversa, mostrando o bot ajudando o usuário a abrir um chamado de suporte e a consultar o seu status.',
+        'Você pode usar este chatbot como ponto de partida para construir assistentes de atendimento ao cliente ou como modelo para coletar do usuário as informações necessárias antes de fazer uma chamada de API. O bot inclui uma habilidade simples para transferir a conversa para outro bot ou para um atendente humano.',
+        'Com esta demonstração, podemos transferir a conversa de um bot para outro bot ou repassá-la a um atendente humano.',
+      ],
     },
+    mediaAlt: (name) => `Prévia de ${name}`,
   },
 
   experience: {

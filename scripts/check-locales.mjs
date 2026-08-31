@@ -68,6 +68,16 @@ for (const locale of localeList) {
     'contact.facts': [locale.contact.facts.length, 4],
     'experience.points': [locale.experience.points.length, 4],
   }
+
+  // A project's description is an array of paragraphs; a locale that dropped or
+  // merged one would still pass the shape check, so compare against English.
+  for (const project of projects) {
+    const paragraphs = locale.projects.items[project.id]
+    const expected = base.projects.items[project.id]?.length
+    if (Array.isArray(paragraphs) && paragraphs.length !== expected) {
+      lengths[`projects.items.${project.id}`] = [paragraphs.length, expected]
+    }
+  }
   for (const [path, [actual, expected]] of Object.entries(lengths)) {
     if (actual !== expected) problems.push(`${locale.code}: ${path} has ${actual}, expected ${expected}`)
   }

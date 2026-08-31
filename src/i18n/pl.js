@@ -109,7 +109,14 @@ export default {
   projects: {
     eyebrow: 'Projekty',
     heading: 'Wybrane projekty',
-    note: (count) => `${count} projektów · web, mobile, e-commerce i AI`,
+    // Polish counts in three forms: 1, 2-4 (but not the teens), and the rest.
+    note: (count) => {
+      if (count === 1) return 'Jeden projekt'
+      const unit = count % 10
+      const teen = count % 100
+      const word = unit >= 2 && unit <= 4 && (teen < 12 || teen > 14) ? 'projekty' : 'projektów'
+      return `${count} ${word}`
+    },
     all: 'Wszystkie',
     categories: {
       chatbot: 'Chatbot / AI',
@@ -122,22 +129,13 @@ export default {
       wordpress: 'WordPress',
     },
     items: {
-      rasa: 'Asystent w Rasa, który przekazuje trwającą rozmowę od bota do konsultanta, gdy dochodzi do granicy tego, na co powinien odpowiadać sam.',
-      erp: 'Prace nad wielofirmowym systemem ERP dostarczanym jako produkt SaaS — backend w PHP i moduły operacyjne wokół niego.',
-      ayiko: 'Platforma e-commerce z backendem w Laravelu i aplikacją zakupową w React Native na Androida i iOS.',
-      emuvas: 'Aplikacja do obsługi dostaw w React Native na backendzie w Node.js, od złożenia zamówienia po śledzenie kuriera.',
-      ubicabs: 'Aplikacja przewozowa na Androida, od projektu doświadczeń użytkownika po wydaną wersję.',
-      mmorpg: 'MMORPG w Unity 3D wydany na Androida i iOS — rozgrywka, build klienta i publikacja w sklepach.',
-      dapp: 'Zdecentralizowana aplikacja z wykresami tokenów na żywo w sieci Binance Smart Chain.',
-      homeenergy: 'Sklep na Shopify dla sprzedawcy energii domowej, z chatbotem obsługującym pierwszą linię pytań klientów.',
-      bicycle: 'Sklep na Shopify dla sprzedawcy rowerów, zbudowany wokół obszernego katalogu produktów.',
-      vassalli: 'Konfiguracja katalogu i masowe dodawanie produktów w sklepie Shopify, prowadzone jako projekt od startu do przekazania.',
-      wheels: 'Katalogowa strona na WordPressie dla dostawcy kół i kółek samonastawnych, z własnym JavaScriptem na kartach produktów.',
-      beauty: 'Strona i projekt graficzny dla kliniki kosmetycznej, na WordPressie, żeby zespół sam utrzymywał treści.',
-      judgement: 'Responsywny landing page dla marki usług prawnych, napisany tak, by zamieniać odwiedzających w zapytania.',
-      arabian: 'Responsywna strona na WordPressie, zbudowana tak, by czytało się ją na telefonie równie dobrze jak na komputerze.',
-      sports: 'Sklep na WordPressie dla sprzedawcy artykułów sportowych, z projektem graficznym całej witryny.',
+      rasaHandoff: [
+        'To przykładowy chatbot w Rasa pokazujący, jak zbudować asystenta AI dla helpdesku IT. Zawiera integrację z API Service Now, która pozwala zgłaszać incydenty i sprawdzać status zgłoszeń. Poniżej widać przykładową rozmowę: bot pomaga użytkownikowi założyć zgłoszenie i sprawdzić, na jakim jest etapie.',
+        'Tego chatbota można potraktować jako punkt wyjścia do budowy asystentów obsługi klienta albo jako szablon zbierania od użytkownika wszystkich potrzebnych informacji przed wywołaniem API. Bot ma prostą umiejętność przekazywania rozmowy do innego bota lub do człowieka.',
+        'Dzięki tej demonstracji rozmowę można przekazać z jednego bota do drugiego albo skierować do konsultanta.',
+      ],
     },
+    mediaAlt: (name) => `Podgląd projektu ${name}`,
   },
 
   experience: {

@@ -1,7 +1,7 @@
 # Dawid Salwecki — Portfolio
 
 A single-page portfolio: everything a client needs to judge the work is on one
-screen-scroll — who you are, what you build, the stack, all 15 projects, work
+screen-scroll — who you are, what you build, the stack, the projects, work
 history, languages and how to reach you.
 
 Built with Vite + React 18, in four languages, with no UI framework and no
@@ -44,8 +44,38 @@ Content is split in two on purpose:
 - [`src/i18n/<locale>.js`](src/i18n/) — every string a translator would touch,
   keyed by the ids above.
 
-Project cards take an `accent` (`violet`, `teal`, `emerald`, `amber`, `rose`,
-`slate`) which colours the band at the top of the card and its category label.
+## Adding a project
+
+1. Put the screenshot, GIF or video still in `src/assets/projects/`. Any size or
+   aspect ratio: each project is a full-width row and the media is shown whole,
+   never cropped to a common thumbnail shape. Vite hashes the file on build, so
+   replacing an image cannot leave visitors on a cached old one.
+2. Add an entry to `projects` in [`src/data/profile.js`](src/data/profile.js) —
+   `id`, `name`, `category` (one of the keys in `projects.categories` in the
+   locales), `accent` (`violet`, `teal`, `emerald`, `amber`, `rose`, `slate`,
+   which colours the band at the top of the row), `media` (the file name from
+   step 1) and `tags`.
+3. Add the description under `projects.items.<id>` in **all four** locale files,
+   as an array of paragraphs.
+4. Run `npm run check:locales`. It fails if a locale is missing the description
+   or has a different number of paragraphs from the English one.
+
+The headline "projects" count in the hero follows `projects.length`, and the
+category filter row appears on its own once there is more than one category.
+
+Large GIFs are worth optimising before they go in.
+[`scripts/optimize-gif.py`](scripts/optimize-gif.py) does it — the Rasa demo went
+from 4.0 MB to 2.2 MB at 480px wide and every second frame, with the running time
+unchanged:
+
+```bash
+python3 scripts/optimize-gif.py demo.gif src/assets/projects/demo.gif
+```
+
+It needs Pillow and a `gifsicle` binary (`GIFSICLE=/path/to/gifsicle` if it is
+not on PATH). The order it uses matters: letting gifsicle do the resize itself
+dithers flat backgrounds into visible yellow-green noise, and giving each frame
+its own palette defeats gifsicle's frame differencing and makes the file bigger.
 
 ## Contact channel
 
