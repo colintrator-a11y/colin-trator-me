@@ -6,6 +6,13 @@ import './Projects.css'
 
 const ALL = 'all'
 
+// A landscape screenshot needs a wider column than a phone-shaped one, so the
+// first image decides how the row splits.
+const isLandscape = (project) => {
+  const [first] = project.media
+  return first ? first.width > first.height : false
+}
+
 export default function Projects() {
   const t = useLocale()
 
@@ -54,14 +61,24 @@ export default function Projects() {
 
         <ol className="projects-list">
           {shown.map((project) => (
-            <li key={project.id} className={`card project-row accent-${project.accent}`}>
-              <div className="project-media">
-                <img
-                  src={projectMedia[project.media]}
-                  alt={t.projects.mediaAlt(project.name)}
-                  loading="lazy"
-                  decoding="async"
-                />
+            <li
+              key={project.id}
+              className={`card project-row accent-${project.accent}${
+                isLandscape(project) ? ' is-wide' : ''
+              }`}
+            >
+              <div className={`project-media${project.media.length > 1 ? ' has-gallery' : ''}`}>
+                {project.media.map((item) => (
+                  <img
+                    key={item.file}
+                    src={projectMedia[item.file]}
+                    alt={t.projects.mediaAlt(project.name)}
+                    width={item.width}
+                    height={item.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ))}
               </div>
 
               <div className="project-content">

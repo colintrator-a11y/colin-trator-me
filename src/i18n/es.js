@@ -127,6 +127,10 @@ export default {
         'Puedes usar este chatbot como punto de partida para construir asistentes de atención al cliente o como plantilla para recoger del usuario la información necesaria antes de hacer una llamada a la API. El bot incluye una habilidad sencilla para derivar la conversación a otro bot o a una persona.',
         'Con esta demo podemos transferir la conversación de un bot a otro bot, o derivarla a un agente humano.',
       ],
+      arabianRange: [
+        'Diseño y desarrollo del sitio de Arabian Ranges — un sitio en WordPress para una empresa de galerías de tiro comerciales y deportivas, con sus productos, servicios, programas de formación, galería y socios.',
+        'El sitio es totalmente responsive y está optimizado, y sigo encargándome de su mantenimiento. Se entregó con un presupuesto ajustado y un plazo corto, y el cliente dejó una reseña de cinco estrellas.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },

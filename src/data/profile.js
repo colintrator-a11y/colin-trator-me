@@ -36,8 +36,10 @@ export const skillGroups = [
   },
 ]
 
-// One entry per project. `media` names a file in src/assets/projects/, `accent`
-// picks the card's colour band (see the palette in Projects.css), and the
+// One entry per project. `media` lists files in src/assets/projects/ with their
+// intrinsic size — the dimensions go on the <img> so the row does not jump as
+// images load, and the first one's orientation decides the row's proportions.
+// `accent` picks the colour band (see the palette in Projects.css) and the
 // description lives in the locale files keyed by `id`.
 export const projects = [
   {
@@ -45,8 +47,19 @@ export const projects = [
     name: 'Human Handoff Demo Using Rasa',
     category: 'chatbot',
     accent: 'violet',
-    media: 'rasa-handoff.gif',
+    media: [{ file: 'rasa-handoff.gif', width: 480, height: 810 }],
     tags: ['Python', 'Git', 'Chatbot', 'Docker', 'REST API'],
+  },
+  {
+    id: 'arabianRange',
+    name: 'Arabian Range Website',
+    category: 'wordpress',
+    accent: 'amber',
+    media: [
+      { file: 'arabian-hero.jpg', width: 1016, height: 464 },
+      { file: 'arabian-pages.jpg', width: 155, height: 645 },
+    ],
+    tags: ['WordPress', 'Responsive Web Design', 'Web Development'],
   },
 ]
 

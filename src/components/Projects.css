@@ -87,21 +87,49 @@
 }
 
 .project-media {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--bg-sunken);
 }
 
+/* Every image is shown whole and never upscaled past its own resolution: a
+   full-page thumbnail blown up to fill a column looks worse than a small one
+   sitting at its native size. */
 .project-media img {
   width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 480px;
   border-radius: 8px;
-  object-fit: contain;
 }
+
+/* Several images sit side by side and share one height, so a full-page
+   thumbnail next to a hero shot reads as two views of the same site rather
+   than stacking into a column twice as tall as the text beside it. */
+.project-media.has-gallery {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* nowrap plus min-width:0 lets the wide hero shrink to make room for the narrow
+   full-page shot; wrapping instead put them in a column twice as tall as the
+   text beside them. */
+.project-media.has-gallery img {
+  min-width: 0;
+  flex: 0 1 auto;
+  max-height: 400px;
+}
+
+/* A landscape lead image gets the wider half of the row. */
+.project-row.is-wide { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+.project-row.is-wide:nth-child(even) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
 
 .project-content {
   display: flex;
@@ -153,8 +181,13 @@
 }
 
 @media (max-width: 860px) {
+  /* .is-wide has to be named here too: it sets the columns at a higher
+     specificity than the base rule, so listing only .project-row would leave
+     landscape rows in two columns on a phone. */
   .project-row,
-  .project-row:nth-child(even) {
+  .project-row:nth-child(even),
+  .project-row.is-wide,
+  .project-row.is-wide:nth-child(even) {
     grid-template-columns: minmax(0, 1fr);
     gap: 22px;
     padding: 24px 22px;
@@ -164,4 +197,8 @@
   .project-row:nth-child(even) .project-media { order: 0; }
   .project-media { justify-self: center; max-width: 340px; width: 100%; }
   .project-media img { max-height: 380px; }
+
+  /* Side-by-side images need the whole width they can get. */
+  .project-media.has-gallery { max-width: 100%; }
+  .project-media.has-gallery img { max-height: 300px; }
 }

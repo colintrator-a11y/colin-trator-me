@@ -46,15 +46,20 @@ Content is split in two on purpose:
 
 ## Adding a project
 
-1. Put the screenshot, GIF or video still in `src/assets/projects/`. Any size or
-   aspect ratio: each project is a full-width row and the media is shown whole,
-   never cropped to a common thumbnail shape. Vite hashes the file on build, so
-   replacing an image cannot leave visitors on a cached old one.
+1. Put the screenshots, GIFs or video stills in `src/assets/projects/`. Any size
+   or aspect ratio: each project is a full-width row and every image is shown
+   whole — never cropped to a common thumbnail shape and never upscaled past its
+   own resolution. Vite hashes the files on build, so replacing an image cannot
+   leave visitors on a cached old one.
 2. Add an entry to `projects` in [`src/data/profile.js`](src/data/profile.js) —
    `id`, `name`, `category` (one of the keys in `projects.categories` in the
    locales), `accent` (`violet`, `teal`, `emerald`, `amber`, `rose`, `slate`,
-   which colours the band at the top of the row), `media` (the file name from
-   step 1) and `tags`.
+   which colours the band at the top of the row), `tags`, and `media`: a list of
+   `{ file, width, height }` from step 1. The intrinsic size goes on the `<img>`
+   so the row does not jump as images load, and the first image's orientation
+   decides how the row splits — a landscape screenshot takes the wider half, a
+   phone-shaped one the narrower. List more than one image and they sit side by
+   side at a shared height.
 3. Add the description under `projects.items.<id>` in **all four** locale files,
    as an array of paragraphs.
 4. Run `npm run check:locales`. It fails if a locale is missing the description

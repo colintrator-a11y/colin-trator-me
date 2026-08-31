@@ -134,6 +134,10 @@ export default {
         'Tego chatbota można potraktować jako punkt wyjścia do budowy asystentów obsługi klienta albo jako szablon zbierania od użytkownika wszystkich potrzebnych informacji przed wywołaniem API. Bot ma prostą umiejętność przekazywania rozmowy do innego bota lub do człowieka.',
         'Dzięki tej demonstracji rozmowę można przekazać z jednego bota do drugiego albo skierować do konsultanta.',
       ],
+      arabianRange: [
+        'Projekt i wykonanie strony Arabian Ranges — witryny na WordPressie dla firmy prowadzącej komercyjne i sportowe strzelnice, obejmującej produkty, usługi, programy szkoleniowe, galerię i partnerów.',
+        'Strona jest w pełni responsywna i zoptymalizowana, a ja nadal się nią opiekuję. Powstała przy skromnym budżecie i krótkim terminie, a klient wystawił pięciogwiazdkową opinię.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

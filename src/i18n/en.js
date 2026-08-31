@@ -127,6 +127,10 @@ export default {
         'You can use this chatbot as a starting point for building customer service assistants or as a template for collecting required pieces of information from a user before making an API call. This bot includes a simple skill for handing off the conversation to another bot or a human.',
         'Using this demo, we can transfer the conversation from one bot to another bot, or hand off to a human.',
       ],
+      arabianRange: [
+        'Design and development of the Arabian Ranges website — a WordPress site for a commercial and sport shooting-range business, covering its products, services, training programmes, gallery and partners.',
+        'The site is fully responsive and optimised, and I still maintain it. It was delivered on a modest budget and a tight timeline, and the client left a five-star review.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },
