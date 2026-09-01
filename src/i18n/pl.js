@@ -251,6 +251,12 @@ export default {
         'Funkcje: tygodniowe podpowiedzi i wskazówki zdrowotne, lista rzeczy do zrobienia na każdym etapie, społeczność z komentarzami pod wpisami bloga, aplikacja webowa dla wygodnego dostępu oraz aplikacje mobilne na iOS i Androida.',
         'Stack: Node.js po stronie serwera, React.js we froncie webowym i Flutter w aplikacjach na iOS i Androida. Powstało rozwiązanie skalowalne i wygodne, które działa tak samo na każdym urządzeniu i pomaga przyszłej mamie być na bieżąco i w kontakcie.',
       ],
+      qalorie: [
+        'Qalorie to aplikacja do coachingu zdrowotnego, wydana w obu sklepach jako Qalorie: Weight Loss & Health. Użytkownik łączy się z trenerami na konsultacje, plany żywieniowe, treningi i porady biohackingowe, a przy okazji śledzi kalorie, makroskładniki, nawodnienie i aktywność względem dziennych celów.',
+        'Pracowałem zarówno nad aplikacją mobilną, jak i nad backendem. Aplikacja to React Native z Reduxem, hookami i sagami; backend to Node.js na MongoDB, z plikami w AWS S3.',
+        'Powstały tu m.in.: logowanie społecznościowe przez Firebase dla Facebooka, Apple, Google i e-maila; rozmowy wideo i głosowe oraz czat na żywo w CometChat; powiadomienia push; Google Analytics i AppsFlyer; społecznościowy feed z wpisami zawierającymi wiele zdjęć i wideo, komentarzami, polubieniami i obserwowaniem; a także płatności PayPal i Stripe. Publikacja w App Store i Google Play również była po mojej stronie.',
+        'Najtrudniejsza była edycja i przycinanie wideo wewnątrz aplikacji, na potrzeby publikacji w feedzie. Projekty graficzne przychodziły w Figmie i InVision.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę', appStore: 'Zobacz w App Store' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

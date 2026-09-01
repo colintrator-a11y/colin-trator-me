@@ -363,6 +363,20 @@ export const projects = [
     ],
     tags: ['Flutter', 'React.js', 'Node.js', 'MySQL', 'iOS', 'Android'],
   },
+  {
+    id: 'qalorie',
+    name: 'Qalorie: Weight Loss & Health',
+    category: 'mobile',
+    accent: 'slate',
+    media: [
+      { file: 'qalorie-site.jpg', width: 1400, height: 677 },
+      { file: 'qalorie-screens.jpg', width: 800, height: 387 },
+      { file: 'qalorie-appstore.jpg', width: 800, height: 607 },
+      { file: 'qalorie-play.jpg', width: 800, height: 438 },
+      { file: 'qalorie-backend.jpg', width: 800, height: 500 },
+    ],
+    tags: ['React Native', 'Redux.js', 'Node.js', 'MongoDB', 'Stripe', 'PayPal API'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

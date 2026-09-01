@@ -244,6 +244,12 @@ export default {
         'Features: weekly pregnancy suggestions and health tips, a checklist of what needs to be done at each stage, a community system with blog comments for discussion and support, a web application for easy access, and mobile apps on iOS and Android.',
         'Tech stack: Node.js on the back end, React.js on the web front end, and Flutter for the iOS and Android apps. The result is a scalable, user-friendly solution that holds up across every device while helping expectant mothers stay informed and connected.',
       ],
+      qalorie: [
+        'Qalorie is a health coaching app, published on both stores as Qalorie: Weight Loss & Health. Users connect with coaches for consultations, diet plans, workouts and biohacking tips, and track calories, macros, water and exercise against daily goals.',
+        'I worked across the mobile app and the back end. The app is React Native with Redux, hooks and sagas; the back end is Node.js on MongoDB, with AWS S3 holding the media.',
+        'Built into it: social sign-in through Firebase for Facebook, Apple, Google and email; video and voice calling and live chat on CometChat; push notifications; Google Analytics and AppsFlyer; a social feed with multi-image and video posts, comments, likes and following; and PayPal and Stripe payments. Publishing to the App Store and Play Store was mine as well.',
+        'The hard part was editing and trimming video inside the app for sharing to the feed. Designs came in as Figma and InVision files.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site', appStore: 'View on the App Store' },
     mediaAlt: (name) => `Preview of ${name}`,
