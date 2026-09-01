@@ -204,6 +204,11 @@ export default {
         'I designed multiple worksheets for income tracking, expense management, savings, debt monitoring, net worth analysis, investment forecasting, and annual summaries. Dynamic charts, KPI cards, category breakdowns, and automated calculations provided real-time financial insights with minimal manual input.',
         'The workbook was optimized for accuracy, usability, and performance, enabling efficient personal finance management, budget analysis, financial reporting, and decision-making through a professional, user-friendly Excel dashboard and financial automation solution.',
       ],
+      zohoStripe: [
+        'Designed and implemented an automation workflow using Zapier to seamlessly integrate Stripe and Zoho CRM.',
+        'The automation triggers as soon as a payment completes in Stripe, creates or updates a Contact in Zoho CRM from the Stripe customer data, configures workflow triggers in Zoho CRM to initiate actions like welcome emails or task assignments, and ensures no duplicate records are created by checking existing entries before creating new ones.',
+        'This solution eliminated manual data entry, enabled real-time customer record updates, and ensured smooth synchronization between the payment platform and the CRM. It significantly improved operational efficiency and responsiveness.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play' },
     mediaAlt: (name) => `Preview of ${name}`,

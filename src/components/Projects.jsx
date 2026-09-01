@@ -9,15 +9,17 @@ const ALL = 'all'
 // How a row is laid out follows from its media. Three or more images cannot be
 // read side by side in half a row, so those projects put the media above the
 // text at full width; otherwise the media sits beside it, in a column whose
-// width follows the orientation of the first image.
+// width follows the orientation of the first image. `layout: 'stacked'` forces
+// the full-width form for media that needs it whatever the count — a flow
+// diagram, say, whose labels vanish at half a row.
 const rowLayout = (project) => {
-  if (project.media.length > 2) return ' is-stacked'
+  if (project.layout === 'stacked' || project.media.length > 2) return ' is-stacked'
   const [first] = project.media
   return first && first.width > first.height ? ' is-wide' : ''
 }
 
 const mediaLayout = (project) => {
-  if (project.media.length > 2) return ' is-stacked'
+  if (project.layout === 'stacked' || project.media.length > 2) return ' is-stacked'
   return project.media.length > 1 ? ' has-gallery' : ''
 }
 

@@ -211,6 +211,11 @@ export default {
         'Zaprojektowałem kilka arkuszy: śledzenie przychodów, kontrolę wydatków, oszczędności, monitoring zadłużenia, analizę majątku, prognozę inwestycji i podsumowania roczne. Dynamiczne wykresy, kafelki wskaźników, podziały na kategorie i automatyczne przeliczenia dają bieżący obraz finansów przy minimalnym wprowadzaniu danych ręcznie.',
         'Skoroszyt zoptymalizowałem pod dokładność, wygodę pracy i wydajność, tak aby prowadzenie domowego budżetu, analiza wydatków, raportowanie i podejmowanie decyzji odbywały się w jednym profesjonalnym, przyjaznym pulpicie Excela.',
       ],
+      zohoStripe: [
+        'Zaprojektowałem i wdrożyłem przepływ automatyzacji w Zapierze, który bezproblemowo łączy Stripe z Zoho CRM.',
+        'Automatyzacja uruchamia się w chwili zakończenia płatności w Stripe, tworzy lub aktualizuje kontakt w Zoho CRM na podstawie danych klienta ze Stripe, konfiguruje wyzwalacze w Zoho CRM dla akcji takich jak e-maile powitalne czy przydzielanie zadań i pilnuje, by nie powstawały duplikaty — sprawdza istniejące wpisy, zanim utworzy nowy.',
+        'Rozwiązanie wyeliminowało ręczne wprowadzanie danych, pozwoliło aktualizować kartoteki klientów na bieżąco i zapewniło spójność między platformą płatności a CRM-em. Wyraźnie poprawiło to sprawność i czas reakcji zespołu.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

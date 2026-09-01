@@ -204,6 +204,11 @@ export default {
         'Criei várias planilhas para acompanhamento de receitas, controle de despesas, poupança, monitoramento de dívidas, análise de patrimônio, projeção de investimentos e resumos anuais. Gráficos dinâmicos, cartões de indicadores, quebras por categoria e cálculos automáticos entregam uma leitura financeira em tempo real com o mínimo de digitação manual.',
         'A pasta de trabalho foi otimizada para precisão, usabilidade e desempenho, viabilizando gestão de finanças pessoais, análise de orçamento, relatórios financeiros e tomada de decisão em um painel de Excel profissional e fácil de usar.',
       ],
+      zohoStripe: [
+        'Desenhei e implementei um fluxo de automação no Zapier para integrar o Stripe e o Zoho CRM sem atrito.',
+        'A automação dispara assim que um pagamento é concluído no Stripe, cria ou atualiza um contato no Zoho CRM a partir dos dados do cliente no Stripe, configura gatilhos no Zoho CRM para ações como e-mails de boas-vindas ou atribuição de tarefas e evita registros duplicados verificando o que já existe antes de criar algo novo.',
+        'A solução eliminou a digitação manual, permitiu atualizar os registros de clientes em tempo real e garantiu a sincronia entre a plataforma de pagamento e o CRM. O ganho em eficiência e em tempo de resposta foi expressivo.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play' },
     mediaAlt: (name) => `Prévia de ${name}`,

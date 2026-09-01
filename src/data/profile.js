@@ -274,6 +274,19 @@ export const projects = [
     ],
     tags: ['Excel', 'Excel VBA', 'Excel Macros', 'Data Visualization', 'Process Automation'],
   },
+  {
+    id: 'zohoStripe',
+    name: 'Stripe → Zoho CRM Automation',
+    category: 'automation',
+    accent: 'amber',
+    // Two halves of one flow diagram: readable across the row, not beside the text.
+    layout: 'stacked',
+    media: [
+      { file: 'zapier-flow-1.jpg', width: 1474, height: 669 },
+      { file: 'zapier-flow-2.jpg', width: 1464, height: 687 },
+    ],
+    tags: ['Zapier', 'Stripe', 'Zoho CRM', 'Process Automation'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
