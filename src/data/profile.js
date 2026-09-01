@@ -104,6 +104,18 @@ export const projects = [
     ],
     tags: ['WordPress', 'Responsive Web Design', 'Web Development'],
   },
+  {
+    id: 'enterpriseErp',
+    name: 'EnterpriseERP',
+    category: 'saas',
+    accent: 'violet',
+    media: [
+      { file: 'erp-dashboard.jpg', width: 1400, height: 933 },
+      { file: 'erp-finance.jpg', width: 800, height: 533 },
+      { file: 'erp-sales.jpg', width: 800, height: 533 },
+    ],
+    tags: ['PHP', 'Laravel', 'AJAX', 'SaaS'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

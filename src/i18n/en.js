@@ -145,6 +145,11 @@ export default {
         'Collect My Judgement specializes in debt collection and judgment enforcement, providing nationwide coverage with a team of expert attorneys, negotiators, and investigators. With over 30 years of proven success, they handle even the most complex cases, ensuring efficient and effective recovery for their clients.',
         'I designed a high-impact landing page for them, showcasing their expertise and credibility in the industry.',
       ],
+      enterpriseErp: [
+        'EnterpriseERP is a cloud-based Enterprise Resource Planning platform designed to centralize and automate core business operations within a single integrated system. The solution provides organizations with real-time visibility into financial performance, sales activities, inventory levels, procurement processes, customer relationships, and workforce management, enabling data-driven decision-making and operational efficiency.',
+        'The platform consists of multiple interconnected modules, including Finance, Sales, Purchasing, Inventory, Production, CRM, Human Resources, Projects, Assets, Reports, and Document Management. Each module shares a unified database, ensuring data consistency and eliminating duplicate data entry across departments.',
+        'The Finance module manages accounts payable, accounts receivable, general ledger, budgeting, tax management, banking, and financial reporting.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

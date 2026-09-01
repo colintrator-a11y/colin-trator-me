@@ -152,6 +152,11 @@ export default {
         'Collect My Judgement specjalizuje się w windykacji długów i egzekucji wyroków, działa na terenie całego kraju i ma zespół doświadczonych prawników, negocjatorów i śledczych. Z ponad 30-letnim dorobkiem prowadzi nawet najbardziej złożone sprawy, zapewniając klientom sprawne i skuteczne odzyskanie należności.',
         'Zaprojektowałem dla nich mocny landing page, który pokazuje to doświadczenie i wiarygodność firmy w branży.',
       ],
+      enterpriseErp: [
+        'EnterpriseERP to chmurowa platforma do zarządzania zasobami przedsiębiorstwa (ERP), która centralizuje i automatyzuje kluczowe procesy firmy w jednym zintegrowanym systemie. Daje bieżący wgląd w wyniki finansowe, sprzedaż, stany magazynowe, zakupy, relacje z klientami i zarządzanie zespołem, co pozwala podejmować decyzje na podstawie danych i pracować wydajniej.',
+        'Platformę tworzy kilka powiązanych modułów: Finanse, Sprzedaż, Zakupy, Magazyn, Produkcja, CRM, Kadry, Projekty, Środki trwałe, Raporty i Zarządzanie dokumentami. Wszystkie korzystają ze wspólnej bazy danych, dzięki czemu dane pozostają spójne, a tej samej informacji nie trzeba wprowadzać w każdym dziale osobno.',
+        'Moduł finansowy obsługuje zobowiązania, należności, księgę główną, budżetowanie, podatki, bankowość i sprawozdawczość finansową.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

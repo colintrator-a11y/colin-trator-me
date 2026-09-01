@@ -145,6 +145,11 @@ export default {
         'Collect My Judgement está especializada en cobro de deudas y ejecución de sentencias, con cobertura nacional y un equipo de abogados, negociadores e investigadores expertos. Con más de 30 años de resultados demostrados, atienden incluso los casos más complejos y aseguran una recuperación eficiente y eficaz para sus clientes.',
         'Diseñé para ellos una landing page de alto impacto, que pone por delante esa experiencia y su credibilidad en el sector.',
       ],
+      enterpriseErp: [
+        'EnterpriseERP es una plataforma de planificación de recursos empresariales (ERP) en la nube, creada para centralizar y automatizar las operaciones esenciales del negocio en un único sistema integrado. La solución ofrece visibilidad en tiempo real del desempeño financiero, la actividad comercial, los niveles de inventario, las compras, la relación con los clientes y la gestión del personal, lo que permite decidir con datos y ganar eficiencia.',
+        'La plataforma reúne varios módulos interconectados: Finanzas, Ventas, Compras, Inventario, Producción, CRM, Recursos Humanos, Proyectos, Activos, Informes y Gestión Documental. Todos comparten una misma base de datos, lo que asegura la consistencia y elimina tener que cargar la misma información en distintos departamentos.',
+        'El módulo de Finanzas gestiona cuentas por pagar, cuentas por cobrar, libro mayor, presupuestos, impuestos, banca e informes financieros.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },

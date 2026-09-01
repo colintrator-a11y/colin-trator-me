@@ -145,6 +145,11 @@ export default {
         'A Collect My Judgement é especializada em cobrança de dívidas e execução de sentenças, com cobertura nacional e uma equipe de advogados, negociadores e investigadores experientes. Com mais de 30 anos de resultados comprovados, atende até os casos mais complexos, garantindo uma recuperação eficiente e eficaz para os clientes.',
         'Criei para eles uma landing page de alto impacto, que evidencia essa experiência e a credibilidade da empresa no setor.',
       ],
+      enterpriseErp: [
+        'O EnterpriseERP é uma plataforma de gestão empresarial (ERP) em nuvem, criada para centralizar e automatizar as operações essenciais do negócio em um único sistema integrado. A solução dá à organização visibilidade em tempo real do desempenho financeiro, das vendas, dos níveis de estoque, das compras, do relacionamento com clientes e da gestão de pessoas, sustentando decisões baseadas em dados e ganho de eficiência.',
+        'A plataforma reúne vários módulos interligados: Financeiro, Vendas, Compras, Estoque, Produção, CRM, Recursos Humanos, Projetos, Ativos, Relatórios e Gestão de Documentos. Todos compartilham a mesma base de dados, o que garante consistência e elimina o retrabalho de digitar a mesma informação em departamentos diferentes.',
+        'O módulo Financeiro cuida de contas a pagar, contas a receber, razão geral, orçamento, gestão tributária, bancos e relatórios financeiros.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
