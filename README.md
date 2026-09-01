@@ -87,10 +87,12 @@ Clicking any image opens it full size in a preview, with the project name and,
 in a set, a counter and arrows. This is where the top-anchored tiles pay off: a
 page capture cropped to a 365x250 tile in the row is shown whole here.
 
-It zooms to 5x, in 25% steps, with the wheel, the buttons, `+` / `-`, or a
-double-click. Zoomed, the image can be dragged, and panning is bounded so it
-cannot be pushed out of view. `0` or the percentage button resets it; changing
-image resets it too. Escape closes, the arrow keys move through the set, and
+Clicking the image zooms it to 2x, and clicking again returns it to fit. The
+wheel, the buttons and `+` / `-` step through to 5x in 25% increments. A click
+or a wheel zoom keeps the pixel under the pointer where it is, rather than
+scaling about the middle of the picture. Zoomed, the image can be dragged, and
+panning is bounded so it cannot be pushed out of view. `0` or the percentage
+button resets it; changing image resets it too. Escape closes, the arrow keys move through the set, and
 the page behind is held still.
 
 Clicking anywhere that is not the image or a control closes the preview - the

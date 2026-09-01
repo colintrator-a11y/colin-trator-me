@@ -57,6 +57,7 @@
 }
 
 .lightbox-stage img.is-zoomed {
+  /* Dragging is the main gesture once zoomed; a click still returns to fit. */
   cursor: grab;
   transition: none;
 }

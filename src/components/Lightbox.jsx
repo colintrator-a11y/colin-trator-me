@@ -51,18 +51,37 @@ export default function Lightbox({ project, index, onClose, onMove }) {
     return { x: clamp(next.x, -max.x, max.x), y: clamp(next.y, -max.y, max.y) }
   }, [])
 
+  /**
+   * `anchor` is the pointer's offset from the image's current visual centre.
+   * Holding that point still across a scale change from s to s' means moving
+   * the translation by anchor * (1 - s'/s) — so the pixel under the cursor is
+   * the one that stays put, rather than the middle of the picture.
+   */
   const zoom = useCallback(
-    (resolve) => {
+    (resolve, anchor) => {
       setView((current) => {
         const scale = clamp(Number(resolve(current.scale).toFixed(2)), MIN_SCALE, MAX_SCALE)
+        if (scale === current.scale) return current
         if (scale === MIN_SCALE) return { scale, x: 0, y: 0 }
-        return { scale, ...limit(current, scale) }
+
+        const ratio = scale / current.scale
+        const next = anchor
+          ? { x: current.x + anchor.x * (1 - ratio), y: current.y + anchor.y * (1 - ratio) }
+          : { x: current.x, y: current.y }
+        return { scale, ...limit(next, scale) }
       })
     },
     [limit],
   )
 
-  const zoomBy = useCallback((delta) => zoom((scale) => scale + delta), [zoom])
+  const zoomBy = useCallback((delta, anchor) => zoom((scale) => scale + delta, anchor), [zoom])
+
+  // The rect is the transformed one, so its centre is where the image sits now.
+  const anchorFrom = (event) => {
+    const rect = imageRef.current?.getBoundingClientRect()
+    if (!rect) return undefined
+    return { x: event.clientX - (rect.left + rect.width / 2), y: event.clientY - (rect.top + rect.height / 2) }
+  }
 
   const move = useCallback(
     (step) => {
@@ -112,7 +131,11 @@ export default function Lightbox({ project, index, onClose, onMove }) {
     if (!node) return undefined
     const onWheel = (event) => {
       event.preventDefault()
-      zoomBy(event.deltaY < 0 ? STEP : -STEP)
+      const rect = imageRef.current?.getBoundingClientRect()
+      const anchor = rect
+        ? { x: event.clientX - (rect.left + rect.width / 2), y: event.clientY - (rect.top + rect.height / 2) }
+        : undefined
+      zoomBy(event.deltaY < 0 ? STEP : -STEP, anchor)
     }
     node.addEventListener('wheel', onWheel, { passive: false })
     return () => node.removeEventListener('wheel', onWheel)
@@ -126,15 +149,14 @@ export default function Lightbox({ project, index, onClose, onMove }) {
   }
 
   const onPointerMove = (event) => {
-    if (!drag.current) return
+    // Read the drag origin here, not inside the updater: React runs updaters
+    // after the handler returns, and a pointerup arriving in the same task -
+    // a quick flick - clears the ref before the updater ever looks at it.
+    const origin = drag.current
+    if (!origin) return
     dragged.current = true
-    setView((current) => ({
-      ...current,
-      ...limit(
-        { x: event.clientX - drag.current.x, y: event.clientY - drag.current.y },
-        current.scale,
-      ),
-    }))
+    const next = { x: event.clientX - origin.x, y: event.clientY - origin.y }
+    setView((current) => ({ ...current, ...limit(next, current.scale) }))
   }
 
   const endDrag = () => { drag.current = null }
@@ -176,7 +198,12 @@ export default function Lightbox({ project, index, onClose, onMove }) {
             height={item.height}
             draggable="false"
             style={{ transform: `translate(${view.x}px, ${view.y}px) scale(${view.scale})` }}
-            onDoubleClick={() => (zoomed ? reset() : zoom(() => 2))}
+            onClick={(event) => {
+              // A drag ends in a click; that one must not toggle the zoom.
+              if (dragged.current) return
+              if (zoomed) reset()
+              else zoom(() => 2, anchorFrom(event))
+            }}
             onPointerDown={onPointerDown}
             onPointerMove={onPointerMove}
             onPointerUp={endDrag}
