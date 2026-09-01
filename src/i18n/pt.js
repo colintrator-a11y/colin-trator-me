@@ -213,6 +213,11 @@ export default {
         'O KeepNote é um app de anotações rápido, simples e com a privacidade em primeiro lugar: todos os dados ficam guardados localmente no aparelho. Sem configuração complicada e sem conta online, as suas notas continuam sendo só suas.',
         'Principais recursos: armazenamento local, sem nuvem, interface simples para criar notas rapidamente, design pensado para a privacidade e funcionamento completo offline. Feito com Flutter e SQLite.',
       ],
+      monstersClan: [
+        'O site da Monsters Clan apresenta os recursos centrais do jogo, incluindo a troca de NFTs e o staking.',
+        'É um jogo NFT em que cada jogador controla monstros únicos, treinando-os e personalizando-os para batalhas épicas. Com a tecnologia blockchain integrada, a posse dos ativos do jogo é segura e transparente, e os jogadores realmente são donos dos seus monstros e podem negociá-los.',
+        'Com jogabilidade estratégica e recursos envolventes, a Monsters Clan entrega uma experiência imersiva e interativa, na qual o jogador molda as habilidades dos seus monstros e disputa recompensas em um ambiente descentralizado e dinâmico.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play' },
     mediaAlt: (name) => `Prévia de ${name}`,

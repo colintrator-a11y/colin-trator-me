@@ -298,6 +298,14 @@ export const projects = [
     ],
     tags: ['Flutter', 'SQLite', 'iOS Development', 'Mobile App Development', 'Mobile App Testing'],
   },
+  {
+    id: 'monstersClan',
+    name: 'Monsters Clan',
+    category: 'blockchain',
+    accent: 'rose',
+    media: [{ file: 'monstersclan.jpg', width: 1600, height: 1200 }],
+    tags: ['Web Development', 'Blockchain', 'NFT'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

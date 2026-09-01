@@ -213,6 +213,11 @@ export default {
         'KeepNote is a fast, simple, and privacy-first note-taking app that stores all your data locally on your device. With no complicated setup or online account required, the app ensures your notes stay private.',
         'Key features: local storage with no cloud, a simple interface for quick note creation, a privacy-focused design, and full offline functionality. Built with Flutter and SQLite.',
       ],
+      monstersClan: [
+        "Monsters Clan's website showcases the game's core features, including NFT swapping and staking.",
+        "It's a revolutionary NFT game where players control unique monsters, training and customizing them for epic battles. By integrating blockchain technology, the game ensures secure, transparent ownership of in-game assets, allowing players to truly own and trade their monsters.",
+        "With strategic gameplay and engaging features, Monsters Clan offers an immersive, interactive experience where players can shape their monsters' abilities and compete for rewards in a dynamic, decentralized environment.",
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play' },
     mediaAlt: (name) => `Preview of ${name}`,
