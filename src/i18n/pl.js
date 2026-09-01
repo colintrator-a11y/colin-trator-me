@@ -138,6 +138,10 @@ export default {
         'Projekt i wykonanie strony Arabian Ranges — witryny na WordPressie dla firmy prowadzącej komercyjne i sportowe strzelnice, obejmującej produkty, usługi, programy szkoleniowe, galerię i partnerów.',
         'Strona jest w pełni responsywna i zoptymalizowana, a ja nadal się nią opiekuję. Powstała przy skromnym budżecie i krótkim terminie, a klient wystawił pięciogwiazdkową opinię.',
       ],
+      artisanBeauty: [
+        'Zaprojektowałem i zbudowałem kompletną stronę na WordPressie dla Artisan Beauty Clinic, kliniki urody i pielęgnacji skóry w Scarborough. Projekt objął cały układ strony, podstrony usług, strukturę cennika, ścieżkę rezerwacji, responsywność na telefonach i czysty, nowoczesny interfejs dopasowany do marki.',
+        'Celem była profesjonalna i przejrzysta w nawigacji witryna, która jasno przedstawia usługi i buduje zaufanie lokalnych klientów.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

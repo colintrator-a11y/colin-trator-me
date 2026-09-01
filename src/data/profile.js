@@ -61,6 +61,21 @@ export const projects = [
     ],
     tags: ['WordPress', 'Responsive Web Design', 'Web Development'],
   },
+  {
+    id: 'artisanBeauty',
+    name: 'Artisan Beauty Clinic Website',
+    category: 'wordpress',
+    accent: 'rose',
+    media: [
+      { file: 'artisan-mockup.jpg', width: 1600, height: 1200 },
+      { file: 'artisan-home.jpg', width: 1200, height: 820 },
+      { file: 'artisan-about.jpg', width: 1200, height: 820 },
+      { file: 'artisan-services.jpg', width: 1200, height: 820 },
+      { file: 'artisan-pages.jpg', width: 1200, height: 820 },
+      { file: 'artisan-events.jpg', width: 1200, height: 820 },
+    ],
+    tags: ['WordPress', 'Web design'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

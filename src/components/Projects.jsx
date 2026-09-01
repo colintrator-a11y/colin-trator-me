@@ -6,11 +6,36 @@ import './Projects.css'
 
 const ALL = 'all'
 
-// A landscape screenshot needs a wider column than a phone-shaped one, so the
-// first image decides how the row splits.
-const isLandscape = (project) => {
+// How a row is laid out follows from its media. Three or more images cannot be
+// read side by side in half a row, so those projects put the media above the
+// text at full width; otherwise the media sits beside it, in a column whose
+// width follows the orientation of the first image.
+const rowLayout = (project) => {
+  if (project.media.length > 2) return ' is-stacked'
   const [first] = project.media
-  return first ? first.width > first.height : false
+  return first && first.width > first.height ? ' is-wide' : ''
+}
+
+const mediaLayout = (project) => {
+  if (project.media.length > 2) return ' is-stacked'
+  return project.media.length > 1 ? ' has-gallery' : ''
+}
+
+// The lead image and the rest are separate elements rather than one flat list:
+// the two layouts want the lead on its own line or shrinking beside a sibling,
+// and a wrapper says which is which without relying on :first-child.
+function Shot({ project, item, className, alt }) {
+  return (
+    <img
+      className={className}
+      src={projectMedia[item.file]}
+      alt={alt.projects.mediaAlt(project.name)}
+      width={item.width}
+      height={item.height}
+      loading="lazy"
+      decoding="async"
+    />
+  )
 }
 
 export default function Projects() {
@@ -63,22 +88,17 @@ export default function Projects() {
           {shown.map((project) => (
             <li
               key={project.id}
-              className={`card project-row accent-${project.accent}${
-                isLandscape(project) ? ' is-wide' : ''
-              }`}
+              className={`card project-row accent-${project.accent}${rowLayout(project)}`}
             >
-              <div className={`project-media${project.media.length > 1 ? ' has-gallery' : ''}`}>
-                {project.media.map((item) => (
-                  <img
-                    key={item.file}
-                    src={projectMedia[item.file]}
-                    alt={t.projects.mediaAlt(project.name)}
-                    width={item.width}
-                    height={item.height}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                ))}
+              <div className={`project-media${mediaLayout(project)}`}>
+                <Shot project={project} item={project.media[0]} className="media-lead" alt={t} />
+                {project.media.length > 1 ? (
+                  <div className="media-rest">
+                    {project.media.slice(1).map((item) => (
+                      <Shot key={item.file} project={project} item={item} alt={t} />
+                    ))}
+                  </div>
+                ) : null}
               </div>
 
               <div className="project-content">

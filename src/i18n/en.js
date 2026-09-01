@@ -131,6 +131,10 @@ export default {
         'Design and development of the Arabian Ranges website — a WordPress site for a commercial and sport shooting-range business, covering its products, services, training programmes, gallery and partners.',
         'The site is fully responsive and optimised, and I still maintain it. It was delivered on a modest budget and a tight timeline, and the client left a five-star review.',
       ],
+      artisanBeauty: [
+        'I designed and developed a complete WordPress website for Artisan Beauty Clinic, a beauty and skincare clinic in Scarborough. The project included full layout design, service pages, pricing structure, booking flow, mobile responsiveness, and a clean modern UI to match their brand.',
+        'The goal was to create a professional, easy-to-navigate website that clearly presents their services and builds trust with local clients.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

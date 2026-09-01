@@ -109,27 +109,74 @@
   border-radius: 8px;
 }
 
-/* Several images sit side by side and share one height, so a full-page
-   thumbnail next to a hero shot reads as two views of the same site rather
-   than stacking into a column twice as tall as the text beside it. */
+/* Two images share one row at a shared height, so a full-page thumbnail next to
+   a hero shot reads as two views of the same site rather than stacking into a
+   column twice as tall as the text beside it. nowrap plus min-width:0 lets the
+   wide one give way to the narrow one. */
 .project-media.has-gallery {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 }
 
-/* nowrap plus min-width:0 lets the wide hero shrink to make room for the narrow
-   full-page shot; wrapping instead put them in a column twice as tall as the
-   text beside them. */
-.project-media.has-gallery img {
+.project-media.has-gallery > * {
   min-width: 0;
   flex: 0 1 auto;
-  max-height: 400px;
+}
+
+.project-media.has-gallery img { max-height: 400px; }
+
+/* Three or more: the lead on its own line, the rest three across beneath it.
+   The thumbnails are sized by width rather than by max-height — leaving a wide
+   screenshot to be shrunk by its height cap makes its flex base size the full
+   intrinsic width, and every one lands on a row of its own. */
+.project-media.is-stacked .media-lead { max-height: 420px; }
+.project-media.is-stacked .media-rest { width: 100%; }
+
+.project-media.is-stacked .media-rest img {
+  flex: 0 0 calc((100% - 24px) / 3);
+  max-width: calc((100% - 24px) / 3);
+  max-height: none;
+}
+
+@media (max-width: 1000px) {
+  .project-media.is-stacked .media-rest img {
+    flex-basis: calc((100% - 12px) / 2);
+    max-width: calc((100% - 12px) / 2);
+  }
+}
+
+@media (max-width: 560px) {
+  .project-media.is-stacked .media-rest img {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.media-rest {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 0;
 }
 
 /* A landscape lead image gets the wider half of the row. */
 .project-row.is-wide { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
 .project-row.is-wide:nth-child(even) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
+
+/* Three or more images get the full width of the row, with the text below:
+   half a row split three ways leaves screenshots too small to read. */
+.project-row.is-stacked,
+.project-row.is-stacked:nth-child(even) {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.project-row.is-stacked .project-media { order: 0; }
+
+
 
 .project-content {
   display: flex;

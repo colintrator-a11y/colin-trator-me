@@ -131,6 +131,10 @@ export default {
         'Diseño y desarrollo del sitio de Arabian Ranges — un sitio en WordPress para una empresa de galerías de tiro comerciales y deportivas, con sus productos, servicios, programas de formación, galería y socios.',
         'El sitio es totalmente responsive y está optimizado, y sigo encargándome de su mantenimiento. Se entregó con un presupuesto ajustado y un plazo corto, y el cliente dejó una reseña de cinco estrellas.',
       ],
+      artisanBeauty: [
+        'Diseñé y desarrollé un sitio completo en WordPress para Artisan Beauty Clinic, una clínica de belleza y cuidado de la piel en Scarborough. El proyecto incluyó todo el diseño de la maqueta, las páginas de servicios, la estructura de precios, el flujo de reserva, la adaptación a móvil y una interfaz moderna y limpia acorde con su marca.',
+        'El objetivo era crear un sitio profesional y fácil de recorrer, que presentara los servicios con claridad y generara confianza entre los clientes de la zona.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },

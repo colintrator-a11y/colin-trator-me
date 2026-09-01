@@ -56,10 +56,14 @@ Content is split in two on purpose:
    locales), `accent` (`violet`, `teal`, `emerald`, `amber`, `rose`, `slate`,
    which colours the band at the top of the row), `tags`, and `media`: a list of
    `{ file, width, height }` from step 1. The intrinsic size goes on the `<img>`
-   so the row does not jump as images load, and the first image's orientation
-   decides how the row splits — a landscape screenshot takes the wider half, a
-   phone-shaped one the narrower. List more than one image and they sit side by
-   side at a shared height.
+   so the row does not jump as images load, and how many images there are picks
+   the layout:
+
+   | Images | Layout |
+   |---|---|
+   | 1 | Beside the text. A landscape screenshot takes the wider half of the row, a phone-shaped one the narrower. |
+   | 2 | Beside the text, the two sharing one height — a hero shot next to a full-page strip. |
+   | 3+ | Above the text at full width: the first image large, the rest three across beneath it. |
 3. Add the description under `projects.items.<id>` in **all four** locale files,
    as an array of paragraphs.
 4. Run `npm run check:locales`. It fails if a locale is missing the description
