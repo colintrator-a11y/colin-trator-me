@@ -189,8 +189,13 @@ export default {
         'Results: automated user verification, reduced ticket creation time from hours to minutes, round-the-clock customer support availability, and reliable data consistency across all user interactions.',
         'Tech stack: n8n, WhatsApp API, PostgreSQL, relational database architecture, event-driven workflows, state machine logic, and automated notification integrations.',
       ],
+      currencyConverter: [
+        'This Currency Converter mobile app is built using Flutter, delivering fast, accurate, and real-time currency conversion. I integrated a high-speed API to ensure reliable and up-to-date exchange rates.',
+        'Key features and technologies: fast and accurate currency data via a high-performance API, GetX for state management and smooth app performance, Firebase Authentication for secure user access, GetStorage as a local database for user preferences and data, user data persistence through efficient state management, and a fully responsive design that looks great on all devices.',
+        'The app provides a seamless user experience with modern architecture, high performance, and a clean UI across all screen sizes.',
+      ],
     },
-      links: { demo: 'Watch the demo' },
+      links: { demo: 'Watch the demo', store: 'View on Google Play' },
     mediaAlt: (name) => `Preview of ${name}`,
   },
 

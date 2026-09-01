@@ -221,8 +221,8 @@ export const projects = [
     category: 'mobile',
     accent: 'violet',
     media: [{ file: 'music-player.jpg', width: 1400, height: 1050 }],
-    // `kind` picks the label from projects.links in the locale files.
-    link: { kind: 'demo', href: 'https://youtu.be/CyUvzhzyjdA' },
+    // Each `kind` picks its label from projects.links in the locale files.
+    links: [{ kind: 'demo', href: 'https://youtu.be/CyUvzhzyjdA' }],
     tags: ['Java', 'Kotlin', 'Android App Development', 'Mobile App Development', 'Mobile App Testing'],
   },
   {
@@ -237,6 +237,18 @@ export const projects = [
       { file: 'n8n-report-2.jpg', width: 800, height: 564 },
     ],
     tags: ['n8n', 'WhatsApp API', 'PostgreSQL', 'Process Automation', 'Chatbot Development'],
+  },
+  {
+    id: 'currencyConverter',
+    name: 'Encoder Currency Converter',
+    category: 'mobile',
+    accent: 'slate',
+    media: [{ file: 'currency-app.jpg', width: 1400, height: 1050 }],
+    links: [
+      { kind: 'store', href: 'https://play.google.com/store/apps/details?id=net.encoderit.currency_converter' },
+      { kind: 'demo', href: 'https://youtu.be/V3-nlAYCV6o' },
+    ],
+    tags: ['Flutter', 'FastAPI', 'GetX', 'Firebase', 'Mobile App Development'],
   },
 ]
 

@@ -222,12 +222,17 @@
   margin-top: 6px;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin-top: 10px;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  margin-top: 10px;
-  align-self: flex-start;
   font-size: 0.855rem;
   font-weight: 600;
   color: var(--card-accent, var(--accent));

@@ -196,8 +196,13 @@ export default {
         'Efekty: zautomatyzowana weryfikacja użytkowników, czas założenia zgłoszenia skrócony z godzin do minut, wsparcie dostępne całą dobę i spójność danych we wszystkich interakcjach.',
         'Stack: n8n, WhatsApp API, PostgreSQL, architektura relacyjnej bazy danych, przepływy sterowane zdarzeniami, logika maszyny stanów i zautomatyzowane integracje powiadomień.',
       ],
+      currencyConverter: [
+        'Ten mobilny przelicznik walut powstał we Flutterze i przelicza szybko, dokładnie i w czasie rzeczywistym. Podpiąłem szybkie API, żeby kursy były wiarygodne i zawsze aktualne.',
+        'Najważniejsze funkcje i technologie: szybkie i dokładne dane walutowe z wydajnego API, GetX do zarządzania stanem i płynności aplikacji, Firebase Authentication dla bezpiecznego logowania, GetStorage jako lokalna baza na ustawienia i dane użytkownika, trwałe przechowywanie danych dzięki sprawnemu zarządzaniu stanem oraz w pełni responsywny wygląd, który dobrze wypada na każdym urządzeniu.',
+        'Aplikacja daje płynne działanie, nowoczesną architekturę, wysoką wydajność i czysty interfejs na ekranach każdej wielkości.',
+      ],
     },
-      links: { demo: 'Zobacz demo' },
+      links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },
 

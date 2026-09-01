@@ -189,8 +189,13 @@ export default {
         'Resultados: verificação de usuários automatizada, tempo de abertura de chamado reduzido de horas para minutos, atendimento disponível 24 horas por dia e consistência confiável dos dados em todas as interações.',
         'Stack: n8n, WhatsApp API, PostgreSQL, arquitetura de banco relacional, fluxos orientados a eventos, lógica de máquina de estados e integrações de notificação automatizadas.',
       ],
+      currencyConverter: [
+        'Este conversor de moedas para celular foi feito em Flutter e entrega conversão rápida, precisa e em tempo real. Integrei uma API de alta velocidade para garantir taxas de câmbio confiáveis e sempre atualizadas.',
+        'Principais recursos e tecnologias: dados de câmbio rápidos e precisos vindos de uma API de alto desempenho, GetX para gerenciamento de estado e fluidez do app, Firebase Authentication para acesso seguro, GetStorage como banco local para preferências e dados do usuário, persistência de dados por meio de gerenciamento de estado eficiente e um design totalmente responsivo, que fica bem em qualquer aparelho.',
+        'O app oferece uma experiência fluida, com arquitetura moderna, alto desempenho e uma interface limpa em telas de todos os tamanhos.',
+      ],
     },
-      links: { demo: 'Ver a demonstração' },
+      links: { demo: 'Ver a demonstração', store: 'Ver no Google Play' },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
 
