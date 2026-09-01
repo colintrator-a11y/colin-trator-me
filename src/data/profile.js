@@ -195,6 +195,18 @@ export const projects = [
     ],
     tags: ['Shopify', 'E-commerce', 'AJAX', 'JavaScript'],
   },
+  {
+    id: 'richmond',
+    name: 'Wheels and Castors',
+    category: 'wordpress',
+    accent: 'amber',
+    media: [
+      { file: 'richmond-home.jpg', width: 1400, height: 788 },
+      { file: 'richmond-range.jpg', width: 800, height: 450 },
+      { file: 'richmond-stores.jpg', width: 800, height: 450 },
+    ],
+    tags: ['WordPress', 'WooCommerce', 'JavaScript'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

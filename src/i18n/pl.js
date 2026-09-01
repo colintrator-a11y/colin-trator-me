@@ -178,6 +178,10 @@ export default {
       madsen: [
         'Zbudowałem elegancki i responsywny sklep na Shopify dla marki rowerowej MADSEN, z dynamiczną prezentacją produktów i płynnym procesem zakupu.',
       ],
+      richmond: [
+        'Richmond dostarcza rozwiązania jezdne — w tym koła i kółka samonastawne — w Australii i Nowej Zelandii, oferując niezawodne produkty wysokiej jakości do transportu wewnętrznego oraz konstrukcje jezdne projektowane na zamówienie dla bardzo różnych branż.',
+        'Witryna to sklep na WordPressie i WooCommerce, z asortymentem podzielonym na kategorie — od kółek, kół i opon po wózki paletowe, przenośniki, wózki klatkowe i okucia do bram — wraz z wyszukiwarką produktów w obrębie całego serwisu i wyszukiwarką sklepów.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

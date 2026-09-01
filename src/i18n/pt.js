@@ -171,6 +171,10 @@ export default {
       madsen: [
         'Desenvolvi uma loja Shopify elegante e responsiva para a MADSEN, marca de bicicletas, com vitrines de produto dinâmicas e uma experiência de compra fluida.',
       ],
+      richmond: [
+        'A Richmond oferece soluções de rolamento, incluindo rodas e rodízios, na Austrália e na Nova Zelândia, fornecendo produtos confiáveis e de alta qualidade para movimentação de materiais, além de soluções de rolamento sob medida para os mais variados setores.',
+        'O site é uma loja em WordPress e WooCommerce, com o catálogo organizado em categorias que vão de rodízios, rodas e pneus a paleteiras, transportadores, contentores com rodas e ferragens para portões, além de busca de produtos em todo o site e localizador de lojas.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },

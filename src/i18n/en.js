@@ -171,6 +171,10 @@ export default {
       madsen: [
         'Developed a sleek and responsive MADSEN Shopify store for a bicycle brand, featuring dynamic product displays and a smooth shopping experience.',
       ],
+      richmond: [
+        'Richmond offers rolling solutions, including wheels and castors, across Australia and New Zealand, supplying reliable, high-quality material handling and custom-engineered rolling products for a wide range of industries.',
+        'The site is a WordPress and WooCommerce store, with the range organised into product categories from castors, wheels and tyres through to pallet jacks, conveyors, roll cages and gate hardware, alongside site-wide product search and a store finder.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

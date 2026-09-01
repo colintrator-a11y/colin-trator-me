@@ -171,6 +171,10 @@ export default {
       madsen: [
         'Desarrollé una tienda Shopify elegante y responsive para MADSEN, una marca de bicicletas, con escaparates de producto dinámicos y una experiencia de compra fluida.',
       ],
+      richmond: [
+        'Richmond ofrece soluciones de rodadura, entre ellas ruedas y ruedas giratorias, en Australia y Nueva Zelanda, con productos fiables y de alta calidad para manipulación de materiales y soluciones de rodadura fabricadas a medida para sectores muy distintos.',
+        'El sitio es una tienda en WordPress y WooCommerce, con el catálogo organizado en categorías que van de ruedas giratorias, ruedas y neumáticos a transpaletas, transportadores, jaulas rodantes y herrajes para portones, además de buscador de productos en todo el sitio y localizador de tiendas.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },
