@@ -165,6 +165,9 @@ export default {
         'Um MMORPG mobile em Unity 3D para Android e iOS, no gênero de estratégia e construção de base para muitos jogadores: cada um monta o próprio exército, evolui o castelo e a economia e enfrenta outros jogadores em batalhas em tempo real.',
         'O jogo cobre todo o ciclo de um título ao vivo — treinamento de tropas e melhorias do quartel, árvore de pesquisa para plantio, pedra, madeira, ouro e velocidade de construção, cerco em tempo real com recompensas de vitória, rankings de poder e de tropas abatidas, escolha de herói e de líder, recompensas de login de sete dias e uma loja de compras no app com pacotes de baús, de gemas, assinaturas e planos. A versão mostrada roda com a interface em espanhol.',
       ],
+      vassalli: [
+        'Montei uma listagem de produtos limpa e bem organizada no Shopify para a Vassalli, apresentando o vestuário com descrições detalhadas, opções de tamanho e imagens caprichadas para uma experiência de compra melhor.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },

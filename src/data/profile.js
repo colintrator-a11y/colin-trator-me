@@ -171,6 +171,18 @@ export const projects = [
     ],
     tags: ['Unity 3D', 'Android', 'iOS', 'Game Design', 'Game Development'],
   },
+  {
+    id: 'vassalli',
+    name: 'Product Listing Vassalli',
+    category: 'ecommerce',
+    accent: 'emerald',
+    media: [
+      { file: 'vassalli-apparel.jpg', width: 1400, height: 788 },
+      { file: 'vassalli-footwear.jpg', width: 800, height: 450 },
+      { file: 'vassalli-giftcard.jpg', width: 800, height: 450 },
+    ],
+    tags: ['Shopify', 'CSS', 'Project Management'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

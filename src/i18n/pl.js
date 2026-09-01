@@ -172,6 +172,9 @@ export default {
         'Mobilny MMORPG w Unity 3D na Androida i iOS, w gatunku strategii z budową bazy dla wielu graczy: każdy rozwija własną armię, rozbudowuje zamek i jego gospodarkę oraz toczy walki z innymi graczami w czasie rzeczywistym.',
         'Gra obejmuje pełny cykl żywego tytułu — szkolenie wojsk i rozbudowę koszar, drzewko badań dla farmy, kamienia, drewna, złota i szybkości budowy, oblężenia w czasie rzeczywistym z nagrodami za zwycięstwo, rankingi siły i pokonanych oddziałów, wybór bohatera i dowódcy, siedmiodniowe nagrody za logowanie oraz sklep z zakupami w aplikacji: pakiety skrzyń, klejnotów, członkostwa i subskrypcje. Pokazana wersja działa z interfejsem w języku hiszpańskim.',
       ],
+      vassalli: [
+        'Przygotowałem przejrzysty i uporządkowany katalog produktów na Shopify dla marki Vassalli — odzież ze szczegółowymi opisami, wyborem rozmiaru i zadbanymi zdjęciami, dla wygodniejszych zakupów.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

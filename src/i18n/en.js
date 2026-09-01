@@ -165,6 +165,9 @@ export default {
         'A Unity 3D mobile MMORPG for Android and iOS, in the massively multiplayer base-building strategy genre: players raise an army, upgrade a castle and its economy, and fight real-time battles against other players.',
         'The build covers the whole live-game loop — troop training and barracks upgrades, a research tree for farming, stone, timber, gold and build speed, real-time siege combat with victory rewards, power and troops-killed leaderboards, hero and leader selection, seven-day login rewards, and an in-app purchase shop of chest packs, gem packs, memberships and subscriptions. The build shown runs with a Spanish-language interface.',
       ],
+      vassalli: [
+        'Created a clean and organized Shopify product listing for Vassalli, showcasing apparel with detailed descriptions, size options, and stylish visuals for an enhanced shopping experience.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },
