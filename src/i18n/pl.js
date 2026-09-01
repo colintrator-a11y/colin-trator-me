@@ -225,6 +225,10 @@ export default {
         'To gra NFT, w której gracz kieruje unikatowymi potworami, trenuje je i dostosowuje do epickich starć. Dzięki technologii blockchain własność przedmiotów w grze jest bezpieczna i przejrzysta, a gracze naprawdę posiadają swoje potwory i mogą nimi handlować.',
         'Strategiczna rozgrywka i wciągające mechaniki składają się na doświadczenie, w którym gracz kształtuje zdolności swoich potworów i rywalizuje o nagrody w dynamicznym, zdecentralizowanym środowisku.',
       ],
+      weatherParallax: [
+        'Strona z efektem parallax dla dostawcy informacji pogodowych, zbudowana od zera.',
+        'Powstała najpierw jako wersja w HTML i CSS, potem dostała responsywność na tablety i telefony, a na końcu została przerobiona na motyw WordPressa.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

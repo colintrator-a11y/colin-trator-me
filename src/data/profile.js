@@ -306,6 +306,16 @@ export const projects = [
     media: [{ file: 'monstersclan.jpg', width: 1600, height: 1200 }],
     tags: ['Web Development', 'Blockchain', 'NFT'],
   },
+  {
+    id: 'weatherParallax',
+    name: 'Severe Weather Consult',
+    category: 'wordpress',
+    accent: 'slate',
+    media: [{ file: 'weather-parallax.jpg', width: 800, height: 600 }],
+    // The demo URL the client supplied, https://multisite.webencoder.net/demo20,
+    // is not linked: webencoder.net has no DNS record at all any more.
+    tags: ['WordPress', 'PHP', 'MySQL', 'HTML', 'CSS', 'jQuery'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

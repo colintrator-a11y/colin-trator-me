@@ -218,6 +218,10 @@ export default {
         "It's a revolutionary NFT game where players control unique monsters, training and customizing them for epic battles. By integrating blockchain technology, the game ensures secure, transparent ownership of in-game assets, allowing players to truly own and trade their monsters.",
         "With strategic gameplay and engaging features, Monsters Clan offers an immersive, interactive experience where players can shape their monsters' abilities and compete for rewards in a dynamic, decentralized environment.",
       ],
+      weatherParallax: [
+        'A parallax website for a weather news provider, built from scratch.',
+        'It started as an HTML and CSS build, was then made responsive for tablet and mobile, and was finally converted into a WordPress theme.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play' },
     mediaAlt: (name) => `Preview of ${name}`,

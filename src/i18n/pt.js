@@ -218,6 +218,10 @@ export default {
         'É um jogo NFT em que cada jogador controla monstros únicos, treinando-os e personalizando-os para batalhas épicas. Com a tecnologia blockchain integrada, a posse dos ativos do jogo é segura e transparente, e os jogadores realmente são donos dos seus monstros e podem negociá-los.',
         'Com jogabilidade estratégica e recursos envolventes, a Monsters Clan entrega uma experiência imersiva e interativa, na qual o jogador molda as habilidades dos seus monstros e disputa recompensas em um ambiente descentralizado e dinâmico.',
       ],
+      weatherParallax: [
+        'Um site com efeito parallax para um provedor de notícias meteorológicas, construído do zero.',
+        'Começou como uma versão em HTML e CSS, depois recebeu a adaptação responsiva para tablet e celular e, por fim, foi convertido em um tema WordPress.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play' },
     mediaAlt: (name) => `Prévia de ${name}`,
