@@ -89,6 +89,7 @@ export default {
         title: 'Mobile apps',
         body: 'React Native and Flutter apps for Android and iOS, native Android work, and Unity 3D games shipped to both stores.',
       },
+      shopify: 'Shopify',
       ecommerce: {
         title: 'E-commerce',
         body: 'Shopify and WooCommerce stores, product catalogues, theme work and the integrations that keep a shop running.',
@@ -108,6 +109,7 @@ export default {
       frontend: 'Front end',
       backend: 'Back end & data',
       mobile: 'Mobile & games',
+      shopify: 'Shopify',
       ecommerce: 'E-commerce & CMS',
       other: 'Other',
     },
@@ -121,6 +123,8 @@ export default {
     allSkills: 'All skills',
     reset: 'Clear filters',
     empty: 'No projects match these filters.',
+      skillsCommon: 'Most used',
+      skillsOther: 'Everything else',
     all: 'All work',
     categories: {
       chatbot: 'Chatbot / AI',
@@ -129,6 +133,7 @@ export default {
       mobile: 'Mobile',
       games: 'Mobile / Games',
       blockchain: 'Blockchain',
+      shopify: 'Shopify',
       ecommerce: 'E-commerce',
       automation: 'Automation / Data',
       wordpress: 'WordPress',

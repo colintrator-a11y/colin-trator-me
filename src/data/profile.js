@@ -131,7 +131,7 @@ export const projects = [
   {
     id: 'homeEnergy',
     name: 'Home Energy Shopify',
-    category: 'ecommerce',
+    category: 'shopify',
     accent: 'teal',
     media: [
       { file: 'biolite-home.jpg', width: 1400, height: 634 },
@@ -174,7 +174,7 @@ export const projects = [
   {
     id: 'vassalli',
     name: 'Product Listing Vassalli',
-    category: 'ecommerce',
+    category: 'shopify',
     accent: 'emerald',
     media: [
       { file: 'vassalli-apparel.jpg', width: 1400, height: 788 },
@@ -186,7 +186,7 @@ export const projects = [
   {
     id: 'madsen',
     name: 'Shopify Bicycle Store',
-    category: 'ecommerce',
+    category: 'shopify',
     accent: 'teal',
     media: [
       { file: 'madsen-bikes.jpg', width: 1400, height: 788 },
@@ -253,7 +253,7 @@ export const projects = [
   {
     id: 'dineamic',
     name: 'Dineamic Food Delivery Store',
-    category: 'ecommerce',
+    category: 'shopify',
     accent: 'violet',
     media: [{ file: 'dineamic.jpg', width: 995, height: 609 }],
     tags: ['Shopify', 'Shopify Templates', 'Bootstrap', 'Responsive Web Design'],

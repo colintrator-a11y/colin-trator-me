@@ -89,6 +89,7 @@ export default {
         title: 'Aplicaciones móviles',
         body: 'Apps en React Native y Flutter para Android e iOS, desarrollo Android nativo y juegos en Unity 3D publicados en ambas tiendas.',
       },
+      shopify: 'Shopify',
       ecommerce: {
         title: 'E-commerce',
         body: 'Tiendas Shopify y WooCommerce, catálogos de productos, trabajo de tema y las integraciones que mantienen la tienda en marcha.',
@@ -108,6 +109,7 @@ export default {
       frontend: 'Front end',
       backend: 'Back end y datos',
       mobile: 'Móvil y juegos',
+      shopify: 'Shopify',
       ecommerce: 'E-commerce y CMS',
       other: 'Otros',
     },
@@ -121,6 +123,8 @@ export default {
     allSkills: 'Todas las tecnologías',
     reset: 'Quitar filtros',
     empty: 'Ningún proyecto coincide con estos filtros.',
+      skillsCommon: 'Más usadas',
+      skillsOther: 'Resto de tecnologías',
     all: 'Todos',
     categories: {
       chatbot: 'Chatbot / IA',
@@ -129,6 +133,7 @@ export default {
       mobile: 'Móvil',
       games: 'Móvil / Juegos',
       blockchain: 'Blockchain',
+      shopify: 'Shopify',
       ecommerce: 'E-commerce',
       automation: 'Automatización / Datos',
       wordpress: 'WordPress',

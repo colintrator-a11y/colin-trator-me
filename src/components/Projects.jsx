@@ -37,12 +37,19 @@ export default function Projects() {
     return [[ALL, projects.length], ...counts.entries()]
   }, [])
 
+  // Sixty-nine tags in one flat alphabetical list means scrolling past fifty of
+  // them to reach Shopify. The ones that appear on more than one project go in
+  // a group at the top; the rest, each unique to a single project, follow.
   const skills = useMemo(() => {
     const counts = new Map()
     projects.forEach((project) => {
       project.tags.forEach((tag) => counts.set(tag, (counts.get(tag) ?? 0) + 1))
     })
-    return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+    const sorted = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+    return {
+      common: sorted.filter(([, count]) => count > 1),
+      rest: sorted.filter(([, count]) => count === 1),
+    }
   }, [])
 
   const [category, setCategory] = useState(ALL)
@@ -119,11 +126,20 @@ export default function Projects() {
               onChange={(event) => setSkill(event.target.value)}
             >
               <option value={ALL}>{t.projects.allSkills}</option>
-              {skills.map(([tag, count]) => (
-                <option key={tag} value={tag}>
-                  {tag} ({count})
-                </option>
-              ))}
+              <optgroup label={t.projects.skillsCommon}>
+                {skills.common.map(([tag, count]) => (
+                  <option key={tag} value={tag}>
+                    {tag} ({count})
+                  </option>
+                ))}
+              </optgroup>
+              <optgroup label={t.projects.skillsOther}>
+                {skills.rest.map(([tag]) => (
+                  <option key={tag} value={tag}>
+                    {tag}
+                  </option>
+                ))}
+              </optgroup>
             </select>
             {filtered ? (
               <button

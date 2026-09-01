@@ -77,7 +77,9 @@ The headline "projects" count in the hero follows `projects.length`.
 ## Browsing the work
 
 Two filters, which combine: category chips across the top, and a **skill**
-dropdown listing every tag in use with its count. Every tag on a project row is
+dropdown listing every tag in use with its count, in two groups — the tags that
+appear on more than one project first, then the ones unique to a single
+project. Every tag on a project row is
 also a button — clicking one filters to that skill, clicking it again clears it.
 Both filters are keyed by category id and by the tag text, neither of which is
 translated, so switching language keeps the selection. "Clear filters" appears
