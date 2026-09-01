@@ -215,6 +215,16 @@ export const projects = [
     media: [{ file: 'aiart-app.jpg', width: 1600, height: 1200 }],
     tags: ['Mobile App Development', 'AI Mobile App Development'],
   },
+  {
+    id: 'musicPlayer',
+    name: 'Android Music Player · Custom EQ',
+    category: 'mobile',
+    accent: 'violet',
+    media: [{ file: 'music-player.jpg', width: 1400, height: 1050 }],
+    // `kind` picks the label from projects.links in the locale files.
+    link: { kind: 'demo', href: 'https://youtu.be/CyUvzhzyjdA' },
+    tags: ['Java', 'Kotlin', 'Android App Development', 'Mobile App Development', 'Mobile App Testing'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

@@ -179,7 +179,12 @@ export default {
         'O AI Art Generator é um aplicativo que permite criar obras impressionantes sem esforço, com poucos toques. Movido por inteligência artificial avançada, transforma os seus prompts de texto em imagens de alta qualidade e de tirar o fôlego.',
         'Seja você artista, designer ou alguém com vontade de explorar o lado criativo, o AI Art Generator oferece uma plataforma fluida para dar vida às suas ideias. A interface intuitiva permite gerar obras únicas e personalizadas, com possibilidades criativas sem fim. Ao apoiar-se em IA de ponta, o app redefine a forma como criamos e vivemos a arte, tornando-a acessível a qualquer pessoa, independentemente do nível de habilidade.',
       ],
+      musicPlayer: [
+        'Um player de música para Android cheio de recursos, feito para um cliente, com interface moderna e reprodução fluida. Esta foi a primeira fase de desenvolvimento de um app de música popular.',
+        'Inclui um equalizador personalizado — cinco bandas, além de reverb, graves, virtualizador e loudness — junto com criação de playlists, busca avançada, edição de metadados, filtros personalizados para organizar a biblioteca e exclusão rápida de arquivos de áudio indesejados. O app foi construído para velocidade, usabilidade e qualidade de áudio.',
+      ],
     },
+      links: { demo: 'Ver a demonstração' },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
 

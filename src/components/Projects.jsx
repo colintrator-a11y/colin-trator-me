@@ -112,6 +112,27 @@ export default function Projects() {
                     <li key={tag}>{tag}</li>
                   ))}
                 </ul>
+
+                {project.link ? (
+                  <a
+                    className="project-link"
+                    href={project.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t.projects.links[project.link.kind]}
+                    <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
+                      <path
+                        d="M7 17 17 7M9 7h8v8"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </a>
+                ) : null}
               </div>
             </li>
           ))}
