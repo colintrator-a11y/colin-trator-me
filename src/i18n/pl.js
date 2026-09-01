@@ -190,6 +190,12 @@ export default {
         'Rozbudowany odtwarzacz muzyki na Androida, zbudowany dla klienta — nowoczesny interfejs i płynne odtwarzanie. To pierwszy etap prac nad popularną aplikacją muzyczną.',
         'Obejmuje własny korektor dźwięku — pięć pasm oraz pogłos, basy, wirtualizator i wyrównanie głośności — a do tego tworzenie playlist, zaawansowane wyszukiwanie, edycję metadanych, własne filtry porządkujące bibliotekę i szybkie usuwanie zbędnych plików audio. Aplikacja jest robiona pod szybkość, wygodę obsługi i jakość dźwięku.',
       ],
+      n8nChatbot: [
+        'W 3 tygodnie zbudowałem i uruchomiłem solidny przepływ chatbota na WhatsAppie dla zarządcy nieruchomości, upraszczając zespołom wsparcia przyjmowanie zgłoszeń i zakładanie ticketów.',
+        'System obsługuje przychodzące wiadomości, załączniki i weryfikację użytkowników, łącząc automatyzację w n8n z trwałym zapisem w PostgreSQL. Rozmowa prowadzona jest ze stanem, więc użytkownik płynnie przechodzi przez wieloetapowe formularze — rodzaj zgłoszenia, tytuł, opis — a sesja przez cały czas pozostaje pod kontrolą.',
+        'Efekty: zautomatyzowana weryfikacja użytkowników, czas założenia zgłoszenia skrócony z godzin do minut, wsparcie dostępne całą dobę i spójność danych we wszystkich interakcjach.',
+        'Stack: n8n, WhatsApp API, PostgreSQL, architektura relacyjnej bazy danych, przepływy sterowane zdarzeniami, logika maszyny stanów i zautomatyzowane integracje powiadomień.',
+      ],
     },
       links: { demo: 'Zobacz demo' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

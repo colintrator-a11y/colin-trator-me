@@ -183,6 +183,12 @@ export default {
         'Um player de música para Android cheio de recursos, feito para um cliente, com interface moderna e reprodução fluida. Esta foi a primeira fase de desenvolvimento de um app de música popular.',
         'Inclui um equalizador personalizado — cinco bandas, além de reverb, graves, virtualizador e loudness — junto com criação de playlists, busca avançada, edição de metadados, filtros personalizados para organizar a biblioteca e exclusão rápida de arquivos de áudio indesejados. O app foi construído para velocidade, usabilidade e qualidade de áudio.',
       ],
+      n8nChatbot: [
+        'Construí e coloquei no ar, em 3 semanas, um fluxo robusto de chatbot no WhatsApp para gestão predial, simplificando a forma como as equipes de suporte recebem solicitações e abrem chamados.',
+        'O sistema trata mensagens recebidas, anexos de mídia e verificação de usuários combinando automação no n8n com persistência em PostgreSQL. A conversa é gerenciada com estado, o que conduz o usuário com naturalidade por formulários de várias etapas — tipo de chamado, título e descrição — sem perder o controle da sessão.',
+        'Resultados: verificação de usuários automatizada, tempo de abertura de chamado reduzido de horas para minutos, atendimento disponível 24 horas por dia e consistência confiável dos dados em todas as interações.',
+        'Stack: n8n, WhatsApp API, PostgreSQL, arquitetura de banco relacional, fluxos orientados a eventos, lógica de máquina de estados e integrações de notificação automatizadas.',
+      ],
     },
       links: { demo: 'Ver a demonstração' },
     mediaAlt: (name) => `Prévia de ${name}`,

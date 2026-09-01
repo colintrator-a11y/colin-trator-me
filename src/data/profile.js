@@ -225,6 +225,19 @@ export const projects = [
     link: { kind: 'demo', href: 'https://youtu.be/CyUvzhzyjdA' },
     tags: ['Java', 'Kotlin', 'Android App Development', 'Mobile App Development', 'Mobile App Testing'],
   },
+  {
+    id: 'n8nChatbot',
+    name: 'WhatsApp Chatbot Automation with n8n',
+    category: 'chatbot',
+    accent: 'teal',
+    media: [
+      { file: 'n8n-case-study.jpg', width: 1400, height: 1050 },
+      { file: 'n8n-workflow.jpg', width: 800, height: 517 },
+      { file: 'n8n-report.jpg', width: 800, height: 519 },
+      { file: 'n8n-report-2.jpg', width: 800, height: 564 },
+    ],
+    tags: ['n8n', 'WhatsApp API', 'PostgreSQL', 'Process Automation', 'Chatbot Development'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
