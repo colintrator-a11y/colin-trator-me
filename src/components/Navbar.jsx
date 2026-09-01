@@ -6,6 +6,10 @@ import LanguageSwitcher from './LanguageSwitcher.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
 import './Navbar.css'
 
+// The same head crop the favicon is cut from, small enough that the nav does
+// not pull the full-size portrait down for a 32px circle.
+const LOGO = `${import.meta.env.BASE_URL}logo.png`
+
 export default function Navbar() {
   const t = useLocale()
   const [scrolled, setScrolled] = useState(false)
@@ -21,7 +25,7 @@ export default function Navbar() {
     <header className={`nav${scrolled ? ' is-scrolled' : ''}`}>
       <div className="shell nav-inner">
         <a className="nav-brand" href="#top">
-          <span className="nav-mark" aria-hidden="true">DS</span>
+          <img className="nav-mark" src={LOGO} alt="" width="180" height="180" />
           <strong className="nav-brand-name">{profile.name}</strong>
         </a>
 

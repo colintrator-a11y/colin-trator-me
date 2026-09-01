@@ -58,12 +58,21 @@ export default {
   about: {
     eyebrow: 'Perfil',
     heading: 'Siete años entregando, de principio a fin',
-    paragraphs: [
-      'Soy desarrollador full stack y móvil con más de siete años de experiencia, trabajando en remoto con clientes de América Latina, Brasil y Estados Unidos.',
-      'Construyo aplicaciones web con React, Next.js, Node.js y TypeScript, y back ends y automatizaciones con Python y Django, sobre PostgreSQL, MySQL y MongoDB. También desarrollo aplicaciones Android, herramientas de escritorio, sitios en WordPress y tiendas Shopify.',
-      'Llevo el proyecto desde los requisitos hasta el despliegue y trabajo por etapas claras, para que veas el avance en lugar de recibir una única entrega al final. Pregunto antes de empezar y señalo los riesgos pronto, no tarde.',
-      'Trato directamente con los clientes en español, portugués e inglés — la mayoría vuelve con un segundo proyecto.',
+    lead: 'Desarrollo productos web y mobile que de verdad salen a producción — y hablo tu idioma, literalmente. Español, portugués e inglés: comunicación directa, sin traducciones de por medio.',
+    reach: (count) =>
+      `7 años de experiencia, ${count} proyectos entregados, trabajando en remoto con clientes de América Latina, Brasil, Europa y Estados Unidos.`,
+    bestTitle: 'En lo que soy mejor',
+    best: [
+      { area: 'E-commerce', detail: 'tiendas en Shopify y WordPress/WooCommerce, temas a medida, integraciones de pago' },
+      { area: 'Aplicaciones web', detail: 'React, Node.js, Laravel/PHP, desde landing pages hasta plataformas ERP empresariales' },
+      { area: 'Mobile', detail: 'React Native, Kotlin y Java para Android e iOS' },
+      { area: 'IA y automatización', detail: 'chatbots con Rasa, automatización de flujos con n8n y Python' },
     ],
+    approachTitle: 'Cómo trabajo',
+    approach:
+      'Un único punto de contacto, desde la primera llamada hasta el lanzamiento. Plazos realistas, no optimistas. Avances semanales que no tienes que pedir. Código limpio y documentado, que tú u otro desarrollador puede mantener cuando yo ya no esté.',
+    closing:
+      'Baja para ver el portafolio. Después escríbeme con tu idea — te diré con honestidad si soy la persona adecuada, qué suele implicar y cómo lo abordaría.',
     languagesTitle: 'Idiomas',
     certTitle: 'Certificación',
     languages: {

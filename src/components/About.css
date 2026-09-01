@@ -17,9 +17,59 @@
   color: var(--ink-soft);
 }
 
-.about-copy p:first-child {
+.about-copy .about-lead {
   font-size: 1.1rem;
   color: var(--ink);
+}
+
+.about-copy h3 {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.about-best {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.about-best li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.97rem;
+  color: var(--ink-soft);
+}
+
+.about-best li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.about-best strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.about-best strong::after {
+  content: ' — ';
+  font-weight: 400;
+  color: var(--ink-faint);
+}
+
+.about-closing {
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+  margin-top: 4px;
 }
 
 .about-side {

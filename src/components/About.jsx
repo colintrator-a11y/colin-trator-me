@@ -1,4 +1,4 @@
-import { certifications, spokenLanguages } from '../data/profile.js'
+import { certifications, projects, spokenLanguages } from '../data/profile.js'
 import { useLocale } from '../i18n/LocaleContext.jsx'
 import './About.css'
 
@@ -15,9 +15,25 @@ export default function About() {
 
         <div className="about-grid">
           <div className="about-copy">
-            {t.about.paragraphs.map((paragraph) => (
-              <p key={paragraph.slice(0, 32)}>{paragraph}</p>
-            ))}
+            <p className="about-lead">{t.about.lead}</p>
+            {/* The project count follows the list rather than being typed in,
+                so it cannot drift from the number in the hero. */}
+            <p>{t.about.reach(projects.length)}</p>
+
+            <h3>{t.about.bestTitle}</h3>
+            <ul className="about-best">
+              {t.about.best.map((item) => (
+                <li key={item.area}>
+                  <strong>{item.area}</strong>
+                  <span>{item.detail}</span>
+                </li>
+              ))}
+            </ul>
+
+            <h3>{t.about.approachTitle}</h3>
+            <p>{t.about.approach}</p>
+
+            <p className="about-closing">{t.about.closing}</p>
           </div>
 
           <aside className="about-side">

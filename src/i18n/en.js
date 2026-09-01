@@ -58,12 +58,21 @@ export default {
   about: {
     eyebrow: 'About',
     heading: 'Seven years of shipping, start to finish',
-    paragraphs: [
-      'I am a full stack and mobile developer with more than seven years of experience, working remotely with clients in Latin America, Brazil and the United States.',
-      'I build web applications with React, Next.js, Node.js and TypeScript, and backends and automations with Python and Django, on PostgreSQL, MySQL and MongoDB. I also develop Android apps, desktop tools, WordPress sites and Shopify stores.',
-      'I take a project from requirements through to deployment and work in clear stages, so you see progress as it happens instead of one delivery at the end. I ask questions before starting and flag risks early rather than late.',
-      'I work directly with clients in Spanish, Portuguese and English — most of them come back with a second project.',
+    lead: 'I build web and mobile products that ship — and I speak your language, literally. English, Portuguese and Spanish, so you get direct communication instead of translated back-and-forth.',
+    reach: (count) =>
+      `7 years, ${count} delivered projects, working remotely with clients across Latin America, Brazil, Europe and the US.`,
+    bestTitle: 'What I do best',
+    best: [
+      { area: 'E-commerce', detail: 'Shopify and WordPress/WooCommerce stores, custom themes, payment integrations' },
+      { area: 'Web apps', detail: 'React, Node.js, Laravel/PHP, from landing pages to enterprise ERP platforms' },
+      { area: 'Mobile', detail: 'React Native, Kotlin, Java for Android and iOS' },
+      { area: 'AI & automation', detail: 'chatbots with Rasa, workflow automation with n8n and Python' },
     ],
+    approachTitle: 'How I work',
+    approach:
+      'One point of contact from first call to launch. Realistic deadlines, not optimistic ones. Weekly updates you don\u2019t have to ask for. Clean, documented code you or another developer can maintain after I\u2019m gone.',
+    closing:
+      'Scroll down for the portfolio. Then send me your idea — I\u2019ll tell you honestly whether I\u2019m the right fit, roughly what it takes, and how I\u2019d approach it.',
     languagesTitle: 'Languages',
     certTitle: 'Certification',
     languages: {

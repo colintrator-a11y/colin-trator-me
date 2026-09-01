@@ -63,7 +63,7 @@ for (const locale of localeList) {
 
   // Lengths the layout assumes.
   const lengths = {
-    'about.paragraphs': [locale.about.paragraphs.length, 4],
+    'about.best': [locale.about.best.length, 4],
     'hero.facts': [locale.hero.facts.length, 4],
     'contact.facts': [locale.contact.facts.length, 4],
     'experience.points': [locale.experience.points.length, 4],

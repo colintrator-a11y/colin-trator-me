@@ -58,12 +58,21 @@ export default {
   about: {
     eyebrow: 'O mnie',
     heading: 'Siedem lat wdrożeń, od początku do końca',
-    paragraphs: [
-      'Jestem programistą full stack i mobilnym z ponad siedmioletnim doświadczeniem, pracuję zdalnie z klientami z Ameryki Łacińskiej, Brazylii i Stanów Zjednoczonych.',
-      'Tworzę aplikacje webowe w React, Next.js, Node.js i TypeScript, a backendy i automatyzacje w Pythonie i Django, na PostgreSQL, MySQL i MongoDB. Buduję też aplikacje na Androida, narzędzia desktopowe, strony na WordPressie i sklepy na Shopify.',
-      'Prowadzę projekt od wymagań aż po wdrożenie i pracuję w wyraźnych etapach, żeby postępy były widoczne na bieżąco, a nie dopiero przy jednej dostawie na końcu. Pytam, zanim zacznę, i sygnalizuję ryzyka wcześnie, nie na końcu.',
-      'Z klientami rozmawiam bezpośrednio po hiszpańsku, portugalsku i angielsku — większość wraca z drugim projektem.',
+    lead: 'Buduję produkty webowe i mobilne, które naprawdę trafiają na produkcję — i mówię językiem klienta, dosłownie. Angielski, portugalski i hiszpański: rozmawiamy bezpośrednio, bez tłumaczeń po drodze.',
+    reach: (count) =>
+      `7 lat doświadczenia, ${count} zrealizowanych projektów, praca zdalna z klientami z Ameryki Łacińskiej, Brazylii, Europy i Stanów Zjednoczonych.`,
+    bestTitle: 'W czym jestem najlepszy',
+    best: [
+      { area: 'E-commerce', detail: 'sklepy na Shopify i WordPress/WooCommerce, motywy na zamówienie, integracje płatności' },
+      { area: 'Aplikacje webowe', detail: 'React, Node.js, Laravel/PHP — od landing page po firmowe platformy ERP' },
+      { area: 'Mobile', detail: 'React Native, Kotlin i Java na Androida i iOS' },
+      { area: 'AI i automatyzacja', detail: 'chatboty w Rasa, automatyzacja procesów w n8n i Pythonie' },
     ],
+    approachTitle: 'Jak pracuję',
+    approach:
+      'Jeden punkt kontaktu, od pierwszej rozmowy po start. Terminy realne, nie optymistyczne. Cotygodniowe podsumowania, o które nie trzeba prosić. Czysty, udokumentowany kod, który ty albo inny programista utrzyma, gdy mnie już nie będzie.',
+    closing:
+      'Przewiń niżej, żeby zobaczyć portfolio. Potem napisz do mnie ze swoim pomysłem — powiem szczerze, czy jestem właściwą osobą, czego zwykle wymaga taki projekt i jak bym do niego podszedł.',
     languagesTitle: 'Języki',
     certTitle: 'Certyfikat',
     languages: {

@@ -58,12 +58,21 @@ export default {
   about: {
     eyebrow: 'Sobre',
     heading: 'Sete anos entregando, do início ao fim',
-    paragraphs: [
-      'Sou desenvolvedor full stack e mobile com mais de sete anos de experiência, trabalhando remotamente com clientes na América Latina, no Brasil e nos Estados Unidos.',
-      'Construo aplicações web com React, Next.js, Node.js e TypeScript, e back ends e automações com Python e Django, sobre PostgreSQL, MySQL e MongoDB. Também desenvolvo aplicativos Android, ferramentas desktop, sites em WordPress e lojas Shopify.',
-      'Levo o projeto do levantamento de requisitos até o deploy e trabalho em etapas claras, para você acompanhar o progresso em vez de receber tudo de uma vez no final. Faço perguntas antes de começar e aponto os riscos cedo, não tarde.',
-      'Atendo os clientes diretamente em espanhol, português e inglês — a maioria volta com um segundo projeto.',
+    lead: 'Desenvolvo produtos web e mobile que realmente vão ao ar — e falo a sua língua, literalmente. Português, espanhol e inglês: comunicação direta, sem tradução no meio do caminho.',
+    reach: (count) =>
+      `7 anos de experiência, ${count} projetos entregues, trabalhando remotamente com clientes do Brasil, da América Latina, da Europa e dos Estados Unidos.`,
+    bestTitle: 'No que sou melhor',
+    best: [
+      { area: 'E-commerce', detail: 'lojas em Shopify e WordPress/WooCommerce, temas personalizados, integrações de pagamento' },
+      { area: 'Aplicações web', detail: 'React, Node.js, Laravel/PHP, de landing pages a plataformas ERP corporativas' },
+      { area: 'Mobile', detail: 'React Native, Kotlin e Java para Android e iOS' },
+      { area: 'IA e automação', detail: 'chatbots com Rasa, automação de fluxos com n8n e Python' },
     ],
+    approachTitle: 'Como eu trabalho',
+    approach:
+      'Um único ponto de contato, do primeiro contato até o lançamento. Prazos realistas, não otimistas. Atualizações semanais que você não precisa cobrar. Código limpo e documentado, que você ou outro desenvolvedor consegue manter depois que eu sair.',
+    closing:
+      'Role a página para ver o portfólio. Depois me mande a sua ideia — digo com sinceridade se sou a pessoa certa, quanto isso costuma exigir e como eu faria.',
     languagesTitle: 'Idiomas',
     certTitle: 'Certificação',
     languages: {
