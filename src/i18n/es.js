@@ -226,8 +226,12 @@ export default {
         'Rabbit Royale es una mini-app de Telegram que ofrece una experiencia de juego tap-to-earn. Pensada para mantener al jugador enganchado, combina diversión y recompensas en una plataforma interactiva y sin fricción.',
         'A medida que el jugador toca la pantalla y avanza, acumula recompensas y ve crecer sus ganancias día a día. Con una interfaz sencilla y una jugabilidad que engancha, Rabbit Royale ofrece una forma entretenida de ganar mientras se juega.',
       ],
+      ratehub: [
+        'Ratehub es un sitio canadiense de comparación de productos financieros: hipotecas, tarjetas de crédito, cuentas, inversiones y seguros.',
+        'Mi trabajo en él: instalé el certificado SSL, configuré Cloudflare, implementé la pasarela de pago, rediseñé las páginas de hipotecas y de tarjetas de crédito, adapté el sitio a móvil e implementé el soporte multiidioma.',
+      ],
     },
-      links: { demo: 'Ver la demo', store: 'Ver en Google Play' },
+      links: { demo: 'Ver la demo', store: 'Ver en Google Play', site: 'Ver el sitio' },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },
 

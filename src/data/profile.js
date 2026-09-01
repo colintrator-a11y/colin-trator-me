@@ -324,6 +324,15 @@ export const projects = [
     media: [{ file: 'rabbit-royale.jpg', width: 1400, height: 1050 }],
     tags: ['Telegram Mini App', 'Game Development', 'Blockchain', 'Web Application'],
   },
+  {
+    id: 'ratehub',
+    name: 'Ratehub',
+    category: 'wordpress',
+    accent: 'teal',
+    media: [{ file: 'ratehub.jpg', width: 1400, height: 840 }],
+    links: [{ kind: 'site', href: 'https://www.ratehub.ca/' }],
+    tags: ['WordPress', 'PHP', 'JavaScript', 'jQuery', 'Cloudflare'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
