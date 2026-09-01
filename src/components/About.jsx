@@ -2,7 +2,7 @@ import { certifications, projects, spokenLanguages } from '../data/profile.js'
 import { useLocale } from '../i18n/LocaleContext.jsx'
 import './About.css'
 
-export default function About() {
+export default function About({ onFocus }) {
   const t = useLocale()
 
   return (
@@ -23,8 +23,12 @@ export default function About() {
             <h3>{t.about.bestTitle}</h3>
             <ul className="about-best">
               {t.about.best.map((item) => (
-                <li key={item.area}>
-                  <strong>{item.area}</strong>
+                <li key={item.id}>
+                  {/* A real anchor: the jump to the work section is the
+                      browser's, and the click only sets what it lands on. */}
+                  <a href="#work" onClick={() => onFocus(item.id)}>
+                    <strong>{item.area}</strong>
+                  </a>
                   <span>{item.detail}</span>
                 </li>
               ))}

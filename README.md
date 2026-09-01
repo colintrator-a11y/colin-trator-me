@@ -76,7 +76,15 @@ The headline "projects" count in the hero follows `projects.length`.
 
 ## Browsing the work
 
-Two filters, which combine: category chips across the top, and a **skill**
+The four areas named in the About list — E-commerce, Web apps, Mobile, AI &
+automation — are links into the work section. Each selects a **focus**: a set of
+categories broader than any single chip, defined by `focusAreas` in
+`src/data/profile.js`. The four sets are disjoint and between them cover every
+category, so no project is unreachable and none appears under two areas. A focus
+shows as an active chip at the front of the row, and picking any category chip
+clears it, since the two narrow the same axis.
+
+Two more filters, which combine: category chips across the top, and a **skill**
 dropdown listing every tag in use with its count, in two groups — the tags that
 appear on more than one project first, then the ones unique to a single
 project. Every tag on a project row is

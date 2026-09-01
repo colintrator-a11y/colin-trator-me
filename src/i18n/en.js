@@ -63,10 +63,10 @@ export default {
       `7 years, ${count} delivered projects, working remotely with clients across Latin America, Brazil, Europe and the US.`,
     bestTitle: 'What I do best',
     best: [
-      { area: 'E-commerce', detail: 'Shopify and WordPress/WooCommerce stores, custom themes, payment integrations' },
-      { area: 'Web apps', detail: 'React, Node.js, Laravel/PHP, from landing pages to enterprise ERP platforms' },
-      { area: 'Mobile', detail: 'React Native, Kotlin, Java for Android and iOS' },
-      { area: 'AI & automation', detail: 'chatbots with Rasa, workflow automation with n8n and Python' },
+      { id: 'ecommerce', area: 'E-commerce', detail: 'Shopify and WordPress/WooCommerce stores, custom themes, payment integrations' },
+      { id: 'web', area: 'Web apps', detail: 'React, Node.js, Laravel/PHP, from landing pages to enterprise ERP platforms' },
+      { id: 'mobile', area: 'Mobile', detail: 'React Native, Kotlin, Java for Android and iOS' },
+      { id: 'automation', area: 'AI & automation', detail: 'chatbots with Rasa, workflow automation with n8n and Python' },
     ],
     approachTitle: 'How I work',
     approach:

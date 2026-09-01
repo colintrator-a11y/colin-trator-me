@@ -55,14 +55,24 @@
   background: var(--accent);
 }
 
-.about-best strong {
+.about-best a {
   font-weight: 600;
   color: var(--ink);
+  border-bottom: 1px solid var(--line-strong);
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.about-best strong::after {
+.about-best a:hover {
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+
+.about-best strong { font-weight: 600; }
+
+/* The separator sits on the detail, not on the link, so the underline stops
+   at the end of the area name. */
+.about-best span::before {
   content: ' — ';
-  font-weight: 400;
   color: var(--ink-faint);
 }
 

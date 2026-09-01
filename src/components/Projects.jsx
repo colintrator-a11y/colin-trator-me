@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { projects } from '../data/profile.js'
+import { focusAreas, projects } from '../data/profile.js'
 import { projectMedia } from '../data/projectMedia.js'
 import { useLocale } from '../i18n/LocaleContext.jsx'
 import Lightbox from './Lightbox.jsx'
@@ -24,7 +24,7 @@ const mediaLayout = (project) => {
   return project.media.length > 1 ? ' has-gallery' : ''
 }
 
-export default function Projects() {
+export default function Projects({ focus, onFocusChange }) {
   const t = useLocale()
 
   // Filters are keyed by category id and by the tag text itself, neither of
@@ -56,13 +56,25 @@ export default function Projects() {
   const [skill, setSkill] = useState(ALL)
   const [preview, setPreview] = useState(null)
 
+  // A focus and a category narrow the same axis, so choosing one clears the
+  // other rather than intersecting to nothing.
+  const pickCategory = (id) => {
+    onFocusChange(null)
+    setCategory(id)
+  }
+
+  const inFocus = (project) => !focus || focusAreas[focus].includes(project.category)
+
   const shown = projects.filter(
     (project) =>
+      inFocus(project) &&
       (category === ALL || project.category === category) &&
       (skill === ALL || project.tags.includes(skill)),
   )
 
-  const filtered = category !== ALL || skill !== ALL
+  const focusLabel = focus ? t.about.best.find((item) => item.id === focus)?.area : null
+  const focusCount = focus ? projects.filter(inFocus).length : 0
+  const filtered = category !== ALL || skill !== ALL || Boolean(focus)
   const previewProject = preview && projects.find((project) => project.id === preview.id)
 
   const openPreview = (project, index) => setPreview({ id: project.id, index })
@@ -104,13 +116,26 @@ export default function Projects() {
 
         <div className="filters">
           <div className="filter-chips" role="group" aria-label={t.a11y.filter}>
+            {/* The focus comes from the About list, so it has no chip of its
+                own until it is set; shown here it can be seen and dismissed. */}
+            {focus ? (
+              <button
+                type="button"
+                className="filter is-active"
+                onClick={() => onFocusChange(null)}
+                aria-pressed="true"
+              >
+                {focusLabel}
+                <span>{focusCount}</span>
+              </button>
+            ) : null}
             {categories.map(([id, count]) => (
               <button
                 key={id}
                 type="button"
-                className={`filter${category === id ? ' is-active' : ''}`}
-                onClick={() => setCategory(id)}
-                aria-pressed={category === id}
+                className={`filter${category === id && !focus ? ' is-active' : ''}`}
+                onClick={() => pickCategory(id)}
+                aria-pressed={category === id && !focus}
               >
                 {id === ALL ? t.projects.all : t.projects.categories[id]}
                 <span>{count}</span>
@@ -148,6 +173,7 @@ export default function Projects() {
                 onClick={() => {
                   setCategory(ALL)
                   setSkill(ALL)
+                  onFocusChange(null)
                 }}
               >
                 {t.projects.reset}

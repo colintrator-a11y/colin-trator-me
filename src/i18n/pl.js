@@ -63,10 +63,10 @@ export default {
       `7 lat doświadczenia, ${count} zrealizowanych projektów, praca zdalna z klientami z Ameryki Łacińskiej, Brazylii, Europy i Stanów Zjednoczonych.`,
     bestTitle: 'W czym jestem najlepszy',
     best: [
-      { area: 'E-commerce', detail: 'sklepy na Shopify i WordPress/WooCommerce, motywy na zamówienie, integracje płatności' },
-      { area: 'Aplikacje webowe', detail: 'React, Node.js, Laravel/PHP — od landing page po firmowe platformy ERP' },
-      { area: 'Mobile', detail: 'React Native, Kotlin i Java na Androida i iOS' },
-      { area: 'AI i automatyzacja', detail: 'chatboty w Rasa, automatyzacja procesów w n8n i Pythonie' },
+      { id: 'ecommerce', area: 'E-commerce', detail: 'sklepy na Shopify i WordPress/WooCommerce, motywy na zamówienie, integracje płatności' },
+      { id: 'web', area: 'Aplikacje webowe', detail: 'React, Node.js, Laravel/PHP — od landing page po firmowe platformy ERP' },
+      { id: 'mobile', area: 'Mobile', detail: 'React Native, Kotlin i Java na Androida i iOS' },
+      { id: 'automation', area: 'AI i automatyzacja', detail: 'chatboty w Rasa, automatyzacja procesów w n8n i Pythonie' },
     ],
     approachTitle: 'Jak pracuję',
     approach:

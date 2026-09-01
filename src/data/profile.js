@@ -9,6 +9,16 @@ export const profile = {
   contactHref: 'https://www.workana.com/freelancer/19077338b5a3c8d89f6a37f74835f159',
 }
 
+// The four areas the About list names. Each is broader than one category — a
+// visitor who clicks "Mobile" means phone work of any kind, games included —
+// so a focus selects a set of categories rather than a single one.
+export const focusAreas = {
+  ecommerce: ['shopify', 'ecommerce', 'mobileCommerce'],
+  web: ['wordpress', 'saas', 'blockchain'],
+  mobile: ['mobile', 'games'],
+  automation: ['chatbot', 'automation'],
+}
+
 export const navSections = ['about', 'services', 'skills', 'work', 'experience', 'contact']
 
 export const serviceIds = ['web', 'mobile', 'ecommerce', 'automation']
