@@ -194,6 +194,10 @@ export default {
         'Funciones y tecnologías principales: datos de divisas rápidos y precisos desde una API de alto rendimiento, GetX para la gestión del estado y la fluidez de la app, Firebase Authentication para un acceso seguro, GetStorage como base de datos local para preferencias y datos del usuario, persistencia de datos mediante una gestión de estado eficiente y un diseño totalmente responsive que se ve bien en cualquier dispositivo.',
         'La app ofrece una experiencia fluida, con arquitectura moderna, alto rendimiento y una interfaz limpia en pantallas de cualquier tamaño.',
       ],
+      dineamic: [
+        'Una tienda Shopify para Dineamic, una marca de reparto de comida fresca. El sitio cubre el menú y las opciones dietéticas, el reparto y los pedidos por NDIS, con una comprobación de código postal en la cabecera de cada página, para que el visitante sepa de inmediato si le llega el reparto.',
+        'Construido para responder igual de bien en escritorio, portátil, tableta y móvil.',
+      ],
     },
       links: { demo: 'Ver la demo', store: 'Ver en Google Play' },
     mediaAlt: (name) => `Vista previa de ${name}`,

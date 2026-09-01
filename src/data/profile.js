@@ -250,6 +250,14 @@ export const projects = [
     ],
     tags: ['Flutter', 'FastAPI', 'GetX', 'Firebase', 'Mobile App Development'],
   },
+  {
+    id: 'dineamic',
+    name: 'Dineamic Food Delivery Store',
+    category: 'ecommerce',
+    accent: 'violet',
+    media: [{ file: 'dineamic.jpg', width: 995, height: 609 }],
+    tags: ['Shopify', 'Shopify Templates', 'Bootstrap', 'Responsive Web Design'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

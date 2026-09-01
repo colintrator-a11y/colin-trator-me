@@ -194,6 +194,10 @@ export default {
         'Key features and technologies: fast and accurate currency data via a high-performance API, GetX for state management and smooth app performance, Firebase Authentication for secure user access, GetStorage as a local database for user preferences and data, user data persistence through efficient state management, and a fully responsive design that looks great on all devices.',
         'The app provides a seamless user experience with modern architecture, high performance, and a clean UI across all screen sizes.',
       ],
+      dineamic: [
+        'A Shopify e-commerce site for Dineamic, a fresh-meal delivery brand. The store covers the menu and dietary options, delivery and NDIS ordering, with a postcode check at the top of every page so a visitor knows straight away whether they can be delivered to.',
+        'Built to hold up the same on desktop, laptop, tablet and phone.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play' },
     mediaAlt: (name) => `Preview of ${name}`,

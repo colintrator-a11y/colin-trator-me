@@ -194,6 +194,10 @@ export default {
         'Principais recursos e tecnologias: dados de câmbio rápidos e precisos vindos de uma API de alto desempenho, GetX para gerenciamento de estado e fluidez do app, Firebase Authentication para acesso seguro, GetStorage como banco local para preferências e dados do usuário, persistência de dados por meio de gerenciamento de estado eficiente e um design totalmente responsivo, que fica bem em qualquer aparelho.',
         'O app oferece uma experiência fluida, com arquitetura moderna, alto desempenho e uma interface limpa em telas de todos os tamanhos.',
       ],
+      dineamic: [
+        'Uma loja Shopify para a Dineamic, marca de entrega de refeições frescas. O site cobre o cardápio e as opções alimentares, a entrega e os pedidos pelo NDIS, com uma checagem de CEP no topo de todas as páginas, para o visitante saber de imediato se a entrega chega até ele.',
+        'Feito para funcionar igualmente bem no desktop, no notebook, no tablet e no celular.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play' },
     mediaAlt: (name) => `Prévia de ${name}`,
