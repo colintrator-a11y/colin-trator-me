@@ -17,6 +17,9 @@ export default {
     prevImage: 'Imagem anterior',
     nextImage: 'Próxima imagem',
     openPreview: 'Abrir a imagem ampliada',
+    zoomIn: 'Aproximar',
+    zoomOut: 'Afastar',
+    resetZoom: 'Voltar ao tamanho original',
   },
 
   nav: {

@@ -84,10 +84,18 @@ translated, so switching language keeps the selection. "Clear filters" appears
 whenever either is set.
 
 Clicking any image opens it full size in a preview, with the project name and,
-in a set, a counter and arrows. Escape closes it, the arrow keys move through
-the set, and the page behind is held still. This is where the top-anchored tiles
-pay off: a page capture that is cropped to a 365x250 tile in the row is shown
-whole here.
+in a set, a counter and arrows. This is where the top-anchored tiles pay off: a
+page capture cropped to a 365x250 tile in the row is shown whole here.
+
+It zooms to 5x, in 25% steps, with the wheel, the buttons, `+` / `-`, or a
+double-click. Zoomed, the image can be dragged, and panning is bounded so it
+cannot be pushed out of view. `0` or the percentage button resets it; changing
+image resets it too. Escape closes, the arrow keys move through the set, and
+the page behind is held still.
+
+Clicking anywhere that is not the image or a control closes the preview - the
+dimmed surround, the space beside a portrait image, the caption bar. A click
+that ends a pan does not count.
 
 Large GIFs are worth optimising before they go in.
 [`scripts/optimize-gif.py`](scripts/optimize-gif.py) does it — the Rasa demo went

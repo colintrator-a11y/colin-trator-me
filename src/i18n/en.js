@@ -17,6 +17,9 @@ export default {
     prevImage: 'Previous image',
     nextImage: 'Next image',
     openPreview: 'Open a larger preview',
+    zoomIn: 'Zoom in',
+    zoomOut: 'Zoom out',
+    resetZoom: 'Reset zoom',
   },
 
   nav: {

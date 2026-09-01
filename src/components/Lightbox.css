@@ -19,39 +19,108 @@
 
 .lightbox-figure {
   grid-column: 2;
+  align-self: stretch;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 14px;
   min-width: 0;
 }
 
-.lightbox-figure img {
+/* The stage is what a zoomed image is clipped to, so the enlarged picture
+   stays inside the overlay instead of spilling across the whole screen. */
+.lightbox-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.lightbox-stage img {
   width: auto;
   height: auto;
   max-width: 100%;
-  /* Leaves room for the caption under it. */
-  max-height: calc(100vh - 130px);
+  max-height: 100%;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.7);
+  cursor: zoom-in;
+  /* The transform is set inline; only its easing belongs here, and it is
+     dropped while dragging so panning tracks the pointer exactly. */
+  transition: transform 0.12s ease-out;
+  touch-action: none;
+  user-select: none;
 }
 
-.lightbox-figure figcaption {
+.lightbox-stage img.is-zoomed {
+  cursor: grab;
+  transition: none;
+}
+
+.lightbox-stage img.is-zoomed:active { cursor: grabbing; }
+
+.lightbox-bar {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.lightbox-figure figcaption small {
+.lightbox-count {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
   font-variant-numeric: tabular-nums;
 }
+
+.lightbox-zoom {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lightbox-zoom button {
+  display: grid;
+  place-items: center;
+  min-width: 30px;
+  height: 28px;
+  padding: 0 8px;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.lightbox-zoom button:hover:not(:disabled) { background: rgba(255, 255, 255, 0.18); }
+
+.lightbox-zoom button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.lightbox-zoom button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+}
+
+.lightbox-scale { letter-spacing: 0.02em; }
 
 .lightbox-close,
 .lightbox-step {
@@ -101,8 +170,7 @@
     padding: 64px 12px 16px;
   }
 
-  .lightbox-figure { grid-column: 1; }
-  .lightbox-figure img { max-height: calc(100vh - 190px); }
+  .lightbox-figure { grid-column: 1; grid-row: 1; }
 
   /* Under the image on a phone, where reaching the sides of the screen is
      harder than reaching the bottom. */
