@@ -66,7 +66,7 @@ Content is split in two on purpose:
    |---|---|
    | 1 | Beside the text. A landscape screenshot takes the wider half of the row, a phone-shaped one the narrower. |
    | 2 | Beside the text, the two sharing one height — a hero shot next to a full-page strip. |
-   | 3+ | Above the text at full width: the first image large and whole, the rest as top-anchored tiles three across beneath it. |
+   | 3+ | Above the text at full width: the first image large and whole, the rest as small top-anchored tiles four across beneath it (three below 1000px, two below 560px). |
 3. Add the description under `projects.items.<id>` in **all four** locale files,
    as an array of paragraphs.
 4. Run `npm run check:locales`. It fails if a locale is missing the description

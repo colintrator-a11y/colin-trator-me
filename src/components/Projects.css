@@ -194,21 +194,41 @@
 
 .project-media.has-gallery img { max-height: 400px; }
 
-/* Three or more: the lead on its own line, the rest three across beneath it.
-   The thumbnails are sized by width rather than by max-height — leaving a wide
-   screenshot to be shrunk by its height cap makes its flex base size the full
-   intrinsic width, and every one lands on a row of its own. */
+/* Three or more: the lead keeps its full height, and the rest sit under it as
+   small thumbnails — four across rather than three, since the preview now shows
+   any of them full size and the row only has to say what is in the set.
+
+   Their width comes from flex-basis and their height from aspect-ratio, not
+   from a fixed pixel height: a fixed height crops harder the narrower the tile
+   gets, so a set would be cropped differently on a phone than on a desktop.
+   Left to a max-height instead, a 1200px-wide screenshot still takes its full
+   intrinsic width as its flex base size, and every one wraps onto a row of its
+   own. */
+.project-media.is-stacked .media-lead { max-height: 480px; }
 .project-media.is-stacked .media-rest { width: 100%; }
 
-.project-media.is-stacked .media-lead { max-height: 480px; }
-
 .project-media.is-stacked .media-rest img {
-  flex: 0 0 calc((100% - 24px) / 3);
-  max-width: calc((100% - 24px) / 3);
-  height: 250px;
+  flex: 0 0 calc((100% - 36px) / 4);
+  max-width: calc((100% - 36px) / 4);
+  aspect-ratio: 3 / 2;
+  height: auto;
   max-height: none;
   object-fit: cover;
   object-position: top;
+}
+
+@media (max-width: 1000px) {
+  .project-media.is-stacked .media-rest img {
+    flex-basis: calc((100% - 24px) / 3);
+    max-width: calc((100% - 24px) / 3);
+  }
+}
+
+@media (max-width: 560px) {
+  .project-media.is-stacked .media-rest img {
+    flex-basis: calc((100% - 12px) / 2);
+    max-width: calc((100% - 12px) / 2);
+  }
 }
 
 /* A stacked row with a single image after the lead is not a grid of thumbnails
@@ -217,6 +237,8 @@
 .project-media.is-stacked .media-rest img:only-child {
   flex-basis: calc((100% - 12px) / 2);
   max-width: calc((100% - 12px) / 2);
+  /* Back to its own shape: inheriting the 3:2 tile box would letterbox it. */
+  aspect-ratio: auto;
   height: auto;
   object-fit: contain;
 }
