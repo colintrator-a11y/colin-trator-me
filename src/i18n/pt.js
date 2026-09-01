@@ -157,6 +157,10 @@ export default {
       homeEnergy: [
         'Desenvolvi uma loja Shopify dinâmica e fácil de usar para a BioLite, apresentando produtos de energia sustentável com uma experiência de compra fluida e otimizada para celular.',
       ],
+      hulkCharts: [
+        'Um dApp de gráficos em tempo real para tokens da Binance Smart Chain (BSC), construído em torno do Hulk Token — na mesma linha do PooCoin.',
+        'As telas cobrem a busca de mercado ordenada por volume e liquidez, gráficos de token ao vivo com histórico de negociações, swaps na PancakeSwap e na ApeSwap, um sniper de token acionado por endereço de contrato e valor de gatilho, e páginas de perfil por token com transferências e detentores.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },

@@ -140,6 +140,21 @@ export const projects = [
     ],
     tags: ['Shopify', 'AJAX', 'Chatbot'],
   },
+  {
+    id: 'hulkCharts',
+    name: 'Live Streaming Charts DApp',
+    category: 'blockchain',
+    accent: 'violet',
+    media: [
+      { file: 'hulk-chart.jpg', width: 1400, height: 875 },
+      { file: 'hulk-search.jpg', width: 800, height: 500 },
+      { file: 'hulk-token.jpg', width: 800, height: 500 },
+      { file: 'hulk-swap.jpg', width: 800, height: 500 },
+      { file: 'hulk-sniper.jpg', width: 800, height: 500 },
+      { file: 'hulk-trigger.jpg', width: 800, height: 500 },
+    ],
+    tags: ['Blockchain', 'BSC'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
