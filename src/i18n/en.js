@@ -154,6 +154,9 @@ export default {
         'E-Muvas is a delivery service mobile app that allows users to request deliveries in two modes: Instant Requests and Scheduled Requests. It provides real-time updates and live tracking for both modes.',
         'Users can also rate and review drivers after completing deliveries, ensuring transparency and quality service. Payment is processed via a secure gateway, requiring a linked card for transactions.',
       ],
+      homeEnergy: [
+        'Built a dynamic and user-friendly Shopify store for BioLite, showcasing eco-friendly energy products with seamless shopping and mobile optimization.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

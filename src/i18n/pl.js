@@ -161,6 +161,9 @@ export default {
         'E-Muvas to aplikacja kurierska, w której przesyłkę można zamówić na dwa sposoby: od razu albo z wyprzedzeniem, na wybrany termin. W obu trybach dostępne są aktualizacje na bieżąco i śledzenie na żywo.',
         'Po zakończonej dostawie użytkownik może też ocenić kuriera i zostawić opinię, co dba o przejrzystość i jakość usługi. Płatność przechodzi przez bezpieczną bramkę i wymaga karty powiązanej z kontem.',
       ],
+      homeEnergy: [
+        'Zbudowałem dynamiczny i wygodny w obsłudze sklep na Shopify dla marki BioLite, prezentujący produkty ekologicznej energii, z płynnym procesem zakupu i optymalizacją pod telefony.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

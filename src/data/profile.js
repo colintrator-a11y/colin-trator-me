@@ -128,6 +128,18 @@ export const projects = [
     ],
     tags: ['React Native', 'Android', 'iOS', 'Node.js', 'MongoDB'],
   },
+  {
+    id: 'homeEnergy',
+    name: 'Home Energy Shopify',
+    category: 'ecommerce',
+    accent: 'teal',
+    media: [
+      { file: 'biolite-home.jpg', width: 1400, height: 634 },
+      { file: 'biolite-products.jpg', width: 800, height: 450 },
+      { file: 'biolite-product.jpg', width: 800, height: 450 },
+    ],
+    tags: ['Shopify', 'AJAX', 'Chatbot'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

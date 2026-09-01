@@ -154,6 +154,9 @@ export default {
         'E-Muvas es una app de servicio de entregas que permite solicitar un envío en dos modalidades: inmediata o programada. En ambos casos ofrece actualizaciones en tiempo real y seguimiento en vivo.',
         'Al terminar la entrega, el usuario también puede valorar y comentar sobre el repartidor, lo que aporta transparencia y calidad al servicio. El pago se procesa mediante una pasarela segura y requiere una tarjeta vinculada a la cuenta.',
       ],
+      homeEnergy: [
+        'Desarrollé una tienda Shopify dinámica y fácil de usar para BioLite, que presenta sus productos de energía ecológica con una compra fluida y optimizada para móvil.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },
