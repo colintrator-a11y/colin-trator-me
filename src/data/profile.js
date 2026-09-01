@@ -207,6 +207,14 @@ export const projects = [
     ],
     tags: ['WordPress', 'WooCommerce', 'JavaScript'],
   },
+  {
+    id: 'aiArt',
+    name: 'AI Art Generator App',
+    category: 'mobile',
+    accent: 'rose',
+    media: [{ file: 'aiart-app.jpg', width: 1600, height: 1200 }],
+    tags: ['Mobile App Development', 'AI Mobile App Development'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

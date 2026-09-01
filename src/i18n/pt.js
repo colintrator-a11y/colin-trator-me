@@ -175,6 +175,10 @@ export default {
         'A Richmond oferece soluções de rolamento, incluindo rodas e rodízios, na Austrália e na Nova Zelândia, fornecendo produtos confiáveis e de alta qualidade para movimentação de materiais, além de soluções de rolamento sob medida para os mais variados setores.',
         'O site é uma loja em WordPress e WooCommerce, com o catálogo organizado em categorias que vão de rodízios, rodas e pneus a paleteiras, transportadores, contentores com rodas e ferragens para portões, além de busca de produtos em todo o site e localizador de lojas.',
       ],
+      aiArt: [
+        'O AI Art Generator é um aplicativo que permite criar obras impressionantes sem esforço, com poucos toques. Movido por inteligência artificial avançada, transforma os seus prompts de texto em imagens de alta qualidade e de tirar o fôlego.',
+        'Seja você artista, designer ou alguém com vontade de explorar o lado criativo, o AI Art Generator oferece uma plataforma fluida para dar vida às suas ideias. A interface intuitiva permite gerar obras únicas e personalizadas, com possibilidades criativas sem fim. Ao apoiar-se em IA de ponta, o app redefine a forma como criamos e vivemos a arte, tornando-a acessível a qualquer pessoa, independentemente do nível de habilidade.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },

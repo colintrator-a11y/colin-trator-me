@@ -175,6 +175,10 @@ export default {
         'Richmond offers rolling solutions, including wheels and castors, across Australia and New Zealand, supplying reliable, high-quality material handling and custom-engineered rolling products for a wide range of industries.',
         'The site is a WordPress and WooCommerce store, with the range organised into product categories from castors, wheels and tyres through to pallet jacks, conveyors, roll cages and gate hardware, alongside site-wide product search and a store finder.',
       ],
+      aiArt: [
+        'AI Art Generator is a revolutionary mobile app that enables users to create stunning artwork effortlessly with just a few taps. Powered by advanced artificial intelligence, this innovative app transforms your text prompts into breathtaking, high-quality visuals.',
+        "Whether you're an artist, designer, or someone looking to explore their creative side, AI Art Generator provides a seamless platform to bring your ideas to life. Its intuitive interface allows you to generate unique and personalized artwork, offering endless creative possibilities. By leveraging cutting-edge AI technology, the app redefines the way we create and experience art, making it accessible to everyone, regardless of skill level.",
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

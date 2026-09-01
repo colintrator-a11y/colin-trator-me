@@ -175,6 +175,10 @@ export default {
         'Richmond ofrece soluciones de rodadura, entre ellas ruedas y ruedas giratorias, en Australia y Nueva Zelanda, con productos fiables y de alta calidad para manipulación de materiales y soluciones de rodadura fabricadas a medida para sectores muy distintos.',
         'El sitio es una tienda en WordPress y WooCommerce, con el catálogo organizado en categorías que van de ruedas giratorias, ruedas y neumáticos a transpaletas, transportadores, jaulas rodantes y herrajes para portones, además de buscador de productos en todo el sitio y localizador de tiendas.',
       ],
+      aiArt: [
+        'AI Art Generator es una aplicación móvil que permite crear obras impresionantes sin esfuerzo, con solo unos toques. Impulsada por inteligencia artificial avanzada, convierte tus indicaciones de texto en imágenes de alta calidad que quitan el aliento.',
+        'Ya seas artista, diseñador o alguien con ganas de explorar su lado creativo, AI Art Generator ofrece una plataforma fluida para dar vida a tus ideas. Su interfaz intuitiva permite generar obras únicas y personalizadas, con posibilidades creativas sin fin. Apoyándose en IA de última generación, la app redefine la forma en que creamos y vivimos el arte, y la hace accesible a cualquiera, sea cual sea su nivel.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },

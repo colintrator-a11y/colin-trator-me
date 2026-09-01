@@ -182,6 +182,10 @@ export default {
         'Richmond dostarcza rozwiązania jezdne — w tym koła i kółka samonastawne — w Australii i Nowej Zelandii, oferując niezawodne produkty wysokiej jakości do transportu wewnętrznego oraz konstrukcje jezdne projektowane na zamówienie dla bardzo różnych branż.',
         'Witryna to sklep na WordPressie i WooCommerce, z asortymentem podzielonym na kategorie — od kółek, kół i opon po wózki paletowe, przenośniki, wózki klatkowe i okucia do bram — wraz z wyszukiwarką produktów w obrębie całego serwisu i wyszukiwarką sklepów.',
       ],
+      aiArt: [
+        'AI Art Generator to aplikacja mobilna, w której efektowną grafikę tworzy się bez wysiłku, kilkoma dotknięciami. Napędza ją zaawansowana sztuczna inteligencja, która zamienia opis tekstowy w dopracowane obrazy wysokiej jakości.',
+        'Niezależnie od tego, czy jesteś artystą, projektantem, czy po prostu chcesz sprawdzić swoją kreatywną stronę, AI Art Generator daje wygodną przestrzeń, by przenieść pomysł w obraz. Intuicyjny interfejs pozwala tworzyć unikatowe, spersonalizowane prace, a możliwości praktycznie się nie kończą. Dzięki najnowszej technologii AI aplikacja zmienia sposób, w jaki tworzymy i odbieramy sztukę, i otwiera ją na każdego, bez względu na poziom umiejętności.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },
