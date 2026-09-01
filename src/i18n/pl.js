@@ -276,6 +276,26 @@ export default {
       wooBulkDiscount: [
         'Autorska wtyczka do WordPressa, która dynamicznie pokazuje ceny po rabacie. Zbudowana w PHP, HTML i CSS w oparciu o WordPressa i własne funkcje WooCommerce.',
       ],
+      keyzar: [
+        'Sklep na Shopify dla Keyzar, marki biżuterii jubilerskiej — pierścionki zaręczynowe, obrączki, diamenty i kamienie szlachetne.',
+        'Sklep jest zbudowany pod zakup przemyślany, a nie impulsywny: diamenty przegląda się według szlifu, jest sekcja edukacyjna, rezerwacja konsultacji w nowojorskim showroomie albo online, a przy tym gwarancje, których szuka ktoś przed wydaniem pieniędzy na pierścionek — darmowa zmiana rozmiaru, certyfikat i wycena, kamienie z legalnych źródeł, dożywotnia gwarancja.',
+      ],
+      tools4trade: [
+        'Sklep na Shopify dla Tools4Trade, brytyjskiego sprzedawcy elektronarzędzi, narzędzi ręcznych, odzieży roboczej i wyposażenia budowy.',
+        'Tu problemem jest katalog. Tysiące pozycji w kilkunastu kategoriach, wszystkie branżowe marki obok siebie, wyszukiwanie po kategorii, marce albo numerze części, a do tego ekspozycja, która musi pomieścić wyprzedaż, oferty magazynowe, nowości, promocje producentów i program lojalnościowy, nie zasypując przy tym samych produktów.',
+      ],
+      illumivein: [
+        'Sklep na Shopify dla Illumivein, ręcznego lokalizatora żył sprzedawanego pielęgniarkom, flebotomistom i studentom.',
+        'To sklep jednego produktu, więc cała strona jest jednym wywodem: problem w nagłówku, cena od razu, obok dowody — liczba osób, które go używają, zweryfikowane opinie, rejestracja w FDA — a dalej funkcje, film demonstracyjny i instrukcja w trzech krokach.',
+      ],
+      videoMilkshake: [
+        'Sklep na Shopify dla Video Milkshake, sprzedającego materiały do montażu wideo: presety, nakładki, tekstury taśmy, matte, napisy i profile koloru.',
+        'Wszystko jest tu plikiem do pobrania, więc nie ma wysyłki, stanów magazynowych ani zwrotów, które trzeba by zaprojektować. Sklep musi za to pokazać ruch w statycznym katalogu — materiały mają podgląd wideo, są ułożone według tego, co robią, a nie czym są, i sprzedają się zarówno w pakietach, jak i pojedynczo.',
+      ],
+      consciousInk: [
+        'Sklep na Shopify dla Conscious Ink, który sprzedaje tymczasowe tatuaże z afirmacjami — noszone przypomnienia mające przerywać negatywny wewnętrzny monolog.',
+        'Sklep sprzedaje nawyk, a nie przedmiot, więc najpierw tłumaczy, a dopiero potem sprzedaje: założenie, stojące za nim uzasadnienie, korzyści wypunktowane jedna po drugiej, gwarancje produktowe i długa ściana opinii klientów. Obok pojedynczego zakupu działa subskrypcja.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę', appStore: 'Zobacz w App Store' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

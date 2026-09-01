@@ -388,6 +388,71 @@ export const projects = [
     links: [{ kind: 'demo', href: 'https://youtu.be/OedzSDjqZnk' }],
     tags: ['WordPress', 'WooCommerce', 'PHP', 'jQuery', 'HTML', 'CSS'],
   },
+  {
+    id: 'keyzar',
+    name: 'Keyzar Jewelry',
+    category: 'shopify',
+    accent: 'rose',
+    media: [
+      { file: 'keyzar-home.jpg', width: 1400, height: 875 },
+      { file: 'keyzar-sec1.jpg', width: 800, height: 500 },
+      { file: 'keyzar-sec2.jpg', width: 800, height: 500 },
+    ],
+    links: [{ kind: 'site', href: 'https://keyzarjewelry.com/' }],
+    tags: ['Shopify', 'E-commerce', 'Responsive Web Design', 'JavaScript'],
+  },
+  {
+    id: 'tools4trade',
+    name: 'Tools4Trade',
+    category: 'shopify',
+    accent: 'amber',
+    media: [
+      { file: 't4t-home.jpg', width: 1400, height: 875 },
+      { file: 't4t-sec1.jpg', width: 800, height: 500 },
+      { file: 't4t-sec2.jpg', width: 800, height: 500 },
+    ],
+    links: [{ kind: 'site', href: 'https://tools4trade.co.uk/' }],
+    tags: ['Shopify', 'E-commerce', 'Shopify Templates', 'JavaScript'],
+  },
+  {
+    id: 'illumivein',
+    name: 'Illumivein',
+    category: 'shopify',
+    accent: 'slate',
+    media: [
+      { file: 'illumi-home.jpg', width: 1400, height: 875 },
+      { file: 'illumi-sec1.jpg', width: 800, height: 500 },
+      { file: 'illumi-sec2.jpg', width: 800, height: 500 },
+    ],
+    links: [{ kind: 'site', href: 'https://illumivein.com/' }],
+    tags: ['Shopify', 'E-commerce', 'Landing Page', 'Responsive Web Design'],
+  },
+  {
+    id: 'videoMilkshake',
+    name: 'Video Milkshake',
+    category: 'shopify',
+    accent: 'violet',
+    media: [
+      { file: 'milkshake-home.jpg', width: 1400, height: 875 },
+      { file: 'milkshake-sec1.jpg', width: 800, height: 500 },
+      { file: 'milkshake-sec2.jpg', width: 800, height: 500 },
+    ],
+    links: [{ kind: 'site', href: 'https://www.videomilkshake.com/' }],
+    tags: ['Shopify', 'Digital Products', 'E-commerce', 'CSS'],
+  },
+  {
+    id: 'consciousInk',
+    name: 'Conscious Ink',
+    category: 'shopify',
+    accent: 'emerald',
+    media: [
+      { file: 'cink-home.jpg', width: 1400, height: 875 },
+      { file: 'cink-sec1.jpg', width: 800, height: 500 },
+      { file: 'cink-sec2.jpg', width: 800, height: 500 },
+    ],
+    links: [{ kind: 'site', href: 'https://www.consciousink.com/' }],
+    tags: ['Shopify', 'E-commerce', 'Subscriptions', 'Responsive Web Design'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

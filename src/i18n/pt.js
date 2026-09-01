@@ -269,6 +269,26 @@ export default {
       wooBulkDiscount: [
         'Um plugin de WordPress feito sob medida para exibir preços com desconto de forma dinâmica. Construído em PHP, HTML e CSS sobre o WordPress e as próprias funções do WooCommerce.',
       ],
+      keyzar: [
+        'Uma loja Shopify para a Keyzar, marca de joias finas que vende anéis de noivado, alianças, diamantes e pedras preciosas.',
+        'A loja foi pensada para uma compra ponderada, não por impulso: diamantes que se navegam por formato, uma seção educativa, agendamento de consultoria no showroom de Nova York ou online, e as garantias que o comprador procura antes de gastar com um anel — ajuste de tamanho gratuito, certificação e avaliação, pedras livres de conflito e garantia vitalícia.',
+      ],
+      tools4trade: [
+        'Uma loja Shopify para a Tools4Trade, varejista britânica de ferramentas elétricas e manuais, vestuário de trabalho e equipamentos de obra.',
+        'Aqui o desafio é o catálogo. Milhares de itens em uma dúzia de categorias, com todas as marcas do setor lado a lado, busca por categoria, marca ou número de peça, e uma vitrine que precisa acomodar liquidação, ofertas de galpão, lançamentos, resgates de marca e um programa de pontos sem soterrar os produtos.',
+      ],
+      illumivein: [
+        'Uma loja Shopify para o Illumivein, um localizador de veias portátil vendido a enfermeiros, flebotomistas e estudantes.',
+        'É uma loja de produto único, então a página inteira é um só argumento: o problema no título, o preço logo à frente, a prova ao lado — profissionais que usam o aparelho, avaliações verificadas, registro na FDA — e então os recursos, um vídeo de demonstração e as instruções em três passos.',
+      ],
+      videoMilkshake: [
+        'Uma loja Shopify para a Video Milkshake, que vende recursos de edição de vídeo: presets, sobreposições, texturas de película, mattes, títulos e looks de cor.',
+        'Tudo ali é download digital, então não há frete, estoque nem devolução para projetar. O que a loja precisa resolver é mostrar movimento em um catálogo estático — os recursos têm prévia em vídeo, são organizados pelo que fazem e não pelo que são, e vendem tanto em pacotes quanto avulsos.',
+      ],
+      consciousInk: [
+        'Uma loja Shopify para a Conscious Ink, que vende tatuagens temporárias de afirmação — lembretes vestíveis pensados para interromper o diálogo interno negativo.',
+        'A loja vende um hábito, não um objeto, e por isso explica antes de vender: a proposta, o raciocínio por trás dela, os benefícios um a um, as garantias do produto e um longo mural de avaliações de clientes. Há uma assinatura ao lado da compra avulsa.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play', site: 'Ver o site', appStore: 'Ver na App Store' },
     mediaAlt: (name) => `Prévia de ${name}`,

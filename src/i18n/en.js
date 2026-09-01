@@ -269,6 +269,26 @@ export default {
       wooBulkDiscount: [
         'A custom WordPress plugin that shows discounted prices dynamically. Built with PHP, HTML and CSS against WordPress and WooCommerce\u2019s own functions.',
       ],
+      keyzar: [
+        'A Shopify storefront for Keyzar, a fine jewellery brand selling engagement rings, wedding bands, diamonds and gemstones.',
+        'The store is built around a considered purchase rather than an impulse one: diamonds browsable by shape, an education section, consultation booking in the New York showroom or online, and the reassurances a buyer looks for before spending on a ring — free resizing, certification and appraisal, conflict-free stones, a lifetime warranty.',
+      ],
+      tools4trade: [
+        'A Shopify store for Tools4Trade, a UK retailer of power tools, hand tools, workwear and site equipment.',
+        'This one is a catalogue problem. Thousands of lines across a dozen categories and every trade brand stocked side by side, with search by category, brand or part number, and merchandising that has to carry clearance, warehouse deals, new arrivals, brand redemptions and a rewards scheme without burying the products underneath them.',
+      ],
+      illumivein: [
+        'A Shopify store for Illumivein, a handheld vein finder sold to nurses, phlebotomists and students.',
+        'It is a single-product store, so the whole page is one argument: the problem in the headline, the price stated up front, the proof beside it — clinicians carrying one, verified reviews, FDA registration — and then the features, a demonstration video and the three-step instructions.',
+      ],
+      videoMilkshake: [
+        'A Shopify store for Video Milkshake, selling editing assets for video work: presets, overlays, film textures, mattes, titles and colour looks.',
+        'Everything here is a digital download, so there is no shipping, no stock and no returns to design around. What the store has to do instead is show motion in a still catalogue — the assets preview as video, they are sorted by what they do rather than what they are, and they sell in bundles as well as singly.',
+      ],
+      consciousInk: [
+        'A Shopify store for Conscious Ink, which sells manifestation temporary tattoos — wearable affirmations meant to interrupt negative self-talk.',
+        'The store sells a habit rather than an object, so it explains before it sells: the claim, the reasoning behind it, the benefits set out one by one, the product guarantees, and a long wall of customer reviews. A subscription runs alongside the one-off purchase.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site', appStore: 'View on the App Store' },
     mediaAlt: (name) => `Preview of ${name}`,

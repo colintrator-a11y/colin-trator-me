@@ -269,6 +269,26 @@ export default {
       wooBulkDiscount: [
         'Un plugin de WordPress hecho a medida para mostrar precios con descuento de forma dinámica. Construido en PHP, HTML y CSS sobre WordPress y las propias funciones de WooCommerce.',
       ],
+      keyzar: [
+        'Una tienda Shopify para Keyzar, marca de alta joyería que vende anillos de compromiso, alianzas, diamantes y piedras preciosas.',
+        'La tienda está pensada para una compra meditada, no impulsiva: diamantes que se recorren por forma, una sección educativa, reserva de asesoría en el showroom de Nueva York o en línea, y las garantías que busca quien va a gastar en un anillo — ajuste de talla gratuito, certificación y tasación, piedras libres de conflicto y garantía de por vida.',
+      ],
+      tools4trade: [
+        'Una tienda Shopify para Tools4Trade, minorista británico de herramientas eléctricas y manuales, ropa de trabajo y equipamiento de obra.',
+        'Aquí el reto es el catálogo. Miles de referencias en una docena de categorías, con todas las marcas del sector una junto a otra, búsqueda por categoría, marca o número de pieza, y un escaparate que debe sostener liquidación, ofertas de almacén, novedades, canjes de marca y un programa de puntos sin enterrar los productos debajo.',
+      ],
+      illumivein: [
+        'Una tienda Shopify para Illumivein, un localizador de venas de mano que se vende a enfermeras, flebotomistas y estudiantes.',
+        'Es una tienda de un solo producto, así que toda la página es un único argumento: el problema en el titular, el precio por delante, la prueba al lado — profesionales que lo llevan, reseñas verificadas, registro ante la FDA — y después las características, un vídeo de demostración y las instrucciones en tres pasos.',
+      ],
+      videoMilkshake: [
+        'Una tienda Shopify para Video Milkshake, que vende recursos de edición de vídeo: presets, superposiciones, texturas de película, mattes, títulos y looks de color.',
+        'Todo es descarga digital, así que no hay envío, ni stock, ni devoluciones que diseñar. Lo que la tienda sí debe resolver es mostrar movimiento en un catálogo estático: los recursos se previsualizan en vídeo, se ordenan por lo que hacen y no por lo que son, y se venden en packs además de por separado.',
+      ],
+      consciousInk: [
+        'Una tienda Shopify para Conscious Ink, que vende tatuajes temporales de afirmación: recordatorios que se llevan puestos y buscan cortar el diálogo interno negativo.',
+        'La tienda vende un hábito más que un objeto, así que explica antes de vender: la propuesta, el razonamiento detrás, los beneficios uno a uno, las garantías del producto y un largo muro de reseñas de clientes. Junto a la compra suelta corre una suscripción.',
+      ],
     },
       links: { demo: 'Ver la demo', store: 'Ver en Google Play', site: 'Ver el sitio', appStore: 'Ver en la App Store' },
     mediaAlt: (name) => `Vista previa de ${name}`,
