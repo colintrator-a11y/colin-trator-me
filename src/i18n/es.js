@@ -141,6 +141,10 @@ export default {
         'La plataforma incluye además un modelo de agentes para impulsar el crecimiento. Los agentes promocionan la plataforma con sus propios códigos y, cada vez que un cliente nuevo se registra a través de ellos, ganan una comisión. Así el negocio crece por recomendación, sin un gasto fuerte en marketing.',
         'En conjunto, Ayiko se construyó como un sistema completo que integra operación, entrega y crecimiento en un mismo lugar.',
       ],
+      collectMyJudgement: [
+        'Collect My Judgement está especializada en cobro de deudas y ejecución de sentencias, con cobertura nacional y un equipo de abogados, negociadores e investigadores expertos. Con más de 30 años de resultados demostrados, atienden incluso los casos más complejos y aseguran una recuperación eficiente y eficaz para sus clientes.',
+        'Diseñé para ellos una landing page de alto impacto, que pone por delante esa experiencia y su credibilidad en el sector.',
+      ],
     },
     mediaAlt: (name) => `Vista previa de ${name}`,
   },

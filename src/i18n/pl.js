@@ -148,6 +148,10 @@ export default {
         'Platforma ma też model agencyjny wspierający rozwój. Agenci promują ją własnymi kodami i za każdego nowego klienta, który zarejestruje się z ich polecenia, dostają prowizję. Biznes rośnie więc z polecenia, bez dużych wydatków na marketing.',
         'W całości Ayiko powstało jako kompletny system, który łączy operacje, dostawy i rozwój w jednym miejscu.',
       ],
+      collectMyJudgement: [
+        'Collect My Judgement specjalizuje się w windykacji długów i egzekucji wyroków, działa na terenie całego kraju i ma zespół doświadczonych prawników, negocjatorów i śledczych. Z ponad 30-letnim dorobkiem prowadzi nawet najbardziej złożone sprawy, zapewniając klientom sprawne i skuteczne odzyskanie należności.',
+        'Zaprojektowałem dla nich mocny landing page, który pokazuje to doświadczenie i wiarygodność firmy w branży.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

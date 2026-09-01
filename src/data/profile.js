@@ -91,6 +91,19 @@ export const projects = [
     ],
     tags: ['Laravel', 'React Native', 'HTML', 'CSS'],
   },
+  {
+    id: 'collectMyJudgement',
+    name: 'Collect My Judgement Landing Page',
+    category: 'wordpress',
+    accent: 'slate',
+    media: [
+      { file: 'cmj-laptop.jpg', width: 1400, height: 933 },
+      { file: 'cmj-pages.jpg', width: 800, height: 533 },
+      { file: 'cmj-desktop.jpg', width: 800, height: 533 },
+      { file: 'cmj-analytics.jpg', width: 800, height: 533 },
+    ],
+    tags: ['WordPress', 'Responsive Web Design', 'Web Development'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
