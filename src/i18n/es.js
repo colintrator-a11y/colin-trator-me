@@ -119,6 +119,7 @@ export default {
       games: 'Móvil / Juegos',
       blockchain: 'Blockchain',
       ecommerce: 'E-commerce',
+      automation: 'Automatización / Datos',
       wordpress: 'WordPress',
     },
     items: {
@@ -197,6 +198,11 @@ export default {
       dineamic: [
         'Una tienda Shopify para Dineamic, una marca de reparto de comida fresca. El sitio cubre el menú y las opciones dietéticas, el reparto y los pedidos por NDIS, con una comprobación de código postal en la cabecera de cada página, para que el visitante sepa de inmediato si le llega el reparto.',
         'Construido para responder igual de bien en escritorio, portátil, tableta y móvil.',
+      ],
+      excelDashboard: [
+        'El proyecto consistió en desarrollar un panel de presupuesto totalmente automatizado en Excel, con automatización de Microsoft Excel, fórmulas avanzadas, tablas y gráficos dinámicos, validación de datos, formato condicional y cuadros de mando interactivos.',
+        'Diseñé varias hojas para el seguimiento de ingresos, el control de gastos, el ahorro, el seguimiento de deudas, el análisis de patrimonio, la proyección de inversiones y los resúmenes anuales. Gráficos dinámicos, tarjetas de indicadores, desgloses por categoría y cálculos automáticos ofrecen una lectura financiera en tiempo real con la mínima carga manual.',
+        'El libro se optimizó para la exactitud, la usabilidad y el rendimiento, y permite gestionar las finanzas personales, analizar el presupuesto, elaborar informes y decidir con criterio desde un panel de Excel profesional y fácil de usar.',
       ],
     },
       links: { demo: 'Ver la demo', store: 'Ver en Google Play' },

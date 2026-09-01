@@ -119,6 +119,7 @@ export default {
       games: 'Mobile / Games',
       blockchain: 'Blockchain',
       ecommerce: 'E-commerce',
+      automation: 'Automation / Data',
       wordpress: 'WordPress',
     },
     items: {
@@ -197,6 +198,11 @@ export default {
       dineamic: [
         'A Shopify e-commerce site for Dineamic, a fresh-meal delivery brand. The store covers the menu and dietary options, delivery and NDIS ordering, with a postcode check at the top of every page so a visitor knows straight away whether they can be delivered to.',
         'Built to hold up the same on desktop, laptop, tablet and phone.',
+      ],
+      excelDashboard: [
+        'This project involved developing a fully automated Excel Budget Planner Dashboard using Microsoft Excel Automation, advanced Excel formulas, Pivot Tables, Pivot Charts, Data Validation, Conditional Formatting, and interactive dashboards.',
+        'I designed multiple worksheets for income tracking, expense management, savings, debt monitoring, net worth analysis, investment forecasting, and annual summaries. Dynamic charts, KPI cards, category breakdowns, and automated calculations provided real-time financial insights with minimal manual input.',
+        'The workbook was optimized for accuracy, usability, and performance, enabling efficient personal finance management, budget analysis, financial reporting, and decision-making through a professional, user-friendly Excel dashboard and financial automation solution.',
       ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play' },

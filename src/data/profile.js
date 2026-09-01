@@ -258,6 +258,22 @@ export const projects = [
     media: [{ file: 'dineamic.jpg', width: 995, height: 609 }],
     tags: ['Shopify', 'Shopify Templates', 'Bootstrap', 'Responsive Web Design'],
   },
+  {
+    id: 'excelDashboard',
+    name: 'Excel Budget Planner Dashboard',
+    category: 'automation',
+    accent: 'emerald',
+    media: [
+      { file: 'excel-dashboard.jpg', width: 1272, height: 857 },
+      { file: 'excel-income.jpg', width: 800, height: 527 },
+      { file: 'excel-expenses.jpg', width: 800, height: 550 },
+      { file: 'excel-savings.jpg', width: 800, height: 546 },
+      { file: 'excel-debt.jpg', width: 800, height: 523 },
+      { file: 'excel-investments.jpg', width: 800, height: 540 },
+      { file: 'excel-summary.jpg', width: 800, height: 527 },
+    ],
+    tags: ['Excel', 'Excel VBA', 'Excel Macros', 'Data Visualization', 'Process Automation'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

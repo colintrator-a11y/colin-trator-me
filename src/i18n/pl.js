@@ -126,6 +126,7 @@ export default {
       games: 'Mobile / Gry',
       blockchain: 'Blockchain',
       ecommerce: 'E-commerce',
+      automation: 'Automatyzacja / Dane',
       wordpress: 'WordPress',
     },
     items: {
@@ -204,6 +205,11 @@ export default {
       dineamic: [
         'Sklep na Shopify dla marki Dineamic, która dowozi świeże posiłki. Witryna obejmuje menu i opcje dietetyczne, dostawę oraz zamówienia w ramach programu NDIS, a na górze każdej strony sprawdza kod pocztowy, żeby odwiedzający od razu wiedział, czy dostawa do niego dojedzie.',
         'Zbudowany tak, by działał tak samo dobrze na komputerze, laptopie, tablecie i telefonie.',
+      ],
+      excelDashboard: [
+        'Projekt polegał na zbudowaniu w pełni zautomatyzowanego arkusza budżetowego w Excelu — z automatyzacją Microsoft Excel, zaawansowanymi formułami, tabelami i wykresami przestawnymi, walidacją danych, formatowaniem warunkowym i interaktywnymi pulpitami.',
+        'Zaprojektowałem kilka arkuszy: śledzenie przychodów, kontrolę wydatków, oszczędności, monitoring zadłużenia, analizę majątku, prognozę inwestycji i podsumowania roczne. Dynamiczne wykresy, kafelki wskaźników, podziały na kategorie i automatyczne przeliczenia dają bieżący obraz finansów przy minimalnym wprowadzaniu danych ręcznie.',
+        'Skoroszyt zoptymalizowałem pod dokładność, wygodę pracy i wydajność, tak aby prowadzenie domowego budżetu, analiza wydatków, raportowanie i podejmowanie decyzji odbywały się w jednym profesjonalnym, przyjaznym pulpicie Excela.',
       ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play' },
