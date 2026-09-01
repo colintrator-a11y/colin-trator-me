@@ -161,6 +161,10 @@ export default {
         'A live streaming charts dApp for Binance Smart Chain (BSC) tokens, built around Hulk Token — in the same vein as PooCoin.',
         'The screens cover market search ranked by volume and liquidity, live token charts with trading history, swaps across PancakeSwap and ApeSwap, a token sniper driven by contract address and trigger amount, and per-token profile pages with transfers and holders.',
       ],
+      mmorpg: [
+        'A Unity 3D mobile MMORPG for Android and iOS, in the massively multiplayer base-building strategy genre: players raise an army, upgrade a castle and its economy, and fight real-time battles against other players.',
+        'The build covers the whole live-game loop — troop training and barracks upgrades, a research tree for farming, stone, timber, gold and build speed, real-time siege combat with victory rewards, power and troops-killed leaderboards, hero and leader selection, seven-day login rewards, and an in-app purchase shop of chest packs, gem packs, memberships and subscriptions. The build shown runs with a Spanish-language interface.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

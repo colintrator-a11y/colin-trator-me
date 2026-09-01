@@ -168,6 +168,10 @@ export default {
         'dApp z wykresami na żywo dla tokenów Binance Smart Chain (BSC), zbudowany wokół Hulk Token — w duchu PooCoin.',
         'Ekrany obejmują wyszukiwarkę rynku sortowaną według wolumenu i płynności, wykresy tokenów na żywo wraz z historią transakcji, swapy na PancakeSwap i ApeSwap, snipera tokenów uruchamianego adresem kontraktu i kwotą progową oraz strony profilu tokena z transferami i listą posiadaczy.',
       ],
+      mmorpg: [
+        'Mobilny MMORPG w Unity 3D na Androida i iOS, w gatunku strategii z budową bazy dla wielu graczy: każdy rozwija własną armię, rozbudowuje zamek i jego gospodarkę oraz toczy walki z innymi graczami w czasie rzeczywistym.',
+        'Gra obejmuje pełny cykl żywego tytułu — szkolenie wojsk i rozbudowę koszar, drzewko badań dla farmy, kamienia, drewna, złota i szybkości budowy, oblężenia w czasie rzeczywistym z nagrodami za zwycięstwo, rankingi siły i pokonanych oddziałów, wybór bohatera i dowódcy, siedmiodniowe nagrody za logowanie oraz sklep z zakupami w aplikacji: pakiety skrzyń, klejnotów, członkostwa i subskrypcje. Pokazana wersja działa z interfejsem w języku hiszpańskim.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

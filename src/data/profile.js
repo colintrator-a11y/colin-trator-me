@@ -155,6 +155,22 @@ export const projects = [
     ],
     tags: ['Blockchain', 'BSC'],
   },
+  {
+    id: 'mmorpg',
+    name: 'MMORPG Mobile Game',
+    category: 'games',
+    accent: 'amber',
+    media: [
+      { file: 'mmo-battle.jpg', width: 943, height: 518 },
+      { file: 'mmo-research.jpg', width: 800, height: 442 },
+      { file: 'mmo-barracks.jpg', width: 800, height: 439 },
+      { file: 'mmo-victory.jpg', width: 800, height: 440 },
+      { file: 'mmo-rewards.jpg', width: 800, height: 434 },
+      { file: 'mmo-shop.jpg', width: 800, height: 436 },
+      { file: 'mmo-leaderboard.jpg', width: 800, height: 436 },
+    ],
+    tags: ['Unity 3D', 'Android', 'iOS', 'Game Design', 'Game Development'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
