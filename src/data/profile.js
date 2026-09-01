@@ -316,6 +316,14 @@ export const projects = [
     // is not linked: webencoder.net has no DNS record at all any more.
     tags: ['WordPress', 'PHP', 'MySQL', 'HTML', 'CSS', 'jQuery'],
   },
+  {
+    id: 'rabbitRoyale',
+    name: 'Rabbit Royale',
+    category: 'games',
+    accent: 'violet',
+    media: [{ file: 'rabbit-royale.jpg', width: 1400, height: 1050 }],
+    tags: ['Telegram Mini App', 'Game Development', 'Blockchain', 'Web Application'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

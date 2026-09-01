@@ -229,6 +229,10 @@ export default {
         'Strona z efektem parallax dla dostawcy informacji pogodowych, zbudowana od zera.',
         'Powstała najpierw jako wersja w HTML i CSS, potem dostała responsywność na tablety i telefony, a na końcu została przerobiona na motyw WordPressa.',
       ],
+      rabbitRoyale: [
+        'Rabbit Royale to mini-aplikacja na Telegramie z rozgrywką tap-to-earn. Zaprojektowana tak, by zatrzymać gracza na dłużej, łączy zabawę z nagrodami w płynnej, interaktywnej platformie.',
+        'W miarę stukania w ekran i postępów w grze gracz zbiera nagrody i z dnia na dzień widzi rosnący zysk. Prosty interfejs i wciągająca rozgrywka sprawiają, że zarabianie jest tu częścią zabawy.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
