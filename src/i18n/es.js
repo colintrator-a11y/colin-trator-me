@@ -235,6 +235,10 @@ export default {
         'Construí el sitio desde cero, y su blog es el mayor en el que he trabajado: más de 70.000 suscriptores y más de 100.000 correos diarios enviados con Interspire según los criterios de cada suscriptor. El sitio incluye además una sección de empleo.',
         'También en este proyecto: integración con HubSpot, personalización del tema Publisher, trabajo de SEO según los requisitos del cliente e implementación del plugin Yoast.',
       ],
+      tapio: [
+        'Tapio es un juego tap-to-earn en Telegram. Con cada toque, el jugador entra en un mundo de recompensas inmediatas, donde cada acción abre una oportunidad nueva.',
+        'A medida que avanza, no solo acumula recompensas sino también ventajas exclusivas, y desbloquea más beneficios conforme sube en la clasificación. Tapio hace que ganar sea divertido e interactivo, con una experiencia dinámica que invita a volver.',
+      ],
     },
       links: { demo: 'Ver la demo', store: 'Ver en Google Play', site: 'Ver el sitio' },
     mediaAlt: (name) => `Vista previa de ${name}`,

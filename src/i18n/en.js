@@ -235,6 +235,10 @@ export default {
         'I built the site from scratch, and its blog is the largest I have worked on: over 70,000 subscribers, with more than 100,000 emails going out daily through Interspire according to each subscriber\u2019s criteria. It carries a jobs section as well.',
         'Also on this site: HubSpot integration, customisation of the Publisher theme, SEO work to the client\u2019s requirements, and the Yoast plugin.',
       ],
+      tapio: [
+        'Introducing Tapio, the best tap-to-earn game available on Telegram. With every tap, users dive into a world of instant rewards, where each action brings new opportunities.',
+        'As players engage in the game, they not only earn rewards but also gather exclusive perks, unlocking more benefits as they rise up the rankings. Tapio makes earning fun, interactive, and rewarding, providing a dynamic experience that keeps users coming back for more.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site' },
     mediaAlt: (name) => `Preview of ${name}`,

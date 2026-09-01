@@ -342,6 +342,14 @@ export const projects = [
     links: [{ kind: 'site', href: 'https://www.traveldailymedia.com/' }],
     tags: ['WordPress', 'PHP', 'JavaScript', 'jQuery', 'HubSpot', 'SEO'],
   },
+  {
+    id: 'tapio',
+    name: 'Tapio',
+    category: 'games',
+    accent: 'amber',
+    media: [{ file: 'tapio.jpg', width: 1600, height: 1200 }],
+    tags: ['Telegram Mini App', 'Frontend Development', 'Backend Development', 'Web Development'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

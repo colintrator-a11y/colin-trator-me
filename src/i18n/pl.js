@@ -242,6 +242,10 @@ export default {
         'Zbudowałem tę stronę od zera, a jej blog jest największym, przy jakim pracowałem: ponad 70 tys. subskrybentów i ponad 100 tys. e-maili wysyłanych dziennie przez Interspire, zgodnie z kryteriami każdego odbiorcy. Serwis ma też dział ofert pracy.',
         'W tym projekcie również: integracja z HubSpotem, dostosowanie motywu Publisher, prace SEO zgodnie z wymaganiami klienta i wdrożenie wtyczki Yoast.',
       ],
+      tapio: [
+        'Tapio to gra tap-to-earn na Telegramie. Każde stuknięcie wprowadza gracza w świat natychmiastowych nagród, w którym każde działanie otwiera nową możliwość.',
+        'W miarę gry zbiera się nie tylko nagrody, ale i wyjątkowe bonusy, a kolejne korzyści odblokowują się wraz z awansem w rankingu. Tapio robi z zarabiania dobrą zabawę — dynamiczną i interaktywną, po którą chce się wracać.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
