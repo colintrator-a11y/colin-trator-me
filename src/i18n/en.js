@@ -209,6 +209,10 @@ export default {
         'The automation triggers as soon as a payment completes in Stripe, creates or updates a Contact in Zoho CRM from the Stripe customer data, configures workflow triggers in Zoho CRM to initiate actions like welcome emails or task assignments, and ensures no duplicate records are created by checking existing entries before creating new ones.',
         'This solution eliminated manual data entry, enabled real-time customer record updates, and ensured smooth synchronization between the payment platform and the CRM. It significantly improved operational efficiency and responsiveness.',
       ],
+      keepNote: [
+        'KeepNote is a fast, simple, and privacy-first note-taking app that stores all your data locally on your device. With no complicated setup or online account required, the app ensures your notes stay private.',
+        'Key features: local storage with no cloud, a simple interface for quick note creation, a privacy-focused design, and full offline functionality. Built with Flutter and SQLite.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play' },
     mediaAlt: (name) => `Preview of ${name}`,

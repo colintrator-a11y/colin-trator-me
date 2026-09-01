@@ -209,6 +209,10 @@ export default {
         'La automatización se dispara en cuanto se completa un pago en Stripe, crea o actualiza un contacto en Zoho CRM a partir de los datos del cliente en Stripe, configura disparadores en Zoho CRM para acciones como correos de bienvenida o asignación de tareas, y evita registros duplicados comprobando lo existente antes de crear algo nuevo.',
         'La solución eliminó la carga manual de datos, permitió actualizar las fichas de cliente en tiempo real y aseguró la sincronía entre la plataforma de pagos y el CRM. La mejora en eficiencia y capacidad de respuesta fue notable.',
       ],
+      keepNote: [
+        'KeepNote es una app de notas rápida, sencilla y con la privacidad por delante: todos los datos se guardan localmente en el dispositivo. Sin configuración complicada y sin cuenta en línea, tus notas siguen siendo tuyas.',
+        'Funciones principales: almacenamiento local, sin nube, una interfaz sencilla para crear notas al vuelo, un diseño pensado para la privacidad y funcionamiento completo sin conexión. Hecha con Flutter y SQLite.',
+      ],
     },
       links: { demo: 'Ver la demo', store: 'Ver en Google Play' },
     mediaAlt: (name) => `Vista previa de ${name}`,

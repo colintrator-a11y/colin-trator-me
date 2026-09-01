@@ -216,6 +216,10 @@ export default {
         'Automatyzacja uruchamia się w chwili zakończenia płatności w Stripe, tworzy lub aktualizuje kontakt w Zoho CRM na podstawie danych klienta ze Stripe, konfiguruje wyzwalacze w Zoho CRM dla akcji takich jak e-maile powitalne czy przydzielanie zadań i pilnuje, by nie powstawały duplikaty — sprawdza istniejące wpisy, zanim utworzy nowy.',
         'Rozwiązanie wyeliminowało ręczne wprowadzanie danych, pozwoliło aktualizować kartoteki klientów na bieżąco i zapewniło spójność między platformą płatności a CRM-em. Wyraźnie poprawiło to sprawność i czas reakcji zespołu.',
       ],
+      keepNote: [
+        'KeepNote to szybka i prosta aplikacja do notatek, w której prywatność jest na pierwszym miejscu — wszystkie dane zostają lokalnie na urządzeniu. Bez skomplikowanej konfiguracji i bez konta online notatki pozostają prywatne.',
+        'Najważniejsze funkcje: zapis lokalny, bez chmury, prosty interfejs do szybkiego tworzenia notatek, projekt nastawiony na prywatność i pełne działanie offline. Zbudowana we Flutterze i SQLite.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

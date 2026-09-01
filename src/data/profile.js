@@ -287,6 +287,17 @@ export const projects = [
     ],
     tags: ['Zapier', 'Stripe', 'Zoho CRM', 'Process Automation'],
   },
+  {
+    id: 'keepNote',
+    name: 'KeepNote',
+    category: 'mobile',
+    accent: 'emerald',
+    media: [{ file: 'keepnote.jpg', width: 1400, height: 1050 }],
+    links: [
+      { kind: 'store', href: 'https://play.google.com/store/apps/details?id=net.encoderit.encoderkeepnote' },
+    ],
+    tags: ['Flutter', 'SQLite', 'iOS Development', 'Mobile App Development', 'Mobile App Testing'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
