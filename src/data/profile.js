@@ -76,6 +76,21 @@ export const projects = [
     ],
     tags: ['WordPress', 'Web design'],
   },
+  {
+    id: 'ayiko',
+    name: 'Ayiko: Ecommerce Platform',
+    category: 'mobileCommerce',
+    accent: 'teal',
+    media: [
+      { file: 'ayiko-app.jpg', width: 1000, height: 1303 },
+      { file: 'ayiko-home.jpg', width: 800, height: 870 },
+      { file: 'ayiko-about.jpg', width: 800, height: 870 },
+      { file: 'ayiko-dashboard.jpg', width: 800, height: 607 },
+      { file: 'ayiko-contact.jpg', width: 800, height: 777 },
+      { file: 'ayiko-login.jpg', width: 800, height: 493 },
+    ],
+    tags: ['Laravel', 'React Native', 'HTML', 'CSS'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

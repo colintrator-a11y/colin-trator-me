@@ -47,10 +47,13 @@ Content is split in two on purpose:
 ## Adding a project
 
 1. Put the screenshots, GIFs or video stills in `src/assets/projects/`. Any size
-   or aspect ratio: each project is a full-width row and every image is shown
-   whole — never cropped to a common thumbnail shape and never upscaled past its
-   own resolution. Vite hashes the files on build, so replacing an image cannot
-   leave visitors on a cached old one.
+   or aspect ratio: the lead image of a project is always shown whole and never
+   upscaled past its own resolution. In a set of three or more, the images after
+   the lead become uniform tiles anchored to the top of each — a set can mix a
+   phone montage with a 6500px-tall page capture, and letting every one keep its
+   own height leaves the row ragged. Put the image that has to be seen entire
+   first. Vite hashes the files on build, so replacing an image cannot leave
+   visitors on a cached old one.
 2. Add an entry to `projects` in [`src/data/profile.js`](src/data/profile.js) —
    `id`, `name`, `category` (one of the keys in `projects.categories` in the
    locales), `accent` (`violet`, `teal`, `emerald`, `amber`, `rose`, `slate`,
@@ -63,7 +66,7 @@ Content is split in two on purpose:
    |---|---|
    | 1 | Beside the text. A landscape screenshot takes the wider half of the row, a phone-shaped one the narrower. |
    | 2 | Beside the text, the two sharing one height — a hero shot next to a full-page strip. |
-   | 3+ | Above the text at full width: the first image large, the rest three across beneath it. |
+   | 3+ | Above the text at full width: the first image large and whole, the rest as top-anchored tiles three across beneath it. |
 3. Add the description under `projects.items.<id>` in **all four** locale files,
    as an array of paragraphs.
 4. Run `npm run check:locales`. It fails if a locale is missing the description
@@ -85,6 +88,12 @@ It needs Pillow and a `gifsicle` binary (`GIFSICLE=/path/to/gifsicle` if it is
 not on PATH). The order it uses matters: letting gifsicle do the resize itself
 dithers flat backgrounds into visible yellow-green noise, and giving each frame
 its own palette defeats gifsicle's frame differencing and makes the file bigger.
+
+Screenshots are worth converting to JPEG and capping at around 800px wide for
+tiles, 1000-1600px for a lead — Ayiko's six page captures went from 1.7 MB of PNG
+to 0.5 MB that way. A full-page capture only ever shows its top as a tile, so
+crop it there rather than carrying thousands of pixels nobody downloads for a
+reason.
 
 ## Contact channel
 

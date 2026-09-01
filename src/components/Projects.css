@@ -130,13 +130,17 @@
    The thumbnails are sized by width rather than by max-height — leaving a wide
    screenshot to be shrunk by its height cap makes its flex base size the full
    intrinsic width, and every one lands on a row of its own. */
-.project-media.is-stacked .media-lead { max-height: 420px; }
 .project-media.is-stacked .media-rest { width: 100%; }
+
+.project-media.is-stacked .media-lead { max-height: 480px; }
 
 .project-media.is-stacked .media-rest img {
   flex: 0 0 calc((100% - 24px) / 3);
   max-width: calc((100% - 24px) / 3);
+  height: 250px;
   max-height: none;
+  object-fit: cover;
+  object-position: top;
 }
 
 @media (max-width: 1000px) {

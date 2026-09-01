@@ -135,6 +135,12 @@ export default {
         'Projetei e desenvolvi um site completo em WordPress para a Artisan Beauty Clinic, uma clínica de beleza e cuidados com a pele em Scarborough. O projeto incluiu todo o design do layout, as páginas de serviços, a estrutura de preços, o fluxo de agendamento, a responsividade para celular e uma interface moderna e limpa alinhada à marca.',
         'O objetivo era criar um site profissional e fácil de navegar, que apresentasse os serviços com clareza e transmitisse confiança aos clientes da região.',
       ],
+      ayiko: [
+        'A Ayiko é uma plataforma de e-commerce multivendedor criada para reunir vendedores, clientes, entregadores e agentes em um só sistema. A ideia era construir um marketplace em que cada vendedor toca a própria operação enquanto o cliente tem uma experiência de compra e entrega sem atrito.',
+        'Os clientes navegam por produtos de vários vendedores e fazem pedidos com facilidade. Do outro lado, os vendedores gerenciam seus próprios anúncios, tratam os pedidos e atribuem as entregas aos seus próprios entregadores. Os entregadores recebem os dados necessários e cuidam da última milha, mantendo o processo rápido e sob controle do vendedor.',
+        'A plataforma também inclui um modelo de agentes para apoiar o crescimento. Os agentes divulgam a plataforma com códigos próprios e, sempre que um novo cliente se cadastra por meio deles, ganham comissão. Assim o negócio cresce por indicação, sem gasto pesado em marketing.',
+        'No conjunto, a Ayiko foi construída como um sistema completo que integra operação, entrega e crescimento em um só lugar.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
