@@ -257,6 +257,9 @@ export default {
         'Powstały tu m.in.: logowanie społecznościowe przez Firebase dla Facebooka, Apple, Google i e-maila; rozmowy wideo i głosowe oraz czat na żywo w CometChat; powiadomienia push; Google Analytics i AppsFlyer; społecznościowy feed z wpisami zawierającymi wiele zdjęć i wideo, komentarzami, polubieniami i obserwowaniem; a także płatności PayPal i Stripe. Publikacja w App Store i Google Play również była po mojej stronie.',
         'Najtrudniejsza była edycja i przycinanie wideo wewnątrz aplikacji, na potrzeby publikacji w feedzie. Projekty graficzne przychodziły w Figmie i InVision.',
       ],
+      wooBulkDiscount: [
+        'Autorska wtyczka do WordPressa, która dynamicznie pokazuje ceny po rabacie. Zbudowana w PHP, HTML i CSS w oparciu o WordPressa i własne funkcje WooCommerce.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę', appStore: 'Zobacz w App Store' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

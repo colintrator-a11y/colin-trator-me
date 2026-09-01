@@ -377,6 +377,17 @@ export const projects = [
     ],
     tags: ['React Native', 'Redux.js', 'Node.js', 'MongoDB', 'Stripe', 'PayPal API'],
   },
+  {
+    id: 'wooBulkDiscount',
+    name: 'WooCommerce Bulk Discount Display',
+    category: 'wordpress',
+    accent: 'rose',
+    // A title card rather than a screenshot — the demo video is what shows the
+    // plugin working. Swap in a capture of it in a store when one exists.
+    media: [{ file: 'woo-bulk-discount.png', width: 1080, height: 1080 }],
+    links: [{ kind: 'demo', href: 'https://youtu.be/OedzSDjqZnk' }],
+    tags: ['WordPress', 'WooCommerce', 'PHP', 'jQuery', 'HTML', 'CSS'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

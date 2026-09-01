@@ -250,6 +250,9 @@ export default {
         'Built into it: social sign-in through Firebase for Facebook, Apple, Google and email; video and voice calling and live chat on CometChat; push notifications; Google Analytics and AppsFlyer; a social feed with multi-image and video posts, comments, likes and following; and PayPal and Stripe payments. Publishing to the App Store and Play Store was mine as well.',
         'The hard part was editing and trimming video inside the app for sharing to the feed. Designs came in as Figma and InVision files.',
       ],
+      wooBulkDiscount: [
+        'A custom WordPress plugin that shows discounted prices dynamically. Built with PHP, HTML and CSS against WordPress and WooCommerce\u2019s own functions.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site', appStore: 'View on the App Store' },
     mediaAlt: (name) => `Preview of ${name}`,

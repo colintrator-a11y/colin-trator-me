@@ -250,6 +250,9 @@ export default {
         'Entre o que foi construído: login social via Firebase para Facebook, Apple, Google e e-mail; chamadas de vídeo e voz e chat ao vivo na CometChat; notificações push; Google Analytics e AppsFlyer; um feed social com posts de várias imagens e vídeos, comentários, curtidas e seguidores; e pagamentos por PayPal e Stripe. A publicação na App Store e na Play Store também foi minha.',
         'A parte difícil foi editar e cortar vídeo dentro do próprio app para publicação no feed. Os designs chegaram em Figma e InVision.',
       ],
+      wooBulkDiscount: [
+        'Um plugin de WordPress feito sob medida para exibir preços com desconto de forma dinâmica. Construído em PHP, HTML e CSS sobre o WordPress e as próprias funções do WooCommerce.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play', site: 'Ver o site', appStore: 'Ver na App Store' },
     mediaAlt: (name) => `Prévia de ${name}`,
