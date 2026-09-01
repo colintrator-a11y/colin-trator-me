@@ -175,6 +175,9 @@ export default {
       vassalli: [
         'Przygotowałem przejrzysty i uporządkowany katalog produktów na Shopify dla marki Vassalli — odzież ze szczegółowymi opisami, wyborem rozmiaru i zadbanymi zdjęciami, dla wygodniejszych zakupów.',
       ],
+      madsen: [
+        'Zbudowałem elegancki i responsywny sklep na Shopify dla marki rowerowej MADSEN, z dynamiczną prezentacją produktów i płynnym procesem zakupu.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

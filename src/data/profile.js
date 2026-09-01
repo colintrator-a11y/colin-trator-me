@@ -183,6 +183,18 @@ export const projects = [
     ],
     tags: ['Shopify', 'CSS', 'Project Management'],
   },
+  {
+    id: 'madsen',
+    name: 'Shopify Bicycle Store',
+    category: 'ecommerce',
+    accent: 'teal',
+    media: [
+      { file: 'madsen-bikes.jpg', width: 1400, height: 788 },
+      { file: 'madsen-map.jpg', width: 800, height: 450 },
+      { file: 'madsen-signup.jpg', width: 800, height: 450 },
+    ],
+    tags: ['Shopify', 'E-commerce', 'AJAX', 'JavaScript'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

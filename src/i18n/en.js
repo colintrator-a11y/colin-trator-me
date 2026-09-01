@@ -168,6 +168,9 @@ export default {
       vassalli: [
         'Created a clean and organized Shopify product listing for Vassalli, showcasing apparel with detailed descriptions, size options, and stylish visuals for an enhanced shopping experience.',
       ],
+      madsen: [
+        'Developed a sleek and responsive MADSEN Shopify store for a bicycle brand, featuring dynamic product displays and a smooth shopping experience.',
+      ],
     },
     mediaAlt: (name) => `Preview of ${name}`,
   },

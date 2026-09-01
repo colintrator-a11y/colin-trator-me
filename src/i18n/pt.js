@@ -168,6 +168,9 @@ export default {
       vassalli: [
         'Montei uma listagem de produtos limpa e bem organizada no Shopify para a Vassalli, apresentando o vestuário com descrições detalhadas, opções de tamanho e imagens caprichadas para uma experiência de compra melhor.',
       ],
+      madsen: [
+        'Desenvolvi uma loja Shopify elegante e responsiva para a MADSEN, marca de bicicletas, com vitrines de produto dinâmicas e uma experiência de compra fluida.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
