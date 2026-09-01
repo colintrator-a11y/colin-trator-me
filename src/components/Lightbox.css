@@ -1,0 +1,117 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 20px clamp(12px, 4vw, 48px);
+  background: rgba(14, 16, 18, 0.88);
+  backdrop-filter: blur(6px);
+  animation: lightbox-in 0.16s ease-out;
+}
+
+@keyframes lightbox-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-figure {
+  grid-column: 2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.lightbox-figure img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  /* Leaves room for the caption under it. */
+  max-height: calc(100vh - 130px);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-figure figcaption {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.lightbox-figure figcaption small {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-variant-numeric: tabular-nums;
+}
+
+.lightbox-close,
+.lightbox-step {
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-step:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-close:focus-visible,
+.lightbox-step:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.lightbox-step {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.lightbox-step.is-prev { grid-column: 1; }
+.lightbox-step.is-next { grid-column: 3; }
+
+@media (max-width: 640px) {
+  .lightbox {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+    padding: 64px 12px 16px;
+  }
+
+  .lightbox-figure { grid-column: 1; }
+  .lightbox-figure img { max-height: calc(100vh - 190px); }
+
+  /* Under the image on a phone, where reaching the sides of the screen is
+     harder than reaching the bottom. */
+  .lightbox-step {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .lightbox-step.is-prev { transform: translateX(-38px); }
+  .lightbox-step.is-next { transform: translateX(38px); }
+}

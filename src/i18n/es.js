@@ -13,6 +13,10 @@ export default {
     backToTop: 'Volver arriba',
     language: 'Idioma',
     filter: 'Filtrar proyectos por categoría',
+    close: 'Cerrar',
+    prevImage: 'Imagen anterior',
+    nextImage: 'Imagen siguiente',
+    openPreview: 'Abrir la imagen ampliada',
   },
 
   nav: {
@@ -110,6 +114,10 @@ export default {
     eyebrow: 'Proyectos',
     heading: 'Proyectos seleccionados',
     note: (count) => (count === 1 ? 'Un proyecto' : `${count} proyectos`),
+    bySkill: 'Tecnología',
+    allSkills: 'Todas las tecnologías',
+    reset: 'Quitar filtros',
+    empty: 'Ningún proyecto coincide con estos filtros.',
     all: 'Todos',
     categories: {
       chatbot: 'Chatbot / IA',

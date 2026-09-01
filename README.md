@@ -72,8 +72,22 @@ Content is split in two on purpose:
 4. Run `npm run check:locales`. It fails if a locale is missing the description
    or has a different number of paragraphs from the English one.
 
-The headline "projects" count in the hero follows `projects.length`, and the
-category filter row appears on its own once there is more than one category.
+The headline "projects" count in the hero follows `projects.length`.
+
+## Browsing the work
+
+Two filters, which combine: category chips across the top, and a **skill**
+dropdown listing every tag in use with its count. Every tag on a project row is
+also a button — clicking one filters to that skill, clicking it again clears it.
+Both filters are keyed by category id and by the tag text, neither of which is
+translated, so switching language keeps the selection. "Clear filters" appears
+whenever either is set.
+
+Clicking any image opens it full size in a preview, with the project name and,
+in a set, a counter and arrows. Escape closes it, the arrow keys move through
+the set, and the page behind is held still. This is where the top-anchored tiles
+pay off: a page capture that is cropped to a 365x250 tile in the row is shown
+whole here.
 
 Large GIFs are worth optimising before they go in.
 [`scripts/optimize-gif.py`](scripts/optimize-gif.py) does it — the Rasa demo went

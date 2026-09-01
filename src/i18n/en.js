@@ -13,6 +13,10 @@ export default {
     backToTop: 'Back to top',
     language: 'Language',
     filter: 'Filter projects by category',
+    close: 'Close',
+    prevImage: 'Previous image',
+    nextImage: 'Next image',
+    openPreview: 'Open a larger preview',
   },
 
   nav: {
@@ -110,6 +114,10 @@ export default {
     eyebrow: 'Work',
     heading: 'Selected projects',
     note: (count) => (count === 1 ? 'One project' : `${count} projects`),
+    bySkill: 'Skill',
+    allSkills: 'All skills',
+    reset: 'Clear filters',
+    empty: 'No projects match these filters.',
     all: 'All work',
     categories: {
       chatbot: 'Chatbot / AI',

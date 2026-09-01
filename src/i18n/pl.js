@@ -13,6 +13,10 @@ export default {
     backToTop: 'Wróć na górę',
     language: 'Język',
     filter: 'Filtruj projekty według kategorii',
+    close: 'Zamknij',
+    prevImage: 'Poprzednie zdjęcie',
+    nextImage: 'Następne zdjęcie',
+    openPreview: 'Otwórz powiększenie',
   },
 
   nav: {
@@ -117,6 +121,10 @@ export default {
       const word = unit >= 2 && unit <= 4 && (teen < 12 || teen > 14) ? 'projekty' : 'projektów'
       return `${count} ${word}`
     },
+    bySkill: 'Technologia',
+    allSkills: 'Wszystkie technologie',
+    reset: 'Wyczyść filtry',
+    empty: 'Żaden projekt nie pasuje do tych filtrów.',
     all: 'Wszystkie',
     categories: {
       chatbot: 'Chatbot / AI',
