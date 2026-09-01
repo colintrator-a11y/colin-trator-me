@@ -116,6 +116,18 @@ export const projects = [
     ],
     tags: ['PHP', 'Laravel', 'AJAX', 'SaaS'],
   },
+  {
+    id: 'eMuvas',
+    name: 'E-Muvas Delivery Service',
+    category: 'mobile',
+    accent: 'emerald',
+    media: [
+      { file: 'emuvas-customer.jpg', width: 1000, height: 750 },
+      { file: 'emuvas-driver.jpg', width: 800, height: 600 },
+      { file: 'emuvas-overview.jpg', width: 800, height: 600 },
+    ],
+    tags: ['React Native', 'Android', 'iOS', 'Node.js', 'MongoDB'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

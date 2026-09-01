@@ -157,6 +157,10 @@ export default {
         'Platformę tworzy kilka powiązanych modułów: Finanse, Sprzedaż, Zakupy, Magazyn, Produkcja, CRM, Kadry, Projekty, Środki trwałe, Raporty i Zarządzanie dokumentami. Wszystkie korzystają ze wspólnej bazy danych, dzięki czemu dane pozostają spójne, a tej samej informacji nie trzeba wprowadzać w każdym dziale osobno.',
         'Moduł finansowy obsługuje zobowiązania, należności, księgę główną, budżetowanie, podatki, bankowość i sprawozdawczość finansową.',
       ],
+      eMuvas: [
+        'E-Muvas to aplikacja kurierska, w której przesyłkę można zamówić na dwa sposoby: od razu albo z wyprzedzeniem, na wybrany termin. W obu trybach dostępne są aktualizacje na bieżąco i śledzenie na żywo.',
+        'Po zakończonej dostawie użytkownik może też ocenić kuriera i zostawić opinię, co dba o przejrzystość i jakość usługi. Płatność przechodzi przez bezpieczną bramkę i wymaga karty powiązanej z kontem.',
+      ],
     },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },

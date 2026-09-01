@@ -150,6 +150,10 @@ export default {
         'A plataforma reúne vários módulos interligados: Financeiro, Vendas, Compras, Estoque, Produção, CRM, Recursos Humanos, Projetos, Ativos, Relatórios e Gestão de Documentos. Todos compartilham a mesma base de dados, o que garante consistência e elimina o retrabalho de digitar a mesma informação em departamentos diferentes.',
         'O módulo Financeiro cuida de contas a pagar, contas a receber, razão geral, orçamento, gestão tributária, bancos e relatórios financeiros.',
       ],
+      eMuvas: [
+        'O E-Muvas é um aplicativo de serviço de entregas que permite solicitar uma entrega em dois modos: imediata ou agendada. Nos dois casos há atualizações em tempo real e rastreamento ao vivo.',
+        'Depois da entrega, o usuário também pode avaliar e comentar sobre o entregador, o que garante transparência e qualidade no serviço. O pagamento é processado por um gateway seguro e exige um cartão vinculado à conta.',
+      ],
     },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
