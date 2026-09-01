@@ -230,6 +230,11 @@ export default {
         'O Ratehub é um site canadense de comparação de produtos financeiros, cobrindo hipotecas, cartões de crédito, contas, investimentos e seguros.',
         'O que fiz nele: instalei o certificado SSL, configurei o Cloudflare, implementei o gateway de pagamento, redesenhei as páginas de hipotecas e de cartões de crédito, deixei o site responsivo no celular e implementei o suporte a vários idiomas.',
       ],
+      travelDaily: [
+        'O Travel Daily Media é um veículo de notícias do trade de viagens, organizado por mercados, setores e reportagens, com vagas, eventos e publicidade ao lado do noticiário.',
+        'Construí o site do zero, e o blog dele é o maior em que já trabalhei: mais de 70 mil assinantes e mais de 100 mil e-mails enviados por dia via Interspire, conforme os critérios de cada assinante. O site também tem uma seção de vagas.',
+        'Ainda neste projeto: integração com o HubSpot, customização do tema Publisher, trabalho de SEO conforme os requisitos do cliente e implementação do plugin Yoast.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play', site: 'Ver o site' },
     mediaAlt: (name) => `Prévia de ${name}`,

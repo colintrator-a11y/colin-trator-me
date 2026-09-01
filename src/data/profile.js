@@ -333,6 +333,15 @@ export const projects = [
     links: [{ kind: 'site', href: 'https://www.ratehub.ca/' }],
     tags: ['WordPress', 'PHP', 'JavaScript', 'jQuery', 'Cloudflare'],
   },
+  {
+    id: 'travelDaily',
+    name: 'Travel Daily Media',
+    category: 'wordpress',
+    accent: 'rose',
+    media: [{ file: 'travel-daily.jpg', width: 1400, height: 876 }],
+    links: [{ kind: 'site', href: 'https://www.traveldailymedia.com/' }],
+    tags: ['WordPress', 'PHP', 'JavaScript', 'jQuery', 'HubSpot', 'SEO'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.

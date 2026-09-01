@@ -237,6 +237,11 @@ export default {
         'Ratehub to kanadyjski serwis porównujący produkty finansowe — kredyty hipoteczne, karty kredytowe, konta, inwestycje i ubezpieczenia.',
         'Moja praca przy nim: instalacja certyfikatu SSL, konfiguracja Cloudflare, wdrożenie bramki płatniczej, przeprojektowanie stron kredytów hipotecznych i kart kredytowych, dostosowanie serwisu do telefonów oraz wdrożenie obsługi wielu języków.',
       ],
+      travelDaily: [
+        'Travel Daily Media to serwis informacyjny branży turystycznej, uporządkowany według rynków, sektorów i tematów, z ofertami pracy, wydarzeniami i reklamą obok samych newsów.',
+        'Zbudowałem tę stronę od zera, a jej blog jest największym, przy jakim pracowałem: ponad 70 tys. subskrybentów i ponad 100 tys. e-maili wysyłanych dziennie przez Interspire, zgodnie z kryteriami każdego odbiorcy. Serwis ma też dział ofert pracy.',
+        'W tym projekcie również: integracja z HubSpotem, dostosowanie motywu Publisher, prace SEO zgodnie z wymaganiami klienta i wdrożenie wtyczki Yoast.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

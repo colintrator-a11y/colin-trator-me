@@ -230,6 +230,11 @@ export default {
         'Ratehub is a Canadian financial product comparison website, covering mortgages, credit cards, banking, investing and insurance.',
         'My work on it: installed the SSL certificate, set up Cloudflare, implemented the payment gateway, redesigned the Mortgages and Credit Cards pages, made the site mobile-responsive, and implemented multi-language functionality.',
       ],
+      travelDaily: [
+        'Travel Daily Media is a travel trade news publication, organised by markets, sectors and features, with jobs, events and advertising alongside the news.',
+        'I built the site from scratch, and its blog is the largest I have worked on: over 70,000 subscribers, with more than 100,000 emails going out daily through Interspire according to each subscriber\u2019s criteria. It carries a jobs section as well.',
+        'Also on this site: HubSpot integration, customisation of the Publisher theme, SEO work to the client\u2019s requirements, and the Yoast plugin.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site' },
     mediaAlt: (name) => `Preview of ${name}`,
