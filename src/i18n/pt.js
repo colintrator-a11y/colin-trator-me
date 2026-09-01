@@ -239,8 +239,13 @@ export default {
         'O Tapio é um jogo tap-to-earn no Telegram. A cada toque o jogador entra em um mundo de recompensas imediatas, em que toda ação abre uma oportunidade nova.',
         'Conforme avança, ele não só acumula recompensas como também junta vantagens exclusivas, liberando mais benefícios à medida que sobe no ranking. O Tapio torna esse ganho divertido e interativo, com uma experiência dinâmica que traz o jogador de volta.',
       ],
+      familj: [
+        'Um aplicativo de saúde na gravidez, feito como projeto para cliente e pensado para acompanhar a gestante ao longo de toda a gravidez. Reúne orientação, dicas de saúde e convivência com outras gestantes em uma plataforma simples de usar.',
+        'Recursos: sugestões e dicas de saúde semana a semana, uma lista do que precisa ser feito em cada etapa, um sistema de comunidade com comentários no blog para conversa e apoio, uma aplicação web de acesso fácil e aplicativos para iOS e Android.',
+        'Stack: Node.js no back end, React.js no front end web e Flutter nos aplicativos iOS e Android. O resultado é uma solução escalável e agradável de usar, que se comporta bem em qualquer aparelho e mantém a gestante informada e conectada.',
+      ],
     },
-      links: { demo: 'Ver a demonstração', store: 'Ver no Google Play', site: 'Ver o site' },
+      links: { demo: 'Ver a demonstração', store: 'Ver no Google Play', site: 'Ver o site', appStore: 'Ver na App Store' },
     mediaAlt: (name) => `Prévia de ${name}`,
   },
 

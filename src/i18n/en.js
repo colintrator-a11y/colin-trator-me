@@ -239,8 +239,13 @@ export default {
         'Introducing Tapio, the best tap-to-earn game available on Telegram. With every tap, users dive into a world of instant rewards, where each action brings new opportunities.',
         'As players engage in the game, they not only earn rewards but also gather exclusive perks, unlocking more benefits as they rise up the rankings. Tapio makes earning fun, interactive, and rewarding, providing a dynamic experience that keeps users coming back for more.',
       ],
+      familj: [
+        'A pregnancy health app built as a client project, designed to support pregnant women throughout their pregnancy journey. It brings guidance, health tips and community interaction together in one easy-to-use platform.',
+        'Features: weekly pregnancy suggestions and health tips, a checklist of what needs to be done at each stage, a community system with blog comments for discussion and support, a web application for easy access, and mobile apps on iOS and Android.',
+        'Tech stack: Node.js on the back end, React.js on the web front end, and Flutter for the iOS and Android apps. The result is a scalable, user-friendly solution that holds up across every device while helping expectant mothers stay informed and connected.',
+      ],
     },
-      links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site' },
+      links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site', appStore: 'View on the App Store' },
     mediaAlt: (name) => `Preview of ${name}`,
   },
 

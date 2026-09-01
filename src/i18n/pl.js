@@ -246,8 +246,13 @@ export default {
         'Tapio to gra tap-to-earn na Telegramie. Każde stuknięcie wprowadza gracza w świat natychmiastowych nagród, w którym każde działanie otwiera nową możliwość.',
         'W miarę gry zbiera się nie tylko nagrody, ale i wyjątkowe bonusy, a kolejne korzyści odblokowują się wraz z awansem w rankingu. Tapio robi z zarabiania dobrą zabawę — dynamiczną i interaktywną, po którą chce się wracać.',
       ],
+      familj: [
+        'Aplikacja zdrowotna dla kobiet w ciąży, zrobiona jako projekt dla klienta i pomyślana tak, by towarzyszyć przez całą ciążę. Łączy porady, wskazówki zdrowotne i kontakt ze społecznością w jednej, prostej w obsłudze platformie.',
+        'Funkcje: tygodniowe podpowiedzi i wskazówki zdrowotne, lista rzeczy do zrobienia na każdym etapie, społeczność z komentarzami pod wpisami bloga, aplikacja webowa dla wygodnego dostępu oraz aplikacje mobilne na iOS i Androida.',
+        'Stack: Node.js po stronie serwera, React.js we froncie webowym i Flutter w aplikacjach na iOS i Androida. Powstało rozwiązanie skalowalne i wygodne, które działa tak samo na każdym urządzeniu i pomaga przyszłej mamie być na bieżąco i w kontakcie.',
+      ],
     },
-      links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę' },
+      links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę', appStore: 'Zobacz w App Store' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,
   },
 

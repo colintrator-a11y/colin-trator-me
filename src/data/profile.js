@@ -350,6 +350,19 @@ export const projects = [
     media: [{ file: 'tapio.jpg', width: 1600, height: 1200 }],
     tags: ['Telegram Mini App', 'Frontend Development', 'Backend Development', 'Web Development'],
   },
+  {
+    id: 'familj',
+    name: 'Familj Pregnancy App',
+    category: 'mobile',
+    accent: 'violet',
+    media: [{ file: 'familj.jpg', width: 1400, height: 730 }],
+    links: [
+      { kind: 'store', href: 'https://play.google.com/store/apps/details?id=com.cmh.familj' },
+      { kind: 'appStore', href: 'https://apps.apple.com/us/app/familj-se/id6765674291' },
+      { kind: 'demo', href: 'https://youtu.be/muK7w5R2THQ' },
+    ],
+    tags: ['Flutter', 'React.js', 'Node.js', 'MySQL', 'iOS', 'Android'],
+  },
 ]
 
 // Declared after `projects` so the headline count follows the list itself.
