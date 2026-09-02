@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { LocaleProvider, useLocale } from './i18n/LocaleContext.jsx'
+import notifyVisit from './utils/notifyVisit.js'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
@@ -17,6 +18,9 @@ function Site() {
   // Which broad area the work list is narrowed to, set by the About list and
   // read by the project rows. It lives here because the two are siblings.
   const [focus, setFocus] = useState(null)
+
+  // Once, at the root. The module itself decides whether to send.
+  useEffect(() => { notifyVisit() }, [])
 
   return (
     <>
