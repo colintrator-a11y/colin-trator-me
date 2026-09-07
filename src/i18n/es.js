@@ -371,12 +371,15 @@ export default {
     eyebrow: 'Contacto',
     heading: '¿Tienes un proyecto en mente?',
     body: 'Cuéntame qué necesitas y vuelvo con preguntas, un plan y un plazo realista — antes de escribir una sola línea de código.',
-    facts: [
-      { label: 'Ubicación', value: 'Polonia' },
-      { label: 'Trabajo con', value: 'América Latina · Brasil · Estados Unidos' },
-      { label: 'Tarifa', value: 'USD 25 / hora' },
-      { label: 'Idiomas', value: 'Inglés · Portugués · Español' },
-    ],
+    form: {
+      name: 'Tu nombre',
+      email: 'Tu correo',
+      message: '¿Qué necesitas?',
+      send: 'Enviar correo',
+      subject: 'Consulta de proyecto',
+      direct: 'O escríbeme directamente a',
+      note: 'Esto abre tu propia aplicación de correo con el mensaje listo para enviar.',
+    },
   },
 
   footer: {

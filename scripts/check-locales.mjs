@@ -65,7 +65,6 @@ for (const locale of localeList) {
   const lengths = {
     'about.best': [locale.about.best.length, 4],
     'hero.facts': [locale.hero.facts.length, 4],
-    'contact.facts': [locale.contact.facts.length, 4],
     'experience.points': [locale.experience.points.length, 4],
   }
 

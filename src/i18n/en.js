@@ -371,12 +371,15 @@ export default {
     eyebrow: 'Contact',
     heading: 'Have a project in mind?',
     body: 'Tell me what you need and I will come back with questions, a plan and a realistic timeline — before any code is written.',
-    facts: [
-      { label: 'Based in', value: 'Poland' },
-      { label: 'Working with', value: 'Latin America · Brazil · United States' },
-      { label: 'Rate', value: 'USD 25 / hour' },
-      { label: 'Speaking', value: 'English · Portuguese · Spanish' },
-    ],
+    form: {
+      name: 'Your name',
+      email: 'Your email',
+      message: 'What do you need?',
+      send: 'Send email',
+      subject: 'Project enquiry',
+      direct: 'Or write to me directly at',
+      note: 'This opens your own mail app with the message ready to send.',
+    },
   },
 
   footer: {

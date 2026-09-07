@@ -3,6 +3,10 @@
 
 export const profile = {
   name: 'Dawid Salwecki',
+  // Where the contact form and the address beside it both point. This is a
+  // static build with no server, so the form composes a mailto: rather than
+  // posting anywhere; change this one line and both follow.
+  contactEmail: 'daiki.fujita.dev@outlook.com',
 }
 
 // The four areas the About list names. Each is broader than one category — a

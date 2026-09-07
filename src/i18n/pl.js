@@ -378,12 +378,15 @@ export default {
     eyebrow: 'Kontakt',
     heading: 'Masz projekt na oku?',
     body: 'Napisz, czego potrzebujesz, a wrócę z pytaniami, planem i realnym terminem — zanim powstanie choć linijka kodu.',
-    facts: [
-      { label: 'Lokalizacja', value: 'Polska' },
-      { label: 'Pracuję z', value: 'Ameryka Łacińska · Brazylia · Stany Zjednoczone' },
-      { label: 'Stawka', value: 'USD 25 / godz.' },
-      { label: 'Języki', value: 'angielski · portugalski · hiszpański' },
-    ],
+    form: {
+      name: 'Twoje imię',
+      email: 'Twój e-mail',
+      message: 'Czego potrzebujesz?',
+      send: 'Wyślij e-mail',
+      subject: 'Zapytanie o projekt',
+      direct: 'Albo napisz bezpośrednio na',
+      note: 'To otworzy twój program pocztowy z gotową do wysłania wiadomością.',
+    },
   },
 
   footer: {

@@ -371,12 +371,15 @@ export default {
     eyebrow: 'Contato',
     heading: 'Tem um projeto em mente?',
     body: 'Me conte o que você precisa e eu volto com perguntas, um plano e um prazo realista — antes de escrever qualquer linha de código.',
-    facts: [
-      { label: 'Baseado em', value: 'Polônia' },
-      { label: 'Atendendo', value: 'América Latina · Brasil · Estados Unidos' },
-      { label: 'Valor', value: 'USD 25 / hora' },
-      { label: 'Idiomas', value: 'Inglês · Português · Espanhol' },
-    ],
+    form: {
+      name: 'Seu nome',
+      email: 'Seu e-mail',
+      message: 'Do que você precisa?',
+      send: 'Enviar e-mail',
+      subject: 'Contato sobre projeto',
+      direct: 'Ou escreva diretamente para',
+      note: 'Isto abre o seu aplicativo de e-mail com a mensagem pronta para enviar.',
+    },
   },
 
   footer: {
