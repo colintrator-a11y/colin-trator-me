@@ -65,12 +65,20 @@ export default function Projects({ focus, onFocusChange }) {
 
   const inFocus = (project) => !focus || focusAreas[focus].includes(project.category)
 
-  const shown = projects.filter(
-    (project) =>
-      inFocus(project) &&
-      (category === ALL || project.category === category) &&
-      (skill === ALL || project.tags.includes(skill)),
-  )
+  // A row a visitor can open is worth more than one they can only read about,
+  // so anything with a live link sorts to the front. `filter` has already made
+  // a copy, and sort is stable, so the order inside each group is still the one
+  // declared in profile.js.
+  const hasLink = (project) => Boolean(project.links?.length)
+
+  const shown = projects
+    .filter(
+      (project) =>
+        inFocus(project) &&
+        (category === ALL || project.category === category) &&
+        (skill === ALL || project.tags.includes(skill)),
+    )
+    .sort((a, b) => Number(hasLink(b)) - Number(hasLink(a)))
 
   const focusLabel = focus ? t.about.best.find((item) => item.id === focus)?.area : null
   const focusCount = focus ? projects.filter(inFocus).length : 0
