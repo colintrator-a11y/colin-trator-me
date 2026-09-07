@@ -61,23 +61,27 @@ export default function About({ onFocus }) {
               </ul>
             </div>
 
-            <div className="card about-panel">
-              <h3>{t.about.certTitle}</h3>
-              <ul className="cert-list">
-                {certifications.map((certification) => {
-                  const copy = t.about.certifications[certification.id]
-                  return (
-                    <li key={certification.id}>
-                      <span className="cert-year">{certification.year}</span>
-                      <span className="cert-body">
-                        <strong>{copy.name}</strong>
-                        <small>{copy.detail}</small>
-                      </span>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
+            {/* Nothing to list means no panel, rather than a heading over an
+                empty box. */}
+            {certifications.length ? (
+              <div className="card about-panel">
+                <h3>{t.about.certTitle}</h3>
+                <ul className="cert-list">
+                  {certifications.map((certification) => {
+                    const copy = t.about.certifications[certification.id]
+                    return (
+                      <li key={certification.id}>
+                        <span className="cert-year">{certification.year}</span>
+                        <span className="cert-body">
+                          <strong>{copy.name}</strong>
+                          <small>{copy.detail}</small>
+                        </span>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            ) : null}
           </aside>
         </div>
       </div>

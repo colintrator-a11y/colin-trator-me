@@ -132,16 +132,15 @@ reason.
 ## Contact channel
 
 The page deliberately carries no phone number or email. The contact section
-shows the invitation and the facts (location, region, rate, languages), and
-every **Hire me** button — in the header, the hero and the contact panel — opens
-`profile.contactHref` from [`src/data/profile.js`](src/data/profile.js) in a new
-tab. It currently points at the Workana profile; swap it for a mailto:, a
-WhatsApp link or another platform and all three buttons follow. Leave it empty
-and they render nothing rather than pointing nowhere.
+shows the invitation and the facts (location, region, rate, languages) and
+nothing else — there is currently no button or form anywhere on the page, so a
+visitor who wants to get in touch has no way to do it from here.
 
-All three go through [`src/components/HireButton.jsx`](src/components/HireButton.jsx),
-so the destination, the new tab and the empty-link guard are decided in one
-place.
+Adding one means putting a link or a form into
+[`src/components/Contact.jsx`](src/components/Contact.jsx), beneath the body
+copy. The **Hire me** buttons that used to sit in the header, the hero and the
+contact panel have been removed, along with the `HireButton` component and the
+`profile.contactHref` they all pointed at.
 
 ## The photo
 

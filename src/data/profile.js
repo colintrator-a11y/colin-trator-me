@@ -3,10 +3,6 @@
 
 export const profile = {
   name: 'Dawid Salwecki',
-  // Where every "Hire me" button goes. Swap it for a mailto:, a WhatsApp link
-  // or another platform and the buttons follow; leave it empty and they simply
-  // do not render, rather than pointing nowhere.
-  contactHref: 'https://www.workana.com/freelancer/19077338b5a3c8d89f6a37f74835f159',
 }
 
 // The four areas the About list names. Each is broader than one category — a
@@ -648,4 +644,7 @@ export const spokenLanguages = [
   { id: 'spanish', value: 70 },
 ]
 
-export const certifications = [{ id: 'workanaEnglish', year: '2026' }]
+// Nothing listed at the moment. The About panel renders only when this has
+// an entry, so adding one here (plus a name and detail under
+// about.certifications in every locale) brings the panel back.
+export const certifications = []

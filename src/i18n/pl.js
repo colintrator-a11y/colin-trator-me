@@ -80,7 +80,6 @@ export default {
       spanish: { name: 'Hiszpański', level: 'Średnio zaawansowany wyższy' },
     },
     certifications: {
-      workanaEnglish: { name: 'Test z angielskiego — Workana', detail: 'Wynik 76% · Ukończony' },
     },
   },
 
