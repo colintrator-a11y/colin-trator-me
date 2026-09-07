@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { navSections, profile } from '../data/profile.js'
 import { useLocale } from '../i18n/LocaleContext.jsx'
-import HireButton from './HireButton.jsx'
 import LanguageSwitcher from './LanguageSwitcher.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
 import './Navbar.css'
@@ -40,7 +39,6 @@ export default function Navbar() {
         <div className="nav-actions">
           <LanguageSwitcher />
           <ThemeToggle />
-          <HireButton className="btn btn-primary nav-cta" label={t.nav.cta} />
         </div>
       </div>
     </header>

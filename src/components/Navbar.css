@@ -109,8 +109,6 @@
 
 .theme-toggle:hover { color: var(--accent-ink); border-color: var(--accent); }
 
-.nav-cta { padding: 8px 17px; font-size: 0.855rem; }
-
 /* Below 1080px the links move to their own scrollable strip under the brand
    instead of collapsing into a menu, so every section stays one tap away. The
    breakpoint clears the longest locale, not just English. */
@@ -135,8 +133,4 @@
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-links a { padding: 6px 11px; white-space: nowrap; }
   .nav-actions { margin-left: auto; }
-}
-
-@media (max-width: 560px) {
-  .nav-cta { display: none; }
 }

@@ -29,7 +29,6 @@ export default {
     work: 'Work',
     experience: 'Experience',
     contact: 'Contact',
-    cta: 'Hire me',
   },
 
   hero: {
@@ -321,7 +320,6 @@ export default {
     eyebrow: 'Contact',
     heading: 'Have a project in mind?',
     body: 'Tell me what you need and I will come back with questions, a plan and a realistic timeline — before any code is written.',
-    cta: 'Hire me on Workana',
     facts: [
       { label: 'Based in', value: 'Poland' },
       { label: 'Working with', value: 'Latin America · Brazil · United States' },

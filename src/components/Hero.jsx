@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { profile, stats } from '../data/profile.js'
 import { useLocale } from '../i18n/LocaleContext.jsx'
-import HireButton from './HireButton.jsx'
 import './Hero.css'
 
 // Lives in public/ so it can be swapped without touching the build.
@@ -31,7 +30,6 @@ export default function Hero() {
             <a className="btn btn-primary" href="#work">
               {t.hero.cta}
             </a>
-            <HireButton className="btn btn-ghost" label={t.nav.cta} />
           </div>
 
           <dl className="hero-facts">
