@@ -297,6 +297,58 @@ export default {
         'Una tienda Shopify para Conscious Ink, que vende tatuajes temporales de afirmación: recordatorios que se llevan puestos y buscan cortar el diálogo interno negativo.',
         'La tienda vende un hábito más que un objeto, así que explica antes de vender: la propuesta, el razonamiento detrás, los beneficios uno a uno, las garantías del producto y un largo muro de reseñas de clientes. Junto a la compra suelta corre una suscripción.',
       ],
+      perriconeMd: [
+        'Una tienda para Perricone MD, marca estadounidense de cuidado de la piel construida sobre la investigación antiinflamatoria de su fundador: sérums, hidratantes, limpiadores y suplementos vendidos como un mismo protocolo.',
+        'El catálogo se organiza por problema y no por línea de producto: el cliente elige su preocupación, se le asigna un sérum y se le lleva hacia la filosofía de tres niveles — dieta, suplementos y cuidado tópico. Las suscripciones, un programa de puntos y las rutinas en kit se suman a las fichas de producto individuales.',
+      ],
+      wildfang: [
+        'Una tienda Shopify para Wildfang, marca de ropa que vende sastrería, ropa de trabajo y básicos de diario con patronaje fuera del tallaje convencional.',
+        'Aquí el trabajo está en el filtrado de colecciones. Un catálogo amplio repartido entre novedades, camisas, pantalones, monos y blazers tiene que seguir siendo navegable mientras banners de rebajas, cuentas atrás y fotografía de lookbook pasan por encima.',
+      ],
+      garnetMarketplace: [
+        'El sitio de producto de Garnet, una app de Shopify que convierte una tienda de un solo vendedor en un marketplace multivendedor B2B o B2C.',
+        'El sitio vende una plataforma y no un producto, así que está construido como un argumento: una hoja de ruta de escalado, integraciones con Stripe, WooCommerce, Klaviyo y Google Analytics, tiempos de incorporación expresados en minutos y una consultoría agendada como llamada a la acción.',
+      ],
+      miroTea: [
+        'Una tienda Shopify para Miro Tea, una casa de té de Seattle que vende hoja de finca única, mezclas sin cafeína y utensilios artesanales.',
+        'El escaparate se apoya en la fotografía y en la contención: un hero editorial largo y después el catálogo. El peso lo lleva la página de colección, que filtra cientos de tés por tipo, sabor, origen y formato.',
+      ],
+      hubspot: [
+        'El sitio corporativo de HubSpot, la plataforma de clientes que une marketing, ventas y servicio sobre un único registro de cliente.',
+        'Es una estructura de contenido grande que atiende a varios productos a la vez: la visión general de la plataforma, páginas por producto, agentes de IA, niveles de precio y un embudo de demostración, todo sostenido por un conjunto coherente de patrones de sección y un solo camino de conversión.',
+      ],
+      webfx: [
+        'El sitio de WebFX, agencia estadounidense de marketing digital que vende SEO, medios de pago, CRO y desarrollo web.',
+        'Un desarrollo en WordPress con una estructura de contenido muy extensa — páginas de servicio de varios niveles, casos de estudio, páginas por sector y un embudo de propuesta — donde la navegación y el enlazado interno pesan tanto como cualquier página concreta.',
+      ],
+      belaySolutions: [
+        'El sitio de BELAY, empresa estadounidense de selección de personal que coloca asistentes virtuales, contables y apoyo de marketing en pequeños negocios.',
+        'Todo en la página empuja hacia un único paso de captación de leads. La tabla comparativa frente a la contratación tradicional, los testimonios de clientes, los logos de confianza y la solicitud de precios existen para llevar al visitante al mismo formulario.',
+      ],
+      hotelJobs: [
+        'HotelJobs, portal sudafricano de empleo para el sector hotelero: hoteles, lodges y restaurantes publicando vacantes para candidatos.',
+        'Dos públicos comparten un mismo sistema: empresas que publican y gestionan vacantes, y candidatos que buscan por tipo de puesto, ubicación y nivel, y se postulan con un currículum guardado. Los anuncios premium se muestran por encima de los gratuitos.',
+      ],
+      aimro: [
+        'El sitio de AIMRO, la asociación de organizaciones irlandesas de investigación de mercados, que representa al sector ante los reguladores y fija sus estándares.',
+        'Un front end en React sobre una API en Node. La parte pública es un sitio editorial pequeño — miembros, encuestas, noticias, estándares — pero el contenido que hay detrás son datos estructurados, así que las páginas se generan desde la API en lugar de montarse a mano.',
+      ],
+      vizury: [
+        'El sitio de producto de Vizury Engage360, plataforma de marketing para adquisición, conversión y retención de usuarios en web, app y WhatsApp.',
+        'Tiene que explicar un producto técnico a un comprador comercial, así que la página presenta el mecanismo y el resultado uno al lado del otro: constructores de recorridos y datos de segmentación por un lado; ROAS y conversión incremental por el otro.',
+      ],
+      rembrr: [
+        'El sitio de producto de Rembrr, un asistente de recordatorios por voz que convierte una nota hablada en correo, tareas y citas de calendario.',
+        'El producto es un asistente, y el sitio está escrito como una conversación: tú hablas y Rembrr hace el resto. Tres pasos, un mockup de móvil para cada uno, después los públicos — freelancers, emprendedores, equipos corporativos — y una prueba gratuita en lugar de una demo agendada.',
+      ],
+      dentalis: [
+        'El sitio de Dentalis, un producto brasileño de gestión para clínicas dentales que se vende a las consultas como un único sistema de agenda, historia clínica y facturación.',
+        'Las citas se gestionan por la API de WhatsApp Business y no por formulario, que es como reserva realmente el paciente en ese mercado. El sitio sostiene el argumento de la automatización — una clínica que funciona 24 horas al día — junto a las cifras y un recorrido por el software.',
+      ],
+      trakMd: [
+        'trakMD Doctor App, una aplicación en React Native para personal médico en iOS y Android, publicada en la App Store.',
+        'La mitad orientada al médico de un sistema de seguimiento de pacientes: citas, historiales y mensajería en un mismo lugar, con una sola base de código llegando a las dos plataformas.',
+      ],
     },
       links: { demo: 'Ver la demo', store: 'Ver en Google Play', site: 'Ver el sitio', appStore: 'Ver en la App Store' },
     mediaAlt: (name) => `Vista previa de ${name}`,

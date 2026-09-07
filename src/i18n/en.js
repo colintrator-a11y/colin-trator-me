@@ -297,6 +297,58 @@ export default {
         'A Shopify store for Conscious Ink, which sells manifestation temporary tattoos — wearable affirmations meant to interrupt negative self-talk.',
         'The store sells a habit rather than an object, so it explains before it sells: the claim, the reasoning behind it, the benefits set out one by one, the product guarantees, and a long wall of customer reviews. A subscription runs alongside the one-off purchase.',
       ],
+      perriconeMd: [
+        "A storefront for Perricone MD, a US skincare brand built on its founder's anti-inflammatory research — serums, moisturisers, cleansers and supplements sold as one regimen.",
+        'The catalogue is organised around a concern rather than a product line: a shopper picks the problem, is matched to a serum, and is walked toward the three-tier philosophy of diet, supplements and topical care. Subscriptions, a rewards programme and bundled routines sit on top of the individual product pages.',
+      ],
+      wildfang: [
+        'A Shopify store for Wildfang, an apparel brand selling suiting, workwear and everyday basics cut outside conventional sizing.',
+        'The work here is collection filtering. A deep catalogue spread across new arrivals, button-ups, bottoms, coveralls and blazers has to stay navigable while sale banners, countdown timers and lookbook photography run over the top of it.',
+      ],
+      garnetMarketplace: [
+        'The product site for Garnet, a Shopify app that turns a single-vendor store into a multi-vendor B2B or B2C marketplace.',
+        'The site sells a platform rather than a product, so it is built as an argument: a scaling roadmap, integrations with Stripe, WooCommerce, Klaviyo and Google Analytics, onboarding times stated in minutes, and a booked consultation as the call to action.',
+      ],
+      miroTea: [
+        'A Shopify store for Miro Tea, a Seattle tea shop selling single-estate leaf, caffeine-free blends and artisanal teaware.',
+        'The storefront leans on photography and restraint — a long editorial hero, then the catalogue. The collection page carries the weight instead, filtering hundreds of teas by type, flavour, origin and format.',
+      ],
+      hubspot: [
+        'The marketing site for HubSpot, the customer platform that ties marketing, sales and service onto a single customer record.',
+        'It is a large content structure serving several products at once: the platform overview, per-product pages, AI agents, pricing tiers and a demo funnel, all held together by a consistent set of section patterns and one conversion path.',
+      ],
+      webfx: [
+        'The site for WebFX, a US digital marketing agency selling SEO, paid media, CRO and web development.',
+        'A WordPress build with a very large content structure — service pages several levels deep, case studies, industry pages and a proposal funnel — where the navigation and the internal linking matter as much as any single page.',
+      ],
+      belaySolutions: [
+        'The site for BELAY, a US staffing company placing virtual assistants, bookkeepers and marketing help with small businesses.',
+        'Everything on the page runs toward a single lead-capture step. The comparison table against traditional hiring, the client testimonials, the trust logos and the pricing request all exist to move a visitor into the same form.',
+      ],
+      hotelJobs: [
+        'HotelJobs, a South African recruitment portal for the hospitality industry — hotels, lodges and restaurants posting to candidates.',
+        'Two audiences share one system: employers posting and managing vacancies, and candidates searching by job type, location and seniority, then applying against a stored CV. Premium listings are merchandised above the free ones.',
+      ],
+      aimro: [
+        'The site for AIMRO, the association of Irish market research organisations, which represents the industry to regulators and sets its standards.',
+        'A React front end on a Node API. The public side is a small editorial site — members, polls, news, standards — but the content behind it is structured data, so the pages are generated from the API rather than built by hand.',
+      ],
+      vizury: [
+        'The product site for Vizury Engage360, a marketing platform for user acquisition, conversion and retention across web, app and WhatsApp.',
+        'It has to explain a technical product to a commercial buyer, so the page carries the mechanism and the outcome side by side: journey builders and segment data on one hand, ROAS and incremental conversion on the other.',
+      ],
+      rembrr: [
+        'The product site for Rembrr, a voice-driven reminder assistant that turns a spoken note into email, tasks and calendar entries.',
+        'The product is an assistant, so the site is written as a conversation: you speak, Rembrr does the rest. Three steps, a phone mockup for each, then the audiences — freelancers, entrepreneurs, corporate teams — and a free trial rather than a booked demo.',
+      ],
+      dentalis: [
+        'The site for Dentalis, a Brazilian dental practice management product sold to clinics as one system for scheduling, records and billing.',
+        'Booking runs through the WhatsApp Business API rather than a form, which is how patients in that market actually book. The site carries the automation argument — a practice that runs 24 hours a day — alongside the numbers and a tour of the software.',
+      ],
+      trakMd: [
+        'trakMD Doctor App, a React Native app for clinicians on iOS and Android, published on the App Store.',
+        'The doctor-facing half of a patient tracking system: appointments, patient records and messaging in one place, with a single codebase shipping to both platforms.',
+      ],
     },
       links: { demo: 'Watch the demo', store: 'View on Google Play', site: 'Visit the site', appStore: 'View on the App Store' },
     mediaAlt: (name) => `Preview of ${name}`,

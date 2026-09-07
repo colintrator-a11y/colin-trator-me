@@ -304,6 +304,58 @@ export default {
         'Sklep na Shopify dla Conscious Ink, który sprzedaje tymczasowe tatuaże z afirmacjami — noszone przypomnienia mające przerywać negatywny wewnętrzny monolog.',
         'Sklep sprzedaje nawyk, a nie przedmiot, więc najpierw tłumaczy, a dopiero potem sprzedaje: założenie, stojące za nim uzasadnienie, korzyści wypunktowane jedna po drugiej, gwarancje produktowe i długa ściana opinii klientów. Obok pojedynczego zakupu działa subskrypcja.',
       ],
+      perriconeMd: [
+        'Sklep dla Perricone MD, amerykańskiej marki kosmetyków do pielęgnacji skóry zbudowanej na przeciwzapalnych badaniach założyciela — serum, kremy nawilżające, produkty myjące i suplementy sprzedawane jako jeden protokół.',
+        'Katalog jest ułożony wokół problemu, a nie linii produktowej: klient wybiera swoją potrzebę, zostaje dopasowany do serum i prowadzony do trójstopniowej filozofii marki — dieta, suplementacja i pielęgnacja miejscowa. Subskrypcje, program lojalnościowy i gotowe zestawy rutyn dochodzą do zwykłych kart produktu.',
+      ],
+      wildfang: [
+        'Sklep na Shopify dla Wildfang, marki odzieżowej sprzedającej garnitury, odzież roboczą i codzienne podstawy w krojach wychodzących poza konwencjonalne rozmiarówki.',
+        'Praca sprowadza się tu do filtrowania kolekcji. Szeroki katalog rozbity na nowości, koszule, spodnie, kombinezony i marynarki musi pozostać przejrzysty, choć nakładają się na niego banery wyprzedaży, liczniki czasu i zdjęcia z lookbooków.',
+      ],
+      garnetMarketplace: [
+        'Strona produktowa Garnet, aplikacji Shopify, która zmienia sklep jednego sprzedawcy w wielosprzedawcowy marketplace B2B lub B2C.',
+        'Strona sprzedaje platformę, a nie produkt, więc zbudowano ją jak wywód: mapa skalowania, integracje ze Stripe, WooCommerce, Klaviyo i Google Analytics, czasy wdrożenia podane w minutach oraz umówiona konsultacja jako wezwanie do działania.',
+      ],
+      miroTea: [
+        'Sklep na Shopify dla Miro Tea, herbaciarni z Seattle sprzedającej herbaty z pojedynczych plantacji, mieszanki bezkofeinowe i rzemieślnicze akcesoria.',
+        'Witryna opiera się na fotografii i powściągliwości — długi, redakcyjny nagłówek, a dopiero potem katalog. Ciężar bierze na siebie strona kolekcji, filtrująca setki herbat według rodzaju, smaku, pochodzenia i formy.',
+      ],
+      hubspot: [
+        'Strona marketingowa HubSpota, platformy klienckiej spinającej marketing, sprzedaż i obsługę wokół jednego rekordu klienta.',
+        'To rozbudowana struktura treści obsługująca kilka produktów naraz: przegląd platformy, strony poszczególnych produktów, agenci AI, progi cenowe i lejek demo — wszystko trzymane przez spójny zestaw wzorców sekcji i jedną ścieżkę konwersji.',
+      ],
+      webfx: [
+        'Strona WebFX, amerykańskiej agencji marketingu cyfrowego sprzedającej SEO, media płatne, CRO i rozwój stron.',
+        'Wdrożenie na WordPressie z bardzo rozległą strukturą treści — strony usług zagnieżdżone na wielu poziomach, studia przypadków, strony branżowe i lejek ofertowy — gdzie nawigacja i linkowanie wewnętrzne ważą tyle samo co pojedyncza podstrona.',
+      ],
+      belaySolutions: [
+        'Strona BELAY, amerykańskiej firmy rekrutacyjnej, która dostarcza małym firmom wirtualnych asystentów, księgowych i wsparcie marketingowe.',
+        'Wszystko na stronie prowadzi do jednego kroku: pozostawienia kontaktu. Tabela porównawcza z tradycyjnym zatrudnieniem, opinie klientów, logotypy zaufanych marek i prośba o wycenę istnieją po to, by doprowadzić odwiedzającego do tego samego formularza.',
+      ],
+      hotelJobs: [
+        'HotelJobs, południowoafrykański portal rekrutacyjny dla branży hotelarskiej — hotele, lodge i restauracje publikujące oferty dla kandydatów.',
+        'Dwie grupy korzystają z jednego systemu: pracodawcy publikujący i zarządzający ogłoszeniami oraz kandydaci szukający według rodzaju stanowiska, lokalizacji i poziomu, aplikujący zapisanym CV. Ogłoszenia premium prezentowane są ponad bezpłatnymi.',
+      ],
+      aimro: [
+        'Strona AIMRO, zrzeszenia irlandzkich organizacji badań rynku, które reprezentuje branżę wobec regulatorów i wyznacza jej standardy.',
+        'Front end w Reakcie na API w Node. Część publiczna to niewielki serwis redakcyjny — członkowie, sondaże, aktualności, standardy — ale treść za nim to dane strukturalne, więc strony są generowane z API, a nie składane ręcznie.',
+      ],
+      vizury: [
+        'Strona produktowa Vizury Engage360, platformy marketingowej do pozyskiwania, konwersji i utrzymania użytkowników w sieci, w aplikacji i na WhatsAppie.',
+        'Musi wytłumaczyć techniczny produkt kupującemu biznesowemu, więc strona pokazuje mechanizm i wynik obok siebie: kreatory ścieżek i dane segmentacyjne z jednej strony, ROAS i przyrost konwersji z drugiej.',
+      ],
+      rembrr: [
+        'Strona produktowa Rembrr, głosowego asystenta przypomnień, który zamienia wypowiedzianą notatkę w e-mail, zadania i wpisy w kalendarzu.',
+        'Produkt jest asystentem, więc strona jest napisana jak rozmowa: ty mówisz, Rembrr robi resztę. Trzy kroki, makieta telefonu do każdego, potem odbiorcy — freelancerzy, przedsiębiorcy, zespoły firmowe — i darmowy okres próbny zamiast umawiania demo.',
+      ],
+      dentalis: [
+        'Strona Dentalis, brazylijskiego systemu do zarządzania gabinetem stomatologicznym, sprzedawanego klinikom jako jedno miejsce na grafik, dokumentację i rozliczenia.',
+        'Rezerwacja wizyt idzie przez API WhatsApp Business, a nie przez formularz — bo tak pacjenci na tym rynku faktycznie się umawiają. Strona prowadzi argument o automatyzacji, o gabinecie działającym całą dobę, obok liczb i przeglądu samego oprogramowania.',
+      ],
+      trakMd: [
+        'trakMD Doctor App, aplikacja w React Native dla lekarzy na iOS i Androida, opublikowana w App Store.',
+        'Lekarska połowa systemu do prowadzenia pacjentów: wizyty, dokumentacja i wiadomości w jednym miejscu, z jedną bazą kodu trafiającą na obie platformy.',
+      ],
     },
       links: { demo: 'Zobacz demo', store: 'Zobacz w Google Play', site: 'Zobacz stronę', appStore: 'Zobacz w App Store' },
     mediaAlt: (name) => `Podgląd projektu ${name}`,

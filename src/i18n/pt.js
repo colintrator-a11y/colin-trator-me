@@ -297,6 +297,58 @@ export default {
         'Uma loja Shopify para a Conscious Ink, que vende tatuagens temporárias de afirmação — lembretes vestíveis pensados para interromper o diálogo interno negativo.',
         'A loja vende um hábito, não um objeto, e por isso explica antes de vender: a proposta, o raciocínio por trás dela, os benefícios um a um, as garantias do produto e um longo mural de avaliações de clientes. Há uma assinatura ao lado da compra avulsa.',
       ],
+      perriconeMd: [
+        'Uma loja para a Perricone MD, marca americana de dermocosméticos construída sobre a pesquisa anti-inflamatória do fundador — séruns, hidratantes, produtos de limpeza e suplementos vendidos como um único protocolo.',
+        'O catálogo se organiza por preocupação, e não por linha de produto: o cliente escolhe o problema, é direcionado a um sérum e conduzido à filosofia de três pilares — dieta, suplementação e cuidado tópico. Assinaturas, um programa de pontos e rotinas em kit se somam às páginas de produto individuais.',
+      ],
+      wildfang: [
+        'Uma loja Shopify para a Wildfang, marca de vestuário que vende alfaiataria, roupa de trabalho e básicos do dia a dia com modelagem fora dos padrões convencionais.',
+        'O trabalho aqui é a filtragem de coleções. Um catálogo extenso, dividido entre lançamentos, camisas, calças, macacões e blazers, precisa continuar navegável enquanto banners de promoção, contadores regressivos e fotos de lookbook passam por cima dele.',
+      ],
+      garnetMarketplace: [
+        'O site de produto do Garnet, um aplicativo Shopify que transforma uma loja de vendedor único em um marketplace multivendedor B2B ou B2C.',
+        'O site vende uma plataforma, não um produto, e por isso é construído como um argumento: um roteiro de escala, integrações com Stripe, WooCommerce, Klaviyo e Google Analytics, tempos de onboarding declarados em minutos e uma consultoria agendada como chamada para ação.',
+      ],
+      miroTea: [
+        'Uma loja Shopify para a Miro Tea, casa de chás de Seattle que vende folhas de fazendas específicas, blends sem cafeína e utensílios artesanais.',
+        'A vitrine aposta em fotografia e contenção — um herói editorial longo e, depois, o catálogo. Quem carrega o peso é a página de coleção, que filtra centenas de chás por tipo, sabor, origem e formato.',
+      ],
+      hubspot: [
+        'O site institucional da HubSpot, a plataforma de clientes que reúne marketing, vendas e atendimento em um único registro de cliente.',
+        'É uma estrutura de conteúdo grande atendendo a vários produtos ao mesmo tempo: a visão geral da plataforma, páginas por produto, agentes de IA, faixas de preço e um funil de demonstração, tudo sustentado por um conjunto consistente de padrões de seção e um só caminho de conversão.',
+      ],
+      webfx: [
+        'O site da WebFX, agência americana de marketing digital que vende SEO, mídia paga, CRO e desenvolvimento web.',
+        'Um projeto WordPress com uma estrutura de conteúdo muito extensa — páginas de serviço com vários níveis de profundidade, estudos de caso, páginas por setor e um funil de proposta — em que a navegação e o link interno pesam tanto quanto qualquer página isolada.',
+      ],
+      belaySolutions: [
+        'O site da BELAY, empresa americana de recrutamento que coloca assistentes virtuais, profissionais de contabilidade e apoio de marketing em pequenos negócios.',
+        'Tudo na página converge para uma única etapa de captação de leads. A tabela comparativa com a contratação tradicional, os depoimentos de clientes, os logos de confiança e o pedido de orçamento existem para levar o visitante ao mesmo formulário.',
+      ],
+      hotelJobs: [
+        'HotelJobs, portal sul-africano de recrutamento para o setor de hospitalidade — hotéis, pousadas e restaurantes publicando vagas para candidatos.',
+        'Dois públicos dividem o mesmo sistema: empregadores que publicam e gerenciam vagas, e candidatos que buscam por tipo de cargo, localização e senioridade e se candidatam com um currículo salvo. Os anúncios premium aparecem acima dos gratuitos.',
+      ],
+      aimro: [
+        'O site da AIMRO, a associação das organizações irlandesas de pesquisa de mercado, que representa o setor perante os órgãos reguladores e define seus padrões.',
+        'Um front end em React sobre uma API Node. A parte pública é um site editorial enxuto — associados, pesquisas, notícias, normas — mas o conteúdo por trás é dado estruturado, então as páginas são geradas pela API em vez de montadas à mão.',
+      ],
+      vizury: [
+        'O site de produto do Vizury Engage360, plataforma de marketing para aquisição, conversão e retenção de usuários na web, no app e no WhatsApp.',
+        'Ele precisa explicar um produto técnico para um comprador comercial, então a página apresenta mecanismo e resultado lado a lado: construtores de jornada e dados de segmentação de um lado; ROAS e conversão incremental do outro.',
+      ],
+      rembrr: [
+        'O site de produto do Rembrr, assistente de lembretes por voz que transforma uma nota falada em e-mail, tarefas e compromissos na agenda.',
+        'O produto é um assistente, e o site é escrito como uma conversa: você fala, o Rembrr faz o resto. Três passos, um mockup de celular para cada um, depois os públicos — freelancers, empreendedores, equipes corporativas — e um teste gratuito no lugar de uma demonstração agendada.',
+      ],
+      dentalis: [
+        'O site da Dentalis, produto brasileiro de gestão para clínicas odontológicas, vendido aos consultórios como um sistema único de agenda, prontuário e cobrança.',
+        'O agendamento acontece pela API do WhatsApp Business, e não por formulário — que é como o paciente desse mercado realmente marca consulta. O site sustenta o argumento da automação, o de uma clínica que funciona 24 horas por dia, ao lado dos números e de um tour pelo software.',
+      ],
+      trakMd: [
+        'trakMD Doctor App, aplicativo em React Native para médicos no iOS e no Android, publicado na App Store.',
+        'A metade voltada ao médico de um sistema de acompanhamento de pacientes: consultas, prontuários e mensagens em um só lugar, com uma única base de código chegando às duas plataformas.',
+      ],
     },
       links: { demo: 'Ver a demonstração', store: 'Ver no Google Play', site: 'Ver o site', appStore: 'Ver na App Store' },
     mediaAlt: (name) => `Prévia de ${name}`,
